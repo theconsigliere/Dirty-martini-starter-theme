@@ -1,13 +1,13 @@
 # Dirty Martini Test Theme
 
-## A Codekit WordPress starter theme for developers.
+## A Codekit WordPress Starter theme for developers.
 
 ![](https://dirty-martini.com/wp-content/themes/Dirty%20Martini%20Theme/img/dm.png)
 
 _Simple Home page with sidebar showing CSS Grid layout blocks.
 It's almost as if it is not even there. (The colors are just for development to see your grid and are easily removed)_
 
-#### 🎉 How to use Test Theme?
+#### 🎉 How to use Starter Theme?
 
 Download or clone into your `/wp-content/themes/` folder and activate the theme in the WordPress admin in `Appearance > Themes`.
 
@@ -39,7 +39,7 @@ Classes are mirrored from the templates directly to the `SCSS` files so you can 
 - HTML schema built-in
 - Complete `<head>` cleanup
 
-## What's Included In Plate?
+## What's Included In The Starter theme?
 
 Plate includes all of the files any robust WordPress theme should have: default page + post templates, archive + taxonomy templates, header, footer, search as well as extra page + post templates to handle full width layouts.
 
