@@ -1,9 +1,9 @@
 <?php
 /*------------------------------------
-* Theme: Plate by studio.bio 
+* Theme: Dirty Martini Theme by Dirty Martini
 * File: Main functions file
-* Author: Joshua Michaels
-* URI: https://studio.bio/themes/plate
+* Author: Maxwell Kirwin
+* URI: https://dirty-martini.com/
 *------------------------------------
 *
 * We've moved all of the theme functions to this single
@@ -129,14 +129,14 @@ add_filter( 'image_size_names_choose', 'plate_custom_image_sizes' );
 
 function plate_custom_image_sizes( $sizes ) {
 
-    return array_merge( $sizes, array(
+return array_merge( $sizes, array(
 
-        'plate-image-600' => __('600px by 600px', 'platetheme'),
-        'plate-image-300' => __('300px by 300px', 'platetheme'),
-        'plate-image-150' => __('150px by 150px', 'platetheme'),
+'plate-image-600' => __('600px by 600px', 'platetheme'),
+'plate-image-300' => __('300px by 300px', 'platetheme'),
+'plate-image-150' => __('150px by 150px', 'platetheme'),
 
-        ) 
-    );
+)
+);
 }
 
 /*
@@ -152,46 +152,46 @@ new image size.
 // Sidebars & Widgetizes Areas
 function plate_register_sidebars() {
 
-	register_sidebar( array(
+register_sidebar( array(
 
-            'id' => 'sidebar1',
-            'name' => __( 'Sidebar 1', 'platetheme' ),
-            'description' => __( 'The first (primary) sidebar.', 'platetheme' ),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget' => '</div>',
-            'before_title' => '<h4 class="widgettitle">',
-            'after_title' => '</h4>',
+'id' => 'sidebar1',
+'name' => __( 'Sidebar 1', 'platetheme' ),
+'description' => __( 'The first (primary) sidebar.', 'platetheme' ),
+'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>',
+'before_title' => '<h4 class="widgettitle">',
+    'after_title' => '</h4>',
 
-        )
-    );
+)
+);
 
-	/*
-	to add more sidebars or widgetized areas, just copy
-	and edit the above sidebar code. In order to call
-	your new sidebar just use the following code:
+/*
+to add more sidebars or widgetized areas, just copy
+and edit the above sidebar code. In order to call
+your new sidebar just use the following code:
 
-	Just change the name to whatever your new
-	sidebar's id is, for example:
+Just change the name to whatever your new
+sidebar's id is, for example:
 
-	register_sidebar( array(
+register_sidebar( array(
 
-		'id' => 'sidebar2',
-		'name' => __( 'Sidebar 2', 'platetheme' ),
-		'description' => __( 'The second (secondary) sidebar.', 'platetheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
+'id' => 'sidebar2',
+'name' => __( 'Sidebar 2', 'platetheme' ),
+'description' => __( 'The second (secondary) sidebar.', 'platetheme' ),
+'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>',
+'before_title' => '<h4 class="widgettitle">',
+    'after_title' => '</h4>',
 
-	   )
-    );
+)
+);
 
-	To call the sidebar in your template, you can just copy
-	the sidebar.php file and rename it to your sidebar's name.
-	So using the above example, it would be:
-	sidebar-sidebar2.php
+To call the sidebar in your template, you can just copy
+the sidebar.php file and rename it to your sidebar's name.
+So using the above example, it would be:
+sidebar-sidebar2.php
 
-	*/
+*/
 } // don't remove this bracket!
 
 
@@ -205,87 +205,90 @@ add_filter( 'avatar_defaults', 'new_default_avatar' );
 
 function new_default_avatar ( $avatar_defaults ) {
 
-    //Set the URL where the image file for your avatar is located
-    $new_avatar_url = get_stylesheet_directory_uri() . '/library/images/custom-gravatar.png';
+//Set the URL where the image file for your avatar is located
+$new_avatar_url = get_stylesheet_directory_uri() . '/library/images/custom-gravatar.png';
 
-    // var_dump($new_avatar_url);
+// var_dump($new_avatar_url);
 
-    //Set the text that will appear to the right of your avatar in Settings>>Discussion
-    $avatar_defaults[$new_avatar_url] = 'Custom Avatar';
+//Set the text that will appear to the right of your avatar in Settings>>Discussion
+$avatar_defaults[$new_avatar_url] = 'Custom Avatar';
 
-    return $avatar_defaults;
+return $avatar_defaults;
 }
 
 // Comment Layout
 function plate_comments( $comment, $args, $depth ) {
 
-   $GLOBALS['comment'] = $comment; ?>
+$GLOBALS['comment'] = $comment; ?>
 
-    <div id="comment-<?php comment_ID(); ?>" <?php comment_class('comment-wrap'); ?>>
+<div id="comment-<?php comment_ID(); ?>" <?php comment_class('comment-wrap'); ?>>
 
-        <article class="article-comment">
+    <article class="article-comment">
 
-            <header class="comment-author vcard">
+        <header class="comment-author vcard">
 
-                <?php
+            <?php
                 /*
                   this is the new responsive optimized comment image. It used the new HTML5 data-attribute to display comment gravatars on larger screens only. What this means is that on larger posts, mobile sites don't have a ton of requests for comment images. This makes load time incredibly fast! If you'd like to change it back, just replace it with the regular wordpress gravatar call:
                   echo get_avatar($comment,$size='32',$default='<path_to_url>' );
                 */
                 ?>
 
-                <?php // custom gravatar call ?>
+            <?php // custom gravatar call ?>
 
-                <?php
+            <?php
                   // create variable
                   $bgauthemail = get_comment_author_email();
                 ?>
 
-                <img data-gravatar="//www.gravatar.com/avatar/<?php echo md5( $bgauthemail ); ?>?s=256" class="load-gravatar avatar avatar-48 photo" height="64" width="64" src="<?php echo get_theme_file_uri(); ?>/library/images/custom-gravatar.png" />
+            <img data-gravatar="//www.gravatar.com/avatar/<?php echo md5( $bgauthemail ); ?>?s=256"
+                class="load-gravatar avatar avatar-48 photo" height="64" width="64"
+                src="<?php echo get_theme_file_uri(); ?>/library/images/custom-gravatar.png" />
 
-                <?php // end custom gravatar call ?>
+            <?php // end custom gravatar call ?>
 
-                <div class="comment-meta">
+            <div class="comment-meta">
 
-                    <?php printf(__( '<cite class="fn">%1$s</cite> %2$s', 'platetheme' ), get_comment_author_link(), edit_comment_link(__( '(Edit)', 'platetheme' ),'  ','') ) ?>
+                <?php printf(__( '<cite class="fn">%1$s</cite> %2$s', 'platetheme' ), get_comment_author_link(), edit_comment_link(__( '(Edit)', 'platetheme' ),'  ','') ) ?>
 
-                    <time datetime="<?php echo comment_time('Y-m-j'); ?>">
+                <time datetime="<?php echo comment_time('Y-m-j'); ?>">
 
-                        <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'platetheme' )); ?> </a>
+                    <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'platetheme' )); ?>
+                    </a>
 
-                    </time>
-                
-                </div>
+                </time>
 
-            </header>
-
-            <?php if ( $comment->comment_approved == '0' ) : ?>
-
-                <div class="alert alert-info">
-
-                    <p><?php _e( 'Your comment is awaiting moderation.', 'platetheme' ) ?></p>
-
-                </div>
-
-            <?php endif; ?>
-
-            <section class="comment-content">
-
-                <?php comment_text() ?>
-
-            </section>
-
-            <div class="comment-reply">
-
-                <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-                
             </div>
-            
-        </article>
+
+        </header>
+
+        <?php if ( $comment->comment_approved == '0' ) : ?>
+
+        <div class="alert alert-info">
+
+            <p><?php _e( 'Your comment is awaiting moderation.', 'platetheme' ) ?></p>
+
+        </div>
+
+        <?php endif; ?>
+
+        <section class="comment-content">
+
+            <?php comment_text() ?>
+
+        </section>
+
+        <div class="comment-reply">
+
+            <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+
+        </div>
+
+    </article>
 
     <?php // </li> is added by WordPress automatically ?>
 
-<?php } // don't remove this bracket!
+    <?php } // don't remove this bracket!
 
 
 /*
@@ -592,7 +595,7 @@ function plate_filter_ptags_on_images( $content ) {
 }
 
 
-// Simple function to remove the [...] from excerpt and add a 'Read More »' link.
+// Simple function to remove the [...] from excerpt and add a 'Read More ï¿½' link.
 function plate_excerpt_more($more) {
     global $post;
     // edit here if you like
@@ -821,144 +824,146 @@ RELATED POSTS FUNCTION
  * Usage:
  * To show related by categories:
  * Add in single.php <?php plate_related_posts(); ?>.
- * To show related by tags:
- * Add in single.php <?php plate_related_posts('tag'); ?>.
- *
- * @global array $post
- *   WP global post.
- * @param string $display
- *   Set category or tag.
- * @param int $qty
- *   Number of posts to be displayed.
- * @param bool $images
- *   Enable or disable displaying images.
- * @param string $title
- *   Set the widget title.
- */
+    * To show related by tags:
+    * Add in single.php <?php plate_related_posts('tag'); ?>.
+    *
+    * @global array $post
+    * WP global post.
+    * @param string $display
+    * Set category or tag.
+    * @param int $qty
+    * Number of posts to be displayed.
+    * @param bool $images
+    * Enable or disable displaying images.
+    * @param string $title
+    * Set the widget title.
+    */
 
-function plate_related_posts( $display = 'category', $qty = 5, $images = true, $title = 'Related Posts' ) {
+    function plate_related_posts( $display = 'category', $qty = 5, $images = true, $title = 'Related Posts' ) {
     global $post;
     $show = false;
     $post_qty = (int) $qty;
     switch ( $display ) :
-        case 'tag':
-            $tags = wp_get_post_tags( $post->ID) ;
-            if ( $tags ) {
-                $show = true;
-                $tag_ids = array();
-                foreach ( $tags as $individual_tag ) {
-                    $tag_ids[] = $individual_tag->term_id;
-                }
-                $args = array(
-                    'tag__in' => $tag_ids,
-                    'post__not_in' => array( $post->ID ),
-                    'posts_per_page' => $post_qty,
-                    'ignore_sticky_posts' => 1
-                );
-            }
-            break;
-        default :
-            $categories = get_the_category( $post->ID );
-            if ( $categories ) {
-                $show = true;
-                $category_ids = array();
-                foreach ( $categories as $individual_category ) {
-                    $category_ids[] = $individual_category->term_id;
-                }
-                $args = array(
-                    'category__in' => $category_ids,
-                    'post__not_in' => array( $post->ID ),
-                    'showposts' => $post_qty,
-                    'ignore_sticky_posts' => 1
-                );
-            }
+    case 'tag':
+    $tags = wp_get_post_tags( $post->ID) ;
+    if ( $tags ) {
+    $show = true;
+    $tag_ids = array();
+    foreach ( $tags as $individual_tag ) {
+    $tag_ids[] = $individual_tag->term_id;
+    }
+    $args = array(
+    'tag__in' => $tag_ids,
+    'post__not_in' => array( $post->ID ),
+    'posts_per_page' => $post_qty,
+    'ignore_sticky_posts' => 1
+    );
+    }
+    break;
+    default :
+    $categories = get_the_category( $post->ID );
+    if ( $categories ) {
+    $show = true;
+    $category_ids = array();
+    foreach ( $categories as $individual_category ) {
+    $category_ids[] = $individual_category->term_id;
+    }
+    $args = array(
+    'category__in' => $category_ids,
+    'post__not_in' => array( $post->ID ),
+    'showposts' => $post_qty,
+    'ignore_sticky_posts' => 1
+    );
+    }
     endswitch;
     if ( $show == true ) {
-        $related = new wp_query( $args );
-        if ( $related->have_posts() ) {
-            $layout = '<div class="related-posts">';
-            $layout .= '<h3>' . strip_tags( $title ) . '</h3>';
-            $layout .= '<ul class="nostyle related-posts-list">';
+    $related = new wp_query( $args );
+    if ( $related->have_posts() ) {
+    $layout = '<div class="related-posts">';
+        $layout .= '<h3>' . strip_tags( $title ) . '</h3>';
+        $layout .= '<ul class="nostyle related-posts-list">';
             while ( $related->have_posts() ) {
-                $related->the_post();
-                $layout .= '<li class="related-post">';
+            $related->the_post();
+            $layout .= '<li class="related-post">';
                 if ( $images == true ) {
-                    $layout .= '<span class="related-thumb">';
-                    $layout .= '<a href="' . get_permalink() . '" title="' . get_the_title() . '">' . get_the_post_thumbnail() . '</a>';
+                $layout .= '<span class="related-thumb">';
+                    $layout .= '<a href="' . get_permalink() . '" title="' . get_the_title() . '">' .
+                        get_the_post_thumbnail() . '</a>';
                     $layout .= '</span>';
                 }
                 $layout .= '<span class="related-title">';
-                $layout .= '<a href="' . get_permalink() . '" title="' . get_the_title() . '">' . get_the_title() . '</a>';
-                $layout .= '</span>';
+                    $layout .= '<a href="' . get_permalink() . '" title="' . get_the_title() . '">' . get_the_title() .
+                        '</a>';
+                    $layout .= '</span>';
                 $layout .= '</li>';
             }
             $layout .= '</ul>';
-            $layout .= '</div>';
-            echo $layout;
-        }
-        wp_reset_query();
+        $layout .= '</div>';
+    echo $layout;
     }
-}
+    wp_reset_query();
+    }
+    }
 
 
-/*********************
-PAGE NAVI
-*********************/
+    /*********************
+    PAGE NAVI
+    *********************/
 
-/* 
-* Numeric Page Navi (built into the theme by default).
-* (Updated 2018-05-17)
-* 
-* If you're using this with a custom WP_Query, make sure 
-* to add your query variable as an argument and this 
-* function will play nice. Example:
-* 
-* plate_page_navi( $query );
-*
-* Also make sure your query has pagination set, e.g.:
-* $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-* (or something similar)
-* See the codex: https://codex.wordpress.org/Pagination
-*
-*/
+    /*
+    * Numeric Page Navi (built into the theme by default).
+    * (Updated 2018-05-17)
+    *
+    * If you're using this with a custom WP_Query, make sure
+    * to add your query variable as an argument and this
+    * function will play nice. Example:
+    *
+    * plate_page_navi( $query );
+    *
+    * Also make sure your query has pagination set, e.g.:
+    * $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    * (or something similar)
+    * See the codex: https://codex.wordpress.org/Pagination
+    *
+    */
 
-function plate_page_navi( $wp_query ) {
+    function plate_page_navi( $wp_query ) {
     $pages = $wp_query->max_num_pages;
     $big = 999999999; // need an unlikely integer
 
     if ( $pages > 1 ) {
-        $page_current = max(1, get_query_var('paged'));
+    $page_current = max(1, get_query_var('paged'));
 
-        echo '<nav class="pagination">';
+    echo '<nav class="pagination">';
 
         echo paginate_links(array(
-            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-            'format' => '?paged=%#%',
-            'current'       => $page_current,
-            'total'         => $pages,
-            'prev_text'     => '&larr;',
-            'next_text'     => '&rarr;',
-            'type'          => 'list',
-            'end_size'      => 3,
-            'mid_size'      => 3
+        'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+        'format' => '?paged=%#%',
+        'current' => $page_current,
+        'total' => $pages,
+        'prev_text' => '&larr;',
+        'next_text' => '&rarr;',
+        'type' => 'list',
+        'end_size' => 3,
+        'mid_size' => 3
         ));
 
         echo '</nav>';
     }
-}
+    }
 
 
-/*
-****************************************
-*        PLATE SPECIAL FUNCTIONS       *
-****************************************
-*/
+    /*
+    ****************************************
+    * PLATE SPECIAL FUNCTIONS *
+    ****************************************
+    */
 
-// Body Class functions
-// Adds more slugs to body class so we can style individual pages + posts.
-add_filter( 'body_class', 'plate_body_class' );
+    // Body Class functions
+    // Adds more slugs to body class so we can style individual pages + posts.
+    add_filter( 'body_class', 'plate_body_class' );
 
-function plate_body_class( $classes ) {
+    function plate_body_class( $classes ) {
 
     // Adds new classes for blogroll page (list of blog posts)
     // good for containing full-width images from Gutenberg
@@ -966,98 +971,96 @@ function plate_body_class( $classes ) {
     global $wp_query;
 
     if ( isset( $wp_query ) && (bool) $wp_query->is_posts_page ) {
-        $classes[] = 'blogroll page-blog';
+    $classes[] = 'blogroll page-blog';
     }
 
     global $post;
 
     if ( isset( $post ) ) {
 
-        /* Un comment below if you want the post_type-post_name body class */
-        /* $classes[] = $post->post_type . '-' . $post->post_name; */
-        
-        $pagetemplate = get_post_meta( $post->ID, '_wp_page_template', true);
-        $classes[] = sanitize_html_class( str_replace( '.', '-', $pagetemplate ), '' );
-        $classes[] = $post->post_name;
+    /* Un comment below if you want the post_type-post_name body class */
+    /* $classes[] = $post->post_type . '-' . $post->post_name; */
+
+    $pagetemplate = get_post_meta( $post->ID, '_wp_page_template', true);
+    $classes[] = sanitize_html_class( str_replace( '.', '-', $pagetemplate ), '' );
+    $classes[] = $post->post_name;
 
     }
 
     if (is_page()) {
 
-        global $post;
+    global $post;
 
-        if ( $post->post_parent ) {
+    if ( $post->post_parent ) {
 
-            // Parent post name/slug
-            $parent = get_post( $post->post_parent );
-            $classes[] = $parent->post_name;
+    // Parent post name/slug
+    $parent = get_post( $post->post_parent );
+    $classes[] = $parent->post_name;
 
-            // Parent template name
-            $parent_template = get_post_meta( $parent->ID, '_wp_page_template', true );
-            
-            if ( !empty($parent_template) )
-                $classes[] = 'template-'.sanitize_html_class( str_replace( '.', '-', $parent_template ), '' );
+    // Parent template name
+    $parent_template = get_post_meta( $parent->ID, '_wp_page_template', true );
 
-        }
-        
-        // If we *do* have an ancestors list, process it
-        // http://codex.wordpress.org/Function_Reference/get_post_ancestors
-        if ($parents = get_post_ancestors( $post->ID )) {
+    if ( !empty($parent_template) )
+    $classes[] = 'template-'.sanitize_html_class( str_replace( '.', '-', $parent_template ), '' );
 
-            foreach ( (array)$parents as $parent ) {
+    }
 
-                // As the array contains IDs only, we need to get each page
-                if ( $page = get_page($parent) ) {
-                    // Add the current ancestor to the body class array
-                    $classes[] = "{$page->post_type}-{$page->post_name}";
-                }
+    // If we *do* have an ancestors list, process it
+    // http://codex.wordpress.org/Function_Reference/get_post_ancestors
+    if ($parents = get_post_ancestors( $post->ID )) {
 
-            }
+    foreach ( (array)$parents as $parent ) {
 
-        }
- 
-        // Add the current page to our body class array
-        $classes[] = "{$post->post_type}-{$post->post_name}";
+    // As the array contains IDs only, we need to get each page
+    if ( $page = get_page($parent) ) {
+    // Add the current ancestor to the body class array
+    $classes[] = "{$page->post_type}-{$page->post_name}";
+    }
+
+    }
+
+    }
+
+    // Add the current page to our body class array
+    $classes[] = "{$post->post_type}-{$post->post_name}";
 
     }
 
     if ( is_page_template('single-full.php') ) {
-        $classes[] = 'single-full';
+    $classes[] = 'single-full';
     }
 
     return $classes;
 
-}
+    }
 
 
-/* 
-* QUICKTAGS
-*
-* Let's add some extra Quicktags for clients who aren't HTML masters
-* They are pretty handy for HTML masters too.
-*
-* Hook into the 'admin_print_footer_scripts' action
-*
-*/
-add_action( 'admin_print_footer_scripts', 'plate_custom_quicktags' );
+    /*
+    * QUICKTAGS
+    *
+    * Let's add some extra Quicktags for clients who aren't HTML masters
+    * They are pretty handy for HTML masters too.
+    *
+    * Hook into the 'admin_print_footer_scripts' action
+    *
+    */
+    add_action( 'admin_print_footer_scripts', 'plate_custom_quicktags' );
 
-function plate_custom_quicktags() {
+    function plate_custom_quicktags() {
 
     if ( wp_script_is( 'quicktags' ) ) { ?>
 
-        <script type="text/javascript">
+    <script type="text/javascript">
+    QTags.addButton('qt-p', 'p', '<p>', '</p>', '', '', 1);
+    QTags.addButton('qt-br', 'br', '<br>', '', '', '', 9);
+    QTags.addButton('qt-span', 'span', '<span>', '</span>', '', '', 11);
+    QTags.addButton('qt-h2', 'h2', '<h2>', '</h2>', '', '', 12);
+    QTags.addButton('qt-h3', 'h3', '<h3>', '</h3>', '', '', 13);
+    QTags.addButton('qt-h4', 'h4', '<h4>', '</h4>', '', '', 14);
+    QTags.addButton('qt-h5', 'h5', '<h5>', '</h5>', '', '', 15);
+    </script>
 
-            QTags.addButton( 'qt-p', 'p', '<p>', '</p>', '', '', 1 );
-            QTags.addButton( 'qt-br', 'br', '<br>', '', '', '', 9 );
-            QTags.addButton( 'qt-span', 'span', '<span>', '</span>', '', '', 11 );
-            QTags.addButton( 'qt-h2', 'h2', '<h2>', '</h2>', '', '', 12 );
-            QTags.addButton( 'qt-h3', 'h3', '<h3>', '</h3>', '', '', 13 );
-            QTags.addButton( 'qt-h4', 'h4', '<h4>', '</h4>', '', '', 14 );
-            QTags.addButton( 'qt-h5', 'h5', '<h5>', '</h5>', '', '', 15 );
-
-        </script>
-
-<?php }
+    <?php }
 
 }
 
@@ -1148,7 +1151,7 @@ function plate_add_dashboard_widgets() {
     // Call the built-in dashboard widget function with our callback
     wp_add_dashboard_widget(
         'plate_dashboard_widget', // Widget slug. Also the HTML id for styling in admin.scss.
-        __( 'Welcome to Plate!', 'platetheme' ), // Title.
+        __( 'Welcome to your Website!', 'dirtymartini' ), // Title.
         'plate_dashboard_widget_init' // Display function (below)
     );
 }
@@ -1159,14 +1162,12 @@ function plate_dashboard_widget_init() {
 
     // helper vars for links and images and stuffs.
     $url = get_admin_url();
-    $img = get_theme_file_uri() . '/library/images/logo.svg';
+    $img = get_theme_file_uri() . '/library/images/Dirty-Martini-Logo.png';
 
     echo '<div class="dashboard-image"><img src=' . $img . '" width="96" height="96" /></div>';
-    echo '<h3>You\'ve arrived at the WordPress Dashboard aka the \'Site Admin\' or \'WordPress Admin\' or simply the \'Admin\'.</h3>'; 
-    echo '<p><strong>Thank you for using the <a href="https://github.com/joshuaiz/plate" target="_blank">Plate</a> theme by <a href="https://studio.bio/" target="_blank">studio.bio</a>!</strong></p>'; 
-    echo '<p>You can add your own message(s) or HTML here. Edit the <code>plate_dashboard_widget_init()</code> function in <code>functions.php</code> at line 1225. Styles are in <code>admin.scss</code>. Or if you don\'t want or need this, just delete the function. Have it your way.</p>';
-    echo '<p>This is a great place for site instructions, links to help or resources, and to add your contact info for clients.</p>';
-    echo '<p>Make sure to remind them about the <code>Screen Options</code> tab on the top right. Often clients do not know about that and that they can show or hide or rearrange these Dashboard Widgets or show/hide boxes on any edit screen.</p>';
+    echo '<h3>You\'ve arrived at your WordPress Dashboard aka the \'Site Admin\' or \'WordPress Admin\'.</h3>'; 
+    echo '<p><strong>Thank you for using the <a href="https://dirty-martini.com/" target="_blank">Dirty Martini</a> theme'; 
+
     
 }
 
@@ -1185,5 +1186,8 @@ if ( in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1')) ) {
     add_action( 'wp_enqueue_scripts', 'livereload_script' );
 
 }
+
+
+
 
 ?>

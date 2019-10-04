@@ -9,25 +9,27 @@ customize the dashboard and WordPress admin area. All admin
 functions are located in `admin.php`.
 
 ******************************************************************/
-
-// Styles for the custom dashboard widget in the admin
 #plate_dashboard_widget {
-    width: 48vw;
-    padding-bottom: 1em;
-    * {
-        line-height: 1.4;
-    }
-    h2 {
-        font-size: 2em;
-    }
-    h3 {
-        font-size: 1.664em;
-    }
-    p {
-        font-size: 15px;
-    }
+  width: 48vw;
+  padding-bottom: 1em;
+}
+
+#plate_dashboard_widget * {
+  line-height: 1.4;
+}
+
+#plate_dashboard_widget h2 {
+  font-size: 2em;
+}
+
+#plate_dashboard_widget h3 {
+  font-size: 1.664em;
+}
+
+#plate_dashboard_widget p {
+  font-size: 15px;
 }
 
 #wpfooter {
-    display: none;
+  display: none;
 }

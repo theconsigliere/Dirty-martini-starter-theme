@@ -1,10 +1,10 @@
 /*--------------------------------------------
-Theme Name: Plate
-Theme URI: https://studio.bio/themes/plate
+Theme Name: Dirty Martini Theme
+Theme URI: https://dirty-martini.com/
 Text Domain: platetheme
-Description: Plate is a super-minimal, stripped-down HTML5, responsive, retina-ready starter WordPress theme for developers.
-Author: Joshua Michaels & Jon Iler for studio.bio
-Author URI: https://studio.bio/
+Description: Dirty Martini is a super-minimal, stripped-down HTML5, responsive, retina-ready starter WordPress theme for developers.
+Author: Dirty Martini
+Author URI: https://maxwellkirwin.co.uk/
 Version: 1.1
 Tags: accessibility-ready, translation-ready, microformats, rtl-language-support, full-width-template, footer-widgets, custom-header, custom-background, custom-logo, custom-menu, grid-layout, editor-style, theme-options, e-commerce
 License: WTFPL
@@ -53,3 +53,7 @@ Great work, Theme Check (eye roll)
 .wp-caption-text {}
 
 /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
+
+#wpfooter {
+    display: none;
+}
