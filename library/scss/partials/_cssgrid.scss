@@ -119,14 +119,14 @@ more pure CSS Grid interpretation: https://github.com/joshuaiz/grate
         // add colors just to show what's going on. Comment the colors out when you've sorted your layouts.
         #content {
             flex: 1; // fallback
-            background-color: ghostwhite;
+            background-color: white;
         }
         aside {
-            background-color: honeydew;
+            background-color: white;
             min-height: 80px; // just to make sure it is visible on mobile; 
         }
         #footer {
-            background-color: powderblue;
+            background-color: white;
         }
     }
 
@@ -203,7 +203,7 @@ more pure CSS Grid interpretation: https://github.com/joshuaiz/grate
         .grid-aside {
             // adjust the grid areas for higher viewports, keeping the content at manageable widths
             #content {
-                grid-column: 3/8;
+                grid-column: 2 / span 10;
             }
             aside {
                 grid-column: 8/11;

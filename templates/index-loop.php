@@ -5,52 +5,52 @@
  * Description: Loop code for the index.php template.
  * 
  * @example <?php get_template_part( 'templates/index', 'loop'); ?>
- * 
- * @author  Joshua Michaels for studio.bio <info@studio.bio>
- * @since   1.0.0
- * @version 1.3
- * @license WTFPL
- * 
- * @see     https://konstantin.blog/2013/get_template_part/
- *          http://buildwpyourself.com/get-template-part/
- * 
- */
-?>
+*
+* @author Maxwell Kirwin for Dirty Martini <info@studio.bio>
+    * @since 1.0.0
+    * @version 1.3
+    * @license WTFPL
+    *
+    * @see https://konstantin.blog/2013/get_template_part/
+    * http://buildwpyourself.com/get-template-part/
+    *
+    */
+    ?>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
 
-		<header class="article-header">
+        <header class="article-header">
 
             <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-			
-			<?php get_template_part( 'templates/byline'); ?>
 
-		</header>
+            <?php get_template_part( 'templates/byline'); ?>
 
-		<section class="entry-content">
-									
-			<?php the_content(); ?>
+        </header>
 
-		</section>
+        <section class="entry-content">
 
-		<footer class="article-footer">
+            <?php the_content(); ?>
 
-			<?php get_template_part( 'templates/comment', 'count'); ?>
+        </section>
+
+        <footer class="article-footer">
+
+            <?php get_template_part( 'templates/comment', 'count'); ?>
 
             <?php get_template_part( 'templates/category-tags'); ?>
 
-		</footer>
+        </footer>
 
-	</article>
+    </article>
 
-<?php endwhile; ?>
+    <?php endwhile; ?>
 
     <?php plate_page_navi( $wp_query ); ?>
 
-<?php else : ?>
+    <?php else : ?>
 
     <?php get_template_part( 'templates/404'); ?>
 
-<?php endif; ?>
+    <?php endif; ?>

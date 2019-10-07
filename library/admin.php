@@ -1,9 +1,9 @@
 <?php
 /*------------------------------------
- * Theme: Plate by studio.bio 
+ * Theme: Starter Theme by Dirty Martini
  * File: Admin custom functions
- * Author: Joshua Michaels
- * URI: https://studio.bio/themes/plate
+ * Author: Maxwell Kirwin
+ * URI: https://dirty-martini.com/
  *------------------------------------
  *
  * This file handles the admin area and functions.
