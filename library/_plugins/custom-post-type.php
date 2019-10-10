@@ -1,10 +1,11 @@
 <?php
 /**
-* Plugin Name: Plate Staff CPT
-* Description: Staff CPT sample for Plate theme
-* Version: 1.0
-* Author: Joshua Michaels for studio.bio
-* Author URI: https://studio.bio/
+
+ * Theme: Starter Theme by Dirty Martini
+ * File: Admin custom functions
+ * Author: Maxwell Kirwin
+ * URI: https://dirty-martini.com/
+
 */
 
 /******************************************************************
@@ -179,6 +180,3 @@ function plate_staff_sort($columns) {
     );
     return wp_parse_args($custom, $columns);
 }
-
-
-?>

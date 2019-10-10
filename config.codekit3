@@ -44,14 +44,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/archive-custom_type.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/archive-custom_type.php",
-		"oF": 0
-		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -117,14 +109,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/functions.php",
-		"oF": 0
-		},
-	"/header-full.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/header-full.php",
 		"oF": 0
 		},
 	"/header.php": {
@@ -633,68 +617,68 @@
 	"/library/js/a11y.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/a11y-min.js",
+		"oAP": "/library/js/min/a11y-min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/library/js/extras/extra-scripts.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/extras/extra-scripts-min.js",
+		"oAP": "/library/js/extras/min/extra-scripts-min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/library/js/libs/modernizr-custom-min.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
-		"oA": 1,
-		"oAP": "/library/js/libs/modernizr-custom-min-min.js",
+		"oA": 0,
+		"oAP": "/library/js/libs/min/modernizr-custom-min-min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/library/js/libs/modernizr-custom.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/libs/modernizr-custom-min.js",
+		"oAP": "/library/js/libs/min/modernizr-custom-min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/library/js/min/a11y-min.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/min/a11y-min-min.js",
+		"oAP": "/library/js/min/min/a11y-min-min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/library/js/min/scripts-min.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/min/scripts-min-min.js",
+		"oAP": "/library/js/min/min/scripts-min-min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/library/js/min/scripts-min.js.map": {
 		"cB": 0,
@@ -707,35 +691,35 @@
 	"/library/js/min/theme-customizer-min.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/min/theme-customizer-min-min.js",
+		"oAP": "/library/js/min/min/theme-customizer-min-min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/library/js/scripts.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/scripts-min.js",
+		"oAP": "/library/js/min/scripts-min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/library/js/theme-customizer.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/theme-customizer-min.js",
+		"oAP": "/library/js/min/theme-customizer-min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/library/plate.php": {
 		"cB": 0,
@@ -1373,52 +1357,12 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/page-custom-loop.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-custom-loop.php",
-		"oF": 0
-		},
-	"/page-custom-noloop.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-custom-noloop.php",
-		"oF": 0
-		},
-	"/page-custom.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-custom.php",
-		"oF": 0
-		},
 	"/page-full.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-full.php",
-		"oF": 0
-		},
-	"/page-home.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-home.php",
-		"oF": 0
-		},
-	"/page-html.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-html.php",
 		"oF": 0
 		},
 	"/page-sidebar.php": {
@@ -1507,22 +1451,6 @@
 		"oAP": "/sidebar.php",
 		"oF": 0
 		},
-	"/single-custom_type.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/single-custom_type.php",
-		"oF": 0
-		},
-	"/single-full.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/single-full.php",
-		"oF": 0
-		},
 	"/single.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1550,22 +1478,6 @@
 		"oAP": "/library/css/style.min-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"/taxonomy-custom_cat.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/taxonomy-custom_cat.php",
-		"oF": 0
-		},
-	"/templates/404.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/404.php",
-		"oF": 0
 		},
 	"/templates/archive-loop.php": {
 		"cB": 0,
@@ -1605,14 +1517,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/content-excerpt.php",
-		"oF": 0
-		},
-	"/templates/format.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/format.php",
 		"oF": 0
 		},
 	"/templates/header-title.php": {
@@ -3547,12 +3451,12 @@
 		"autoOutputPathRelativePath": "/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"bundleFormat": 0,
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 3,
-		"transpilerStyle": 0
+		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,

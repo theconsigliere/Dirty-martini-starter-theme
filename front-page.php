@@ -1,11 +1,11 @@
 <?php
-/**
- * This file is loaded if no other template files are found.
+/*
+ Template Name: Home Page
  * 
- * Know your WordPress template hierarchy:
- * https://wphierarchy.com
- * 
- */
+ * Use this template for a static home page. 
+ * If you don't need the main loop, remove it
+ * and get busy.
+*/
 ?>
 
 <?php get_header(); ?>
@@ -17,8 +17,9 @@
         <main id="main" class="main" role="main" itemscope itemprop="mainContentOfPage"
             itemtype="https://schema.org/Blog">
 
-            <?php // Edit the loop in /templates/index-loop. Or roll your own. ?>
-            <?php get_template_part( 'templates/index','loop'); ?>
+            <?php // Edit the loop in /templates/loop. Or roll your own. 
+            ?>
+            <?php get_template_part('templates/loop'); ?>
 
         </main>
 
