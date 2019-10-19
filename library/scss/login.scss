@@ -1,10 +1,6 @@
 /******************************************************************
-
- * Theme: Starter Theme by Dirty Martini
- * File: Admin custom functions
- * Author: Maxwell Kirwin
- * URI: https://dirty-martini.com/
-
+Site Name:
+Author:
 
 Stylesheet: Login Stylesheet
 
@@ -18,14 +14,12 @@ http://codex.wordpress.org/Creating_Admin_Themes
 ******************************************************************/
 
 body.login {
-  background: white !important;
-  h1 {
-    margin: 0 auto;
-  }
+	h1 {
+		margin: 0 auto;
+	}
 }
 
-#login {
-} /* the form box */
+#login {} /* the form box */
 
 /*
 Add a custom logo to the WordPress login. Clients really like their logo here.
@@ -33,48 +27,43 @@ Just create image at least 400x400 and replace images/login-logo@2x.png.
 Now with square image and retina by default.
 */
 .login h1 a {
-  display: block;
-  overflow: hidden;
-  margin: 0 50px 0 85px;
-  width: 200px;
-  height: 200px;
-  background: url(../images/Dirty-Martini-Logo.png) no-repeat top center; /* make sure to replace this! */
-  background-size: 200px 200px;
-  text-indent: -9999px;
+	display: block;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+	background: url(../images/login-logo@2x.png) no-repeat top center; /* make sure to replace this! */
+	background-size: 200px 200px;
+	text-indent: -9999px;
 }
 
 form {
-  margin-left: 8px;
-  padding: 26px 24px 46px;
-  border: 2px solid black;
-  border-radius: 3px;
-  background: white;
-  box-shadow: none;
-  font-weight: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif !important;
+	margin-left: 8px;
+	padding: 26px 24px 46px;
+	border: 1px solid #E5E5E5;
+	border-radius: 3px;
+	background: white;
+	box-shadow: none;
+	font-weight: normal;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
 }
 
 body form .input {
-  margin-top: 2px;
-  margin-right: 6px;
-  margin-bottom: 16px;
-  padding: 3px;
-  width: 97%;
-  outline: none;
-  border: 1px solid #e5e5e5;
-  background: #fff;
-  box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
-  font-size: 24px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif !important;
+	margin-top: 2px;
+	margin-right: 6px;
+	margin-bottom: 16px;
+	padding: 3px;
+	width: 97%;
+	outline: none;
+	border: 1px solid #E5E5E5;
+	background: #FBFBFB;
+	box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+	font-size: 24px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !important;
 }
 
 /*
 You'll have to override some of the default styles
 but since we're referencing the id, it should be easy.
 */
-#wp-submit {
-} /* login button*/
+#wp-submit {} /* login button*/

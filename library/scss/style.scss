@@ -1,11 +1,12 @@
+/* 
+* Made with Template by studio.bio
+* Based on Bones by Eddie Machado.
+* One love :)
+*/
 
 /******************************************************************
-
- * Theme: Starter Theme by Dirty Martini
- * File: Admin custom functions
- * Author: Maxwell Kirwin
- * URI: https://dirty-martini.com/
-
+Site Name:
+Author:
 
 Stylesheet: Main Stylesheet
 
@@ -32,8 +33,6 @@ the whole project.
 // Sass variables
 @import "partials/variables";
 
-// typography
-@import "partials/typography";
 
 // Sass functions
 @import "partials/functions";
@@ -201,4 +200,326 @@ be set to display none.
 @media print {
     // styles in print.scss
     @import "partials/print";
+}
+/*********************
+Homepage  STYLE
+*********************/
+.welcome-hero {
+    grid-column: span 12;
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.welcome-hero img {
+    width: 100%;
+}
+
+.welcome-hero-text {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    right: 30%;
+}
+
+.welcome-hero-text * {
+    color: $white;
+    text-align: center;
+    text-shadow: 6px 2px 10px #040404a6;
+
+}
+
+.blue-circle {
+    position: absolute;
+    background-image: url(../images/blue.svg);
+    width: 180px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    right: 0;
+    z-index: -5;
+}
+
+.c-home {
+    position: relative; 
+}
+
+.orange-circle {
+    position: absolute;
+    background-image: url(../images/orange.svg);
+    width: 120px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    left: 0;
+    bottom: 0;
+}
+
+.ce-item, .l-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.ce-image, .l-image {
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.l-item {
+    width: 30%;
+    text-align: center;
+}
+
+.ce-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 0;
+}
+
+.candidates-employers-text-section {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10vh 0;
+}
+
+.looking-section {
+    padding: 10vh 0;
+}
+
+.looking-text-section {
+    text-align: center;
+}
+
+.l-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+section.we-are-section {
+    padding: 10vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.we-are-image, .we-are-text {
+    width: 50%;
+}
+
+.we-are-image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.blog-item-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-title, .looking-text-section, .candidates-employers-text-section h2, .button-title {
+    text-align: center;
+    padding: 5vh 0;
+}
+
+
+section.blog-section {
+    padding: 10vh 0;
+}
+
+section.newsletter-section {
+    padding: 10vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.job-search-form1 {
+    display: flex;
+    max-width: 60vw;
+    margin: 0 auto;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    background: white;
+    padding: 45px; }
+
+
+    .job-search-form-section {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+// Template pages
+
+    .page-hero-header {
+        grid-column: span 12;
+    }
+
+    .page-hero-header {
+        grid-column: span 12;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 80vh;
+    }
+
+    .header-hero-image {
+
+        width: 50%;
+        max-height: 100%;
+        overflow: hidden;
+      
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .header-hero-text {
+        width: 30%;
+    }
+
+    .text-sections {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10vh 0;
+        flex-direction: row-reverse;
+    }
+
+    .text-text {
+        width: 60%;
+    }
+
+    .text-image {
+        width: 40%;
+    }
+
+    .text-image img {
+        margin: 0 auto;
+    }
+
+    .newsletter-image, .newsletter-right-section {
+        width: 40%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .newsletter-text {
+        margin: 50px 0;
+    }
+
+
+    .text-sections:nth-child(even) {
+        flex-direction: row;
+    }
+
+    .button-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pagination {
+        text-align: center;
+    }
+
+
+    .footer-logo-section {
+        display: flex;
+        width: 30vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .footer-logos {
+    width: 200px;
+    height: auto;
+}
+
+
+.text-card {
+    margin: 40px 0;
+    text-align: center;
+
+    * {
+        margin: 20px 0;
+    }
+}
+
+
+// CONTACT FORM
+
+
+input, textarea {
+    border: 2px $blue solid;
+    margin: 15px 0;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.underline {
+    height: 4px;
+    width: 180px;
+    background: $light-blue;
+}
+
+.widgettitle {
+    margin-top: 0;
+}
+
+.contact-section-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-block {
+    width: 50%;
+
+    .wpcf7-form-control-wrap input {
+        width: 99%;
+    }
+}
+
+input[type="file"] {
+    border: none;
+}
+
+.submit-send {
+    text-align: center;
+}
+
+[type="submit"] {
+    width: 100%;
 }

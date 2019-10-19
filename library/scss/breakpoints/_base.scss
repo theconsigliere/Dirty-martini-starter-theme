@@ -94,7 +94,7 @@ further. Using correct headings helps with readability, SEO, and accessibility.
 /* Heading defaults */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     margin: 1.333em 0 0.5em;
-    color: lighten($sb-black, 12%);
+    color: $blue;
     font-weight: 500;
     line-height: 1.2;
     text-rendering: optimizelegibility;
@@ -116,29 +116,64 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 h1, .h1 {
     margin-top: 0;
     margin-bottom: 0.319em;
-    font-size: 3.157em;
+    font-size: $size-h1-mobile;
+    line-height: $lineheight-h1-mobile;
+  
+    @media (min-width: #{$screen-lg}) {
+      font-size: $h1;
+      line-height: $lineheight-h1-desktop;
+    }
 }
 
 h2, .h2 {
     margin-top: 0.88em;
-    font-size: 2.369em;
+    font-size: $size-h2-mobile;
+    line-height: $lineheight-h2-mobile;
+  
+    @media (min-width: #{$screen-lg}) {
+      font-size: $h2;
+      line-height: $lineheight-h2-desktop;
+    }
 }
 
 h3, .h3 {
-    font-size: 1.777em;
+    font-size: $size-h3-mobile;
+    line-height: $lineheight-h3-mobile;
+  
+    @media (min-width: #{$screen-lg}) {
+      font-size: $h3;
+      line-height: $lineheight-h3-desktop;
+    }
 }
 
 h4, .h4 {
-    font-size: 1.333em;
+    font-size: $size-h4-mobile;
+    line-height: $lineheight-h4-mobile;
+  
+    @media (min-width: #{$screen-lg}) {
+      font-size: $size-h4-desktop;
+      line-height: $lineheight-h4-desktop;
+    }
 }
 
 h5, .h5 {
-    font-size: 1em;
+    font-size: $size-h5-mobile;
+    line-height: $lineheight-h5-mobile;
+  
+    @media (min-width: #{$screen-lg}) {
+      font-size: $size-h5-desktop;
+      line-height: $lineheight-h5-desktop;
+    }
 }
 
 h6, .h6 {
-    text-transform: uppercase;
-    letter-spacing: 4.333px;
+    font-size: $size-h6-mobile;
+    line-height: $lineheight-h6-mobile;
+  
+    @media (min-width: #{$screen-lg}) {
+      font-size: $size-h6-desktop;
+      line-height: $lineheight-h6-desktop;
+    }
 }
 
 /*********************
@@ -152,6 +187,8 @@ HEADER STYLES
 // fix for new header.php schema layout
 #inner-header {
     display: flex; 
+    padding: 3vh 0;
+    justify-content: space-between;
 }
 
 #site-title {
@@ -171,8 +208,8 @@ HEADER STYLES
     margin-right: 8px;
     img {
         // replace /library/images/logo.svg and adjust for your logo size
-        width: 50px;
-        height: 50px;
+        width: 250px;
+        height: auto;
     }
 }
 
@@ -183,6 +220,7 @@ LIST STYLES
 ul, ol {
     // removes default list padding in Safari + Chrome
     -webkit-padding-start: 20px;
+    
 }
 
 .list-square {
@@ -229,6 +267,13 @@ default menu.
 
 For your main navigation, styles are in 768up.scss.
 */
+
+
+.main-menu {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
 
 /********************
 WORDPRESS BODY CLASSES
@@ -776,6 +821,7 @@ FOOTER STYLES
 
 .footer {
     clear: both; // are you really still using floats? Tsk, tsk.
+    position: relative;
 }
 
 .footer-links {
@@ -785,3 +831,20 @@ FOOTER STYLES
 }
 
 .copyright {}
+
+// lAZY LOAD
+
+/* Image with 'data' attribute is hidden */
+img[data-lazy-src] {
+    /* we set the opacity to 0 */
+       opacity: 0;
+    }
+    /* Image without 'data' attribute is (or becomes) visible */
+    img.lazyloaded {
+    /* prepare the future animation */
+       -webkit-transition: opacity .5s linear 0.2s;
+           -moz-transition: opacity .5s linear 0.2s;
+                     transition: opacity .5s linear 0.2s;
+    /* we set the opacity to 1 to do the magic */
+       opacity: 1;
+    }

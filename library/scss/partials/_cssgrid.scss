@@ -120,13 +120,23 @@ more pure CSS Grid interpretation: https://github.com/joshuaiz/grate
         #content {
             flex: 1; // fallback
             background-color: white;
+            grid-column: 2 / span 8;
         }
         aside {
             background-color: white;
             min-height: 80px; // just to make sure it is visible on mobile; 
+            grid-column: 10/12;
         }
         #footer {
             background-color: white;
+        }
+
+        #full-page {
+            grid-column: 2 / span 10;
+        }
+
+        .title-page {
+            grid-column: 2 / span 10;
         }
     }
 
@@ -145,8 +155,13 @@ more pure CSS Grid interpretation: https://github.com/joshuaiz/grate
             // create 3 rows: header | content/aside | footer; 'auto' makes header and footer the height of the content
             grid-template-rows: auto 1fr auto;
             // make the header and footer span the full width
-            #header, #footer {
+            #header {
                 grid-column: span 12;
+            }
+
+            #footer {
+                grid-column: span 12;
+                margin-top: 5vh;
             }
 
             // span our main content from columns 1-8 (8 is the start of the new column)
@@ -203,10 +218,18 @@ more pure CSS Grid interpretation: https://github.com/joshuaiz/grate
         .grid-aside {
             // adjust the grid areas for higher viewports, keeping the content at manageable widths
             #content {
-                grid-column: 2 / span 10;
+                grid-column: 2 / span 8;
             }
             aside {
-                grid-column: 8/11;
+                grid-column: 10/12;
+            }
+            #full-page {
+                grid-column: 2 / span 10;
+
+            }
+
+            .title-page {
+                grid-column: 2 / span 10;
             }
         }
 

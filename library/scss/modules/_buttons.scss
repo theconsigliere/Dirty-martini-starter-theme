@@ -33,19 +33,37 @@ https://medium.com/simple-human/buttons-shouldnt-have-a-hand-cursor-b11e99ca374b
 %button {
     position: relative;
     display: inline-block;
-    margin-bottom: .5em;
-    padding: 0.5em 1em;
+    padding: 15px 30px;
     border: 0;
-    border-radius: 2px;
+    background: #5B8AF2;
+    color: #fff;
     text-decoration: none;
     &:hover, &:focus {}
     &:active {
         top: 1px; // adds a tiny hop to the click
+        background: $white;
+        color: $blue;
+        transition: all 0.6s;
     }
 } // end .button
 
-.button {
-    @extend %button;
+button, [type="submit"] {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid $blue;
+    background: $blue;
+    color: #fff;
+    text-decoration: none;
+    height: auto;
+    width: auto;
+
+    &:hover {
+        background: $light-blue;
+        border: 2px solid $light-blue;
+        transition: all 0.6s;
+        color: $blue;
+    }
 }
 
 .blue-button {
@@ -56,3 +74,24 @@ https://medium.com/simple-human/buttons-shouldnt-have-a-hand-cursor-b11e99ca374b
         color: #fff;
     }
 }
+
+.label-block {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.job-search-input, select {
+    margin: 15px auto;
+    width: 80%;
+    border: 2px #5B8AF2 solid;
+    height: 40px;
+    margin-bottom: 0;
+    }
+
+
+    .job-search-input-search {
+        height: auto;
+        width: 80%;
+        margin: 0;
+    }
