@@ -17,6 +17,30 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
+	"/acf-json/group_5d9b4bf4c255a.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5d9b4bf4c255a-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5d9c4a287a947.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5d9c4a287a947-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5d9c747a3dd8a.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5d9c747a3dd8a-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/acf-json/README.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -127,6 +151,14 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
+	"/library/_plugins/advanced-custom-fields-pro.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/_plugins/advanced-custom-fields-pro.zip",
+		"oF": 0
+		},
 	"/library/_plugins/custom-post-type.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -141,6 +173,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/library/admin.php",
+		"oF": 0
+		},
+	"/library/class-tgm-plugin-activation.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/class-tgm-plugin-activation.php",
 		"oF": 0
 		},
 	"/library/css/admin.css": {
@@ -1381,6 +1421,78 @@
 		"oAP": "/page.php",
 		"oF": 0
 		},
+	"/partials/contact-form.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/partials/contact-form.php",
+		"oF": 0
+		},
+	"/partials/content-about.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/partials/content-about.php",
+		"oF": 0
+		},
+	"/partials/content-blog.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/partials/content-blog.php",
+		"oF": 0
+		},
+	"/partials/content-button.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/partials/content-button.php",
+		"oF": 0
+		},
+	"/partials/content-ce.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/partials/content-ce.php",
+		"oF": 0
+		},
+	"/partials/content-looking.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/partials/content-looking.php",
+		"oF": 0
+		},
+	"/partials/content-newsletter.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/partials/content-newsletter.php",
+		"oF": 0
+		},
+	"/partials/content-text.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/partials/content-text.php",
+		"oF": 0
+		},
+	"/partials/page-modules.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/partials/page-modules.php",
+		"oF": 0
+		},
 	"/readme.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1566,7 +1678,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 592135501.51721895,
-	"displayValue": "Dirty-Martini-Test-Theme",
+	"displayValue": "startertheme",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-tar",
 	"iconImageWasSetByUser": 0

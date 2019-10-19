@@ -10,18 +10,33 @@
 
 <?php get_header(); ?>
 
-<div id="content">
+<div class="page-hero-header">
+
+    <div class="header-hero-image">
+        <?php $image = get_field('header_image');
+        if (!empty($image)) : ?>
+        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" data-no-lazy="1" />
+        <?php endif; ?>
+
+    </div>
+
+    <div class="header-hero-text">
+        <h1><?php the_field('header_title'); ?></h1>
+        <div class="underline"></div>
+        <h3><?php the_field('header_sub_title'); ?></h3>
+    </div>
+
+
+</div>
+
+<div id="full-page">
 
     <div id="inner-content" class="wrap">
 
-        <main id="main" class="main" role="main" itemscope itemprop="mainContentOfPage"
-            itemtype="https://schema.org/Blog">
+        <div class="blue-circle"></div>
 
-            <?php // Edit the loop in /templates/loop. Or roll your own. 
-            ?>
-            <?php get_template_part('templates/loop'); ?>
-
-        </main>
+        <!-- Page Modules -->
+        <?php get_template_part('partials/page', 'modules'); ?>
 
     </div>
 

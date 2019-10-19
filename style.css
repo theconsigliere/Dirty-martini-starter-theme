@@ -1,7 +1,7 @@
 /*--------------------------------------------
 Theme Name: Dirty Martini Theme
 Theme URI: https://dirty-martini.com/
-Text Domain: platetheme
+Text Domain: dmtheme
 Description: Dirty Martini is a super-minimal, stripped-down HTML5, responsive, retina-ready starter WordPress theme for developers.
 Author: Dirty Martini
 Author URI: https://maxwellkirwin.co.uk/
@@ -40,16 +40,21 @@ So we're gonna drop these here to keep it happy.
 Great work, Theme Check (eye roll)
 */
 
-.sticky {}
+.sticky {
+}
 
 /* DO NOT EDIT THIS */
-.gallery-caption {}
+.gallery-caption {
+}
 
 /* THESE ARE USELESS */
-.bypostauthor {}
+.bypostauthor {
+}
 
-.wp-caption {}
+.wp-caption {
+}
 
-.wp-caption-text {}
+.wp-caption-text {
+}
 
 /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */

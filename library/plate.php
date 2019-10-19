@@ -1,9 +1,9 @@
 <?php
 /*------------------------------------
-* Theme: Plate by studio.bio 
+* Theme: Dirty Martini Theme
 * File: Template dev functions file 
-* Author: Joshua Michaels
-* URI: https://studio.bio/themes/plate
+* Author: Maxwell Kirwin
+Theme URI: https://dirty-martini.com/
 *------------------------------------
 */
 

@@ -107,10 +107,10 @@
 
                 <nav class="header-nav primary-menu" role="navigation" itemscope
                     itemtype="https://schema.org/SiteNavigationElement"
-                    aria-label="<?php _e( 'Primary Menu ', 'platetheme' ); ?>">
+                    aria-label="<?php _e( 'Primary Menu ', 'dmtheme' ); ?>">
 
                     <?php // added primary menu marker for accessibility ?>
-                    <h2 class="screen-reader-text"><?php _e( 'Primary Menu', 'platetheme' ); ?></h2>
+                    <h2 class="screen-reader-text"><?php _e( 'Primary Menu', 'dmtheme' ); ?></h2>
 
                     <?php // see all default args here: https://developer.wordpress.org/reference/functions/wp_nav_menu/ ?>
 
@@ -118,7 +118,7 @@
 
                             'container' => false,                          // remove nav container
                             'container_class' => 'menu',                   // class of container (should you choose to use it)
-                            'menu' => __( 'The Main Menu', 'platetheme' ), // nav name
+                            'menu' => __( 'The Main Menu', 'dmtheme' ), // nav name
                             'menu_class' => 'nav top-nav main-menu',       // adding custom nav class
                             'theme_location' => 'main-nav',                // where it's located in the theme
 

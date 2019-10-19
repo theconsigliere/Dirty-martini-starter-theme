@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Custom Page With No Loop
+ Template Name: Page Template
  *
  * This is the base custom page template with no loop(!). Why no loop?
  * If you're using ACF fields and replacing the main content box and
@@ -25,73 +25,38 @@
 */
 ?>
 
+
+
 <?php get_header(); ?>
 
-<div id="content">
+<div class="welcome-hero">
+    <?php $image = get_field('welcome_image');
+
+    if (!empty($image)) : ?>
+
+    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" data-no-lazy="1" />
+
+    <?php endif; ?>
+
+    <div class="welcome-hero-text">
+        <h1><?php the_field('welcome_text'); ?></h1>
+        <h3><?php the_field('welcome_sub-title'); ?></h3>
+    </div>
+
+</div>
+
+
+<div id="full-page">
 
     <div id="inner-content" class="wrap">
+ 
+        <!-- Page Modules -->
+        <?php get_template_part('partials/page', 'modules'); ?>
 
-        <main id="main" class="main" role="main" itemscope itemprop="mainContentOfPage"
-            itemtype="https://schema.org/Blog">
-
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article" itemscope
-                itemtype="https://schema.org/BlogPosting">
-
-                <header class="article-header">
-
-                    <h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-
-                    <div class="byline-wrap">
-
-                        <?php // Get the author name; wrap it in a link.
-										if (get_the_author_meta('ID')) {
-											$byline = sprintf(__('by %s', 'platetheme'), '<span class="author vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . get_the_author() . '</a></span>');
-
-											echo '<span class="posted-on">' . plate_time_link() . '</span><span class="byline"> ' . $byline . '</span>';
-										} else {
-											echo '<span class="posted-on">Posted on:' . plate_time_link() . '</span>';
-										}
-
-										?>
-
-                    </div>
-
-                </header> <?php // end article header 
-											?>
-
-                <section class="entry-content" itemprop="articleBody">
-
-                    <?php the_content(); ?>
-
-                </section> <?php // end article section 
-											?>
-
-                <footer class="article-footer">
-
-                </footer>
-
-                <?php comments_template(); ?>
-
-            </article>
-
-            <?php endwhile; ?>
-
-            <?php plate_page_navi($wp_query); ?>
-
-            <?php else : ?>
-
-            <?php get_template_part('templates/404'); ?>
-
-            <?php endif; ?>
-
-        </main>
 
     </div>
 
 </div>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

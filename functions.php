@@ -46,7 +46,7 @@ function plate_lunch() {
     add_editor_style( get_stylesheet_directory_uri() . '/library/css/editor-style.css' );
 
     // let's get language support going, if you need it
-    load_theme_textdomain( 'platetheme', get_template_directory() . '/library/translation' );
+    load_theme_textdomain( 'dmtheme', get_template_directory() . '/library/translation' );
 
     // cleanup the <head>
     add_action( 'init', 'plate_head_cleanup' );
@@ -131,9 +131,9 @@ function plate_custom_image_sizes( $sizes ) {
 
 return array_merge( $sizes, array(
 
-'plate-image-600' => __('600px by 600px', 'platetheme'),
-'plate-image-300' => __('300px by 300px', 'platetheme'),
-'plate-image-150' => __('150px by 150px', 'platetheme'),
+'plate-image-600' => __('600px by 600px', 'dmtheme'),
+'plate-image-300' => __('300px by 300px', 'dmtheme'),
+'plate-image-150' => __('150px by 150px', 'dmtheme'),
 
 )
 );
@@ -155,8 +155,8 @@ function plate_register_sidebars() {
 register_sidebar( array(
 
 'id' => 'sidebar1',
-'name' => __( 'Sidebar 1', 'platetheme' ),
-'description' => __( 'The first (primary) sidebar.', 'platetheme' ),
+'name' => __( 'Sidebar 1', 'dmtheme' ),
+'description' => __( 'The first (primary) sidebar.', 'dmtheme' ),
 'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
 'before_title' => '<h4 class="widgettitle">',
@@ -176,8 +176,8 @@ sidebar's id is, for example:
 register_sidebar( array(
 
 'id' => 'sidebar2',
-'name' => __( 'Sidebar 2', 'platetheme' ),
-'description' => __( 'The second (secondary) sidebar.', 'platetheme' ),
+'name' => __( 'Sidebar 2', 'dmtheme' ),
+'description' => __( 'The second (secondary) sidebar.', 'dmtheme' ),
 'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
 'before_title' => '<h4 class="widgettitle">',
@@ -249,11 +249,11 @@ $GLOBALS['comment'] = $comment; ?>
 
             <div class="comment-meta">
 
-                <?php printf(__( '<cite class="fn">%1$s</cite> %2$s', 'platetheme' ), get_comment_author_link(), edit_comment_link(__( '(Edit)', 'platetheme' ),'  ','') ) ?>
+                <?php printf(__( '<cite class="fn">%1$s</cite> %2$s', 'dmtheme' ), get_comment_author_link(), edit_comment_link(__( '(Edit)', 'dmtheme' ),'  ','') ) ?>
 
                 <time datetime="<?php echo comment_time('Y-m-j'); ?>">
 
-                    <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'platetheme' )); ?>
+                    <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'dmtheme' )); ?>
                     </a>
 
                 </time>
@@ -266,7 +266,7 @@ $GLOBALS['comment'] = $comment; ?>
 
         <div class="alert alert-info">
 
-            <p><?php _e( 'Your comment is awaiting moderation.', 'platetheme' ) ?></p>
+            <p><?php _e( 'Your comment is awaiting moderation.', 'dmtheme' ) ?></p>
 
         </div>
 
@@ -599,7 +599,7 @@ function plate_filter_ptags_on_images( $content ) {
 function plate_excerpt_more($more) {
     global $post;
     // edit here if you like
-    return '...  <a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'platetheme' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( 'Read more &raquo;', 'platetheme' ) .'</a>';
+    return '...  <a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'dmtheme' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( 'Read more &raquo;', 'dmtheme' ) .'</a>';
 }
 
 
@@ -663,8 +663,8 @@ function plate_theme_support() {
     // To add another menu, uncomment the second line and change it to whatever you want. You can have even more menus.
     register_nav_menus( array(
 
-        'main-nav' => __( 'The Main Menu', 'platetheme' ),   // main nav in header
-        // 'footer-links' => __( 'Footer Links', 'platetheme' ) // secondary nav in footer. Uncomment to use or edit.
+        'main-nav' => __( 'The Main Menu', 'dmtheme' ),   // main nav in header
+        // 'footer-links' => __( 'Footer Links', 'dmtheme' ) // secondary nav in footer. Uncomment to use or edit.
 
         )
     );
@@ -1089,7 +1089,7 @@ function plate_posted_on() {
     $byline = sprintf(
 
     /* translators: %s: post author */
-    __( 'by %s', 'platetheme' ),
+    __( 'by %s', 'dmtheme' ),
     '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . get_the_author() . '</a></span>'
 
     );
@@ -1124,7 +1124,7 @@ function plate_time_link() {
     return sprintf(
 
         /* translators: %s: post date */
-        __( '<span class="screen-reader-text">Posted on</span> %s', 'platetheme' ),
+        __( '<span class="screen-reader-text">Posted on</span> %s', 'dmtheme' ),
         '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 
     );
@@ -1188,6 +1188,204 @@ if ( in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1')) ) {
 }
 
 
+
+
+
+/**
+ * Activate PLUGIN on theme ACTIVATION //////////
+ */
+
+/**
+ * Include the TGM_Plugin_Activation class.
+ */
+
+include_once dirname( __FILE__ ) . '/library/class-tgm-plugin-activation.php';
+
+add_action( 'tgmpa_register', 'dmtheme_register_required_plugins' );
+
+/**
+ * Register the required plugins for this theme.
+ *
+ * In this example, we register five plugins:
+ * - one included with the TGMPA library
+ * - two from an external source, one from an arbitrary source, one from a GitHub repository
+ * - two from the .org repo, where one demonstrates the use of the `is_callable` argument
+ *
+ * The variables passed to the `tgmpa()` function should be:
+ * - an array of plugin arrays;
+ * - optionally a configuration array.
+ * If you are not changing anything in the configuration array, you can remove the array and remove the
+ * variable from the function call: `tgmpa( $plugins );`.
+ * In that case, the TGMPA default settings will be used.
+ *
+ * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
+ */
+function dmtheme_register_required_plugins() {
+	/*
+	 * Array of plugin arrays. Required keys are name and slug.
+	 * If the source is NOT from the .org repo, then source is also required.
+	 */
+	$plugins = array(
+
+		// Including ACF PRO with the theme
+		array(
+			'name'               => 'Advanced Custom Fields Pro', // The plugin name.
+			'slug'               => 'advanced-custom-fields-pro', // The plugin slug (typically the folder name).
+			'source'             => get_template_directory() . '/library/_plugins/advanced-custom-fields-pro.zip', // The plugin source.
+			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
+			'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
+		),
+
+
+        // how to include a plugin from the WordPress Plugin Repository.
+        // Lazy load Images
+		array(
+			'name'      => 'Lazy Load by WP Rocket',
+			'slug'      => 'rocket-lazy-load',
+			'required'  => true,
+        ),
+        
+        // Classic Editor
+		array(
+			'name'      => 'Classic Editor',
+			'slug'      => 'classic-editor',
+			'required'  => true,
+        ),
+        
+        // Contact Form 7
+		array(
+			'name'      => 'Contact Form 7',
+			'slug'      => 'contact-form-7',
+			'required'  => true,
+		),
+
+		// This is an example of the use of 'is_callable' functionality. A user could - for instance -
+		// have WPSEO installed *or* WPSEO Premium. The slug would in that last case be different, i.e.
+		// 'wordpress-seo-premium'.
+		// By setting 'is_callable' to either a function from that plugin or a class method
+		// `array( 'class', 'method' )` similar to how you hook in to actions and filters, TGMPA can still
+		// recognize the plugin as being installed.
+		array(
+			'name'        => 'WordPress SEO by Yoast',
+			'slug'        => 'wordpress-seo',
+			'is_callable' => 'wpseo_init',
+        ),
+        
+        // ACF Content Analysis
+        
+		array(
+			'name'      => 'ACF Content Analysis for Yoast SEO',
+			'slug'      => 'yoast-acf-analysis',
+			'required'  => true,
+		),
+
+	);
+
+	/*
+	 * Array of configuration settings. Amend each line as needed.
+	 *
+	 * TGMPA will start providing localized text strings soon. If you already have translations of our standard
+	 * strings available, please help us make TGMPA even better by giving us access to these translations or by
+	 * sending in a pull-request with .po file(s) with the translations.
+	 *
+	 * Only uncomment the strings in the config array if you want to customize the strings.
+	 */
+	$config = array(
+		'id'           => 'dmtheme',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'default_path' => '',                      // Default absolute path to bundled plugins.
+		'menu'         => 'tgmpa-install-plugins', // Menu slug.
+		'parent_slug'  => 'themes.php',            // Parent menu slug.
+		'capability'   => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
+		'has_notices'  => true,                    // Show admin notices or not.
+		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+		'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+		'message'      => '',                      // Message to output right before the plugins table.
+
+		/*
+		'strings'      => array(
+			'page_title'                      => __( 'Install Required Plugins', 'dmtheme' ),
+			'menu_title'                      => __( 'Install Plugins', 'dmtheme' ),
+			/* translators: %s: plugin name. * /
+			'installing'                      => __( 'Installing Plugin: %s', 'dmtheme' ),
+			/* translators: %s: plugin name. * /
+			'updating'                        => __( 'Updating Plugin: %s', 'dmtheme' ),
+			'oops'                            => __( 'Something went wrong with the plugin API.', 'dmtheme' ),
+			'notice_can_install_required'     => _n_noop(
+				/* translators: 1: plugin name(s). * /
+				'This theme requires the following plugin: %1$s.',
+				'This theme requires the following plugins: %1$s.',
+				'dmtheme'
+			),
+			'notice_can_install_recommended'  => _n_noop(
+				/* translators: 1: plugin name(s). * /
+				'This theme recommends the following plugin: %1$s.',
+				'This theme recommends the following plugins: %1$s.',
+				'dmtheme'
+			),
+			'notice_ask_to_update'            => _n_noop(
+				/* translators: 1: plugin name(s). * /
+				'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.',
+				'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.',
+				'dmtheme'
+			),
+			'notice_ask_to_update_maybe'      => _n_noop(
+				/* translators: 1: plugin name(s). * /
+				'There is an update available for: %1$s.',
+				'There are updates available for the following plugins: %1$s.',
+				'dmtheme'
+			),
+			'notice_can_activate_required'    => _n_noop(
+				/* translators: 1: plugin name(s). * /
+				'The following required plugin is currently inactive: %1$s.',
+				'The following required plugins are currently inactive: %1$s.',
+				'dmtheme'
+			),
+			'notice_can_activate_recommended' => _n_noop(
+				/* translators: 1: plugin name(s). * /
+				'The following recommended plugin is currently inactive: %1$s.',
+				'The following recommended plugins are currently inactive: %1$s.',
+				'dmtheme'
+			),
+			'install_link'                    => _n_noop(
+				'Begin installing plugin',
+				'Begin installing plugins',
+				'dmtheme'
+			),
+			'update_link' 					  => _n_noop(
+				'Begin updating plugin',
+				'Begin updating plugins',
+				'dmtheme'
+			),
+			'activate_link'                   => _n_noop(
+				'Begin activating plugin',
+				'Begin activating plugins',
+				'dmtheme'
+			),
+			'return'                          => __( 'Return to Required Plugins Installer', 'dmtheme' ),
+			'plugin_activated'                => __( 'Plugin activated successfully.', 'dmtheme' ),
+			'activated_successfully'          => __( 'The following plugin was activated successfully:', 'dmtheme' ),
+			/* translators: 1: plugin name. * /
+			'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'dmtheme' ),
+			/* translators: 1: plugin name. * /
+			'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'dmtheme' ),
+			/* translators: 1: dashboard link. * /
+			'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'dmtheme' ),
+			'dismiss'                         => __( 'Dismiss this notice', 'dmtheme' ),
+			'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'dmtheme' ),
+			'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'dmtheme' ),
+
+			'nag_type'                        => '', // Determines admin notice type - can only be one of the typical WP notice classes, such as 'updated', 'update-nag', 'notice-warning', 'notice-info' or 'error'. Some of which may not work as expected in older WP versions.
+		),
+		*/
+	);
+
+	tgmpa( $plugins, $config );
+}
 
 
 ?>

@@ -17,7 +17,7 @@
             
         <?php else : ?>
 
-            <!-- <?php _e( 'Add some widgets and they will appear here.', 'platetheme' );  ?> -->
+            <!-- <?php _e( 'Add some widgets and they will appear here.', 'dmtheme' );  ?> -->
 
     	<?php endif; ?>
 

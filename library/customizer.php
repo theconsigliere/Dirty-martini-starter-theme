@@ -40,21 +40,21 @@ function plate_register_theme_customizer($wp_customize)
   // echo '</pre>';
 
   // Customize title and tagline sections and labels
-  $wp_customize->get_section('title_tagline')->title = __('Site Name and Description', 'platetheme');
-  $wp_customize->get_control('blogname')->label = __('Site Name', 'platetheme');
-  $wp_customize->get_control('blogdescription')->label = __('Site Description', 'platetheme');
+  $wp_customize->get_section('title_tagline')->title = __('Site Name and Description', 'dmtheme');
+  $wp_customize->get_control('blogname')->label = __('Site Name', 'dmtheme');
+  $wp_customize->get_control('blogdescription')->label = __('Site Description', 'dmtheme');
   $wp_customize->get_setting('blogname')->transport = 'postMessage';
   $wp_customize->get_setting('blogdescription')->transport  = 'postMessage';
 
   // Customize the Front Page Settings
-  $wp_customize->get_section('static_front_page')->title = __('Homepage Preferences', 'platetheme');
+  $wp_customize->get_section('static_front_page')->title = __('Homepage Preferences', 'dmtheme');
   $wp_customize->get_section('static_front_page')->priority = 20;
-  $wp_customize->get_control('show_on_front')->label = __('Choose Homepage Preference:', 'platetheme');
-  $wp_customize->get_control('page_on_front')->label = __('Select Homepage:', 'platetheme');
-  $wp_customize->get_control('page_for_posts')->label = __('Select Blog Homepage:', 'platetheme');
+  $wp_customize->get_control('show_on_front')->label = __('Choose Homepage Preference:', 'dmtheme');
+  $wp_customize->get_control('page_on_front')->label = __('Select Homepage:', 'dmtheme');
+  $wp_customize->get_control('page_for_posts')->label = __('Select Blog Homepage:', 'dmtheme');
 
   // Customize Background Settings
-  $wp_customize->get_section('background_image')->title = __('Background Styles', 'platetheme');
+  $wp_customize->get_section('background_image')->title = __('Background Styles', 'dmtheme');
   $wp_customize->get_control('background_color')->section = 'background_image';
 
   // Customize Header Image Settings  
@@ -62,7 +62,7 @@ function plate_register_theme_customizer($wp_customize)
     'header_text_styles',
     array(
 
-      'title'      => __('Header Text Styles', 'platetheme'),
+      'title'      => __('Header Text Styles', 'dmtheme'),
       'priority'   => 30
 
     )
