@@ -33,7 +33,6 @@ the whole project.
 // Sass variables
 @import "partials/variables";
 
-
 // Sass functions
 @import "partials/functions";
 
@@ -98,8 +97,8 @@ larger than an iPhone but smaller than a tablet. Let's call them
 tweeners.
 *********************/
 @media only screen and (min-width: 481px) {
-    // styles in 481up.scss
-    @import "breakpoints/481up";
+  // styles in 481up.scss
+  @import "breakpoints/481up";
 }
 
 // end of media query
@@ -111,8 +110,8 @@ phones. This way we can keep mobile styles separate and not
 compete with the base styles.
 *********************/
 @media only screen and (max-width: 767px) {
-    // styles in 767down.scss
-    @import "breakpoints/767down";
+  // styles in 767down.scss
+  @import "breakpoints/767down";
 }
 
 // end of media query
@@ -124,22 +123,22 @@ in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
-    // styles in 768up.scss
-    @import "breakpoints/768up";
+  // styles in 768up.scss
+  @import "breakpoints/768up";
 }
 
 // end of media query
 
 @media only screen and (max-width: 899px) {
-    // styles in 899down.scss
-    @import "breakpoints/899down";
+  // styles in 899down.scss
+  @import "breakpoints/899down";
 }
 
 // end of media query
 
 @media only screen and (max-width: 1029px) {
-    // styles in 1029down.scss
-    @import "breakpoints/1029down";
+  // styles in 1029down.scss
+  @import "breakpoints/1029down";
 }
 
 // end of media query
@@ -152,8 +151,8 @@ If you're not using it, delete it.
 *********************/
 
 @media only screen and (min-width: 900px) {
-    // styles in 900up.scss
-    @import "breakpoints/900up";
+  // styles in 900up.scss
+  @import "breakpoints/900up";
 }
 
 /*********************
@@ -163,8 +162,8 @@ in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 1030px) {
-    // styles in 1030up.scss
-    @import "breakpoints/1030up";
+  // styles in 1030up.scss
+  @import "breakpoints/1030up";
 }
 
 // end of media query
@@ -174,8 +173,8 @@ LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 *********************/
 @media only screen and (min-width: 1240px) {
-    // styles in 1240up.scss
-    @import "breakpoints/1240up";
+  // styles in 1240up.scss
+  @import "breakpoints/1240up";
 }
 
 // end of media query
@@ -185,8 +184,8 @@ HIMALAYA XL 9000 SIZE
 This is for super ginormous monitors like your one friend has.
 *********************/
 @media only screen and (min-width: 1600px) {
-    // styles in 1600up.scss
-    @import "breakpoints/1600up";
+  // styles in 1600up.scss
+  @import "breakpoints/1600up";
 }
 
 // end of media query
@@ -198,328 +197,327 @@ sense to print at the bottom. Things like nav, ads, and forms should
 be set to display none.
 *********************/
 @media print {
-    // styles in print.scss
-    @import "partials/print";
+  // styles in print.scss
+  @import "partials/print";
 }
 /*********************
 Homepage  STYLE
 *********************/
 .welcome-hero {
-    grid-column: span 12;
-    position: relative;
-    height: 85vh;
-    overflow: hidden;
+  grid-column: span 12;
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
 }
 
 .welcome-hero img {
-    width: 100%;
+  width: 100%;
 }
 
 .welcome-hero-text {
-    position: absolute;
-    top: 25%;
-    left: 30%;
-    right: 30%;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  right: 30%;
 }
 
 .welcome-hero-text * {
-    color: $white;
-    text-align: center;
-    text-shadow: 6px 2px 10px #040404a6;
-
+  color: $white;
+  text-align: center;
+  text-shadow: 6px 2px 10px #040404a6;
 }
 
 .blue-circle {
-    position: absolute;
-    background-image: url(../images/blue.svg);
-    width: 180px;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    right: 0;
-    z-index: -5;
+  position: absolute;
+  background-image: url(../images/blue.svg);
+  width: 180px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  right: 0;
+  z-index: -5;
 }
 
 .c-home {
-    position: relative; 
+  position: relative;
 }
 
 .orange-circle {
-    position: absolute;
-    background-image: url(../images/orange.svg);
-    width: 120px;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    left: 0;
-    bottom: 0;
+  position: absolute;
+  background-image: url(../images/orange.svg);
+  width: 120px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  left: 0;
+  bottom: 0;
 }
 
-.ce-item, .l-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 45%;
+.ce-item,
+.l-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
 }
 
-.ce-image, .l-image {
+.ce-image,
+.l-image {
+  width: 100%;
+
+  img {
     width: 100%;
-
-    img {
-        width: 100%;
-    }
+  }
 }
 
 .l-item {
-    width: 30%;
-    text-align: center;
+  width: 30%;
+  text-align: center;
 }
 
 .ce-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vh 0;
 }
 
 .candidates-employers-text-section {
-    text-align: center;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 10vh 0;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 10vh 0;
 }
 
 .looking-section {
-    padding: 10vh 0;
+  padding: 10vh 0;
 }
 
 .looking-text-section {
-    text-align: center;
+  text-align: center;
 }
 
 .l-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 section.we-are-section {
-    padding: 10vh 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+  padding: 10vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
-.we-are-image, .we-are-text {
-    width: 50%;
+.we-are-image,
+.we-are-text {
+  width: 50%;
 }
 
 .we-are-image {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .blog-item-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.blog-title, .looking-text-section, .candidates-employers-text-section h2, .button-title {
-    text-align: center;
-    padding: 5vh 0;
+.blog-title,
+.looking-text-section,
+.candidates-employers-text-section h2,
+.button-title {
+  text-align: center;
+  padding: 5vh 0;
 }
-
 
 section.blog-section {
-    padding: 10vh 0;
+  padding: 10vh 0;
 }
 
 section.newsletter-section {
-    padding: 10vh 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  padding: 10vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .job-search-form1 {
-    display: flex;
-    max-width: 60vw;
-    margin: 0 auto;
-    align-items: flex-end;
-    justify-content: space-between;
-    width: 100%;
-    background: white;
-    padding: 45px; }
+  display: flex;
+  max-width: 60vw;
+  margin: 0 auto;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  background: white;
+  padding: 45px;
+}
 
-
-    .job-search-form-section {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-    }
+.job-search-form-section {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
 
 // Template pages
 
-    .page-hero-header {
-        grid-column: span 12;
-    }
-
-    .page-hero-header {
-        grid-column: span 12;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 80vh;
-    }
-
-    .header-hero-image {
-
-        width: 50%;
-        max-height: 100%;
-        overflow: hidden;
-      
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .header-hero-text {
-        width: 30%;
-    }
-
-    .text-sections {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10vh 0;
-        flex-direction: row-reverse;
-    }
-
-    .text-text {
-        width: 60%;
-    }
-
-    .text-image {
-        width: 40%;
-    }
-
-    .text-image img {
-        margin: 0 auto;
-    }
-
-    .newsletter-image, .newsletter-right-section {
-        width: 40%;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .newsletter-text {
-        margin: 50px 0;
-    }
-
-
-    .text-sections:nth-child(even) {
-        flex-direction: row;
-    }
-
-    .button-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .pagination {
-        text-align: center;
-    }
-
-
-    .footer-logo-section {
-        display: flex;
-        width: 30vw;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .footer-section {
-        display: flex;
-        width: 100%;
-        align-items: flex-end;
-        justify-content: space-between;
-    }
-
-    .footer-logos {
-    width: 200px;
-    height: auto;
+.page-hero-header {
+  grid-column: span 12;
 }
 
+.page-hero-header {
+  grid-column: span 12;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80vh;
+}
+
+.header-hero-image {
+  width: 50%;
+  max-height: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+.header-hero-text {
+  width: 30%;
+}
+
+.text-sections {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10vh 0;
+  flex-direction: row-reverse;
+}
+
+.text-text {
+  width: 60%;
+}
+
+.text-image {
+  width: 40%;
+}
+
+.text-image img {
+  margin: 0 auto;
+}
+
+.newsletter-image,
+.newsletter-right-section {
+  width: 40%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.newsletter-text {
+  margin: 50px 0;
+}
+
+.text-sections:nth-child(even) {
+  flex-direction: row;
+}
+
+.button-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.footer-logo-section {
+  display: flex;
+  width: 30vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-section {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.footer-logos {
+  width: 200px;
+  height: auto;
+}
 
 .text-card {
-    margin: 40px 0;
-    text-align: center;
+  margin: 40px 0;
+  text-align: center;
 
-    * {
-        margin: 20px 0;
-    }
+  * {
+    margin: 20px 0;
+  }
 }
-
 
 // CONTACT FORM
 
-
-input, textarea {
-    border: 2px $blue solid;
-    margin: 15px 0;
+input,
+textarea {
+  border: 2px $blue solid;
+  margin: 15px 0;
 }
 
 input {
-    height: 40px;
-    width: 100%;
+  height: 40px;
+  width: 100%;
 }
 
 textarea {
-    width: 100%;
+  width: 100%;
 }
 
 .underline {
-    height: 4px;
-    width: 180px;
-    background: $light-blue;
+  height: 4px;
+  width: 180px;
+  background: $light-blue;
 }
 
 .widgettitle {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .contact-section-block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .contact-block {
-    width: 50%;
+  width: 50%;
 
-    .wpcf7-form-control-wrap input {
-        width: 99%;
-    }
+  .wpcf7-form-control-wrap input {
+    width: 99%;
+  }
 }
 
 input[type="file"] {
-    border: none;
+  border: none;
 }
 
 .submit-send {
-    text-align: center;
+  text-align: center;
 }
 
 [type="submit"] {
-    width: 100%;
+  width: 100%;
 }
