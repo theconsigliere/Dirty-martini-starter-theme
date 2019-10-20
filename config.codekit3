@@ -1677,6 +1677,14 @@
 		"oA": 0,
 		"oAP": "/templates/single-loop.php",
 		"oF": 0
+		},
+	"/website-wireframe.xd": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/website-wireframe.xd",
+		"oF": 0
 		}
 	},
 "hooks": [

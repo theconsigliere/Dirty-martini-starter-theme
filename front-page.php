@@ -33,14 +33,13 @@
 
     <div id="inner-content" class="wrap">
 
-        <div class="blue-circle"></div>
 
         <!-- Page Modules -->
         <?php get_template_part('partials/page', 'modules'); ?>
 
     </div>
-
 </div>
+
 
 
 <?php get_footer(); ?>

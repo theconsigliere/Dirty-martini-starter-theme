@@ -154,9 +154,9 @@ function plate_register_sidebars() {
 
 register_sidebar( array(
 
-'id' => 'sidebar1',
-'name' => __( 'Sidebar 1', 'dmtheme' ),
-'description' => __( 'The first (primary) sidebar.', 'dmtheme' ),
+'id' => 'sidebar-blog',
+'name' => __( 'Sidebar Blog', 'dmtheme' ),
+'description' => __( 'The first sidebar. For the blog page', 'dmtheme' ),
 'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
 'before_title' => '<h4 class="widgettitle">',
@@ -171,13 +171,13 @@ and edit the above sidebar code. In order to call
 your new sidebar just use the following code:
 
 Just change the name to whatever your new
-sidebar's id is, for example:
+sidebar's id is, for example: */
 
 register_sidebar( array(
 
-'id' => 'sidebar2',
-'name' => __( 'Sidebar 2', 'dmtheme' ),
-'description' => __( 'The second (secondary) sidebar.', 'dmtheme' ),
+'id' => 'footer-info',
+'name' => __( 'Footer Info', 'dmtheme' ),
+'description' => __( 'Input contact information for use in the footer.', 'dmtheme' ),
 'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
 'before_title' => '<h4 class="widgettitle">',
@@ -186,12 +186,11 @@ register_sidebar( array(
 )
 );
 
-To call the sidebar in your template, you can just copy
+/* To call the sidebar in your template, you can just copy
 the sidebar.php file and rename it to your sidebar's name.
 So using the above example, it would be:
-sidebar-sidebar2.php
+sidebar-sidebar2.php */
 
-*/
 } // don't remove this bracket!
 
 
@@ -664,7 +663,7 @@ function plate_theme_support() {
     register_nav_menus( array(
 
         'main-nav' => __( 'The Main Menu', 'dmtheme' ),   // main nav in header
-        // 'footer-links' => __( 'Footer Links', 'dmtheme' ) // secondary nav in footer. Uncomment to use or edit.
+        'footer-links' => __( 'Footer Links', 'dmtheme' ) // secondary nav in footer. Uncomment to use or edit.
 
         )
     );
