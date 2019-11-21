@@ -1,12 +1,9 @@
-/* 
-* Made with Template by studio.bio
-* Based on Bones by Eddie Machado.
-* One love :)
-*/
-
 /******************************************************************
-Site Name:
-Author:
+Site Name: Ryderslade
+Theme URI: https://www.dirty-martini.com/
+Author: Maxwell Kirwin
+Author URI: https://www.maxwellkirwin.co.uk/
+Description: Ryderslade Official Theme.
 
 Stylesheet: Main Stylesheet
 
@@ -27,58 +24,11 @@ our mixins, functions, and variables that we'll be using across
 the whole project.
 *********************/
 
-// normalize: http://necolas.github.io/normalize.css/
-@import "partials/normalize";
-
 // Sass variables
 @import "partials/variables";
 
-// Sass functions
-@import "partials/functions";
-
 // import mixins
 @import "partials/mixins";
-
-// CSS Grid...it's time
-@import "partials/cssgrid";
-
-/* Ye Olde Bones Grid
-* Hear Ye, hear ye!
-* This is the old style grid, now commented out
-* You *should* make the move to css grid now but
-* if you need this or can't let go, it's still here
-* so uncomment to use (and comment the cssgrid out).
-* Just know that Rachel Andrew is watching.
-*/
-// @import "partials/grid";
-
-/**
-* Gutenberg Styles.
-*
-* Now enqueued in a separate function in functions.php to
-* keep styles out of the main stylesheet. Alternatively
-* you can comment out the Gutenberg styles enqueue and 
-* uncomment this below to have a single stylesheet.
-* You do you.
-*/
-// @import "partials/gutenberg";
-
-/*********************
-IMPORTING MODULES
-Modules are reusable blocks or elements we use throughout the project.
-We can break them up as much as we want or just keep them all in one.
-I mean, you can do whatever you want. The world is your oyster. Unless
-you hate oysters, then the world is your peanut butter & jelly sandwich.
-*********************/
-
-// alert boxes
-@import "modules/alerts";
-
-// buttons
-@import "modules/buttons";
-
-// forms (inputs & labels)
-@import "modules/forms";
 
 /*********************
 BASE STYLESHEET
@@ -88,144 +38,399 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
 
 // styles in base.scss
-@import "breakpoints/base";
+@import "partials/base";
 
 /*********************
-LARGER MOBILE DEVICES
-This is for devices like the Galaxy Note or something that's
-larger than an iPhone but smaller than a tablet. Let's call them
-tweeners.
-*********************/
-@media only screen and (min-width: 481px) {
-  // styles in 481up.scss
-  @import "breakpoints/481up";
-}
-
-// end of media query
-
-/*********************
-BELOW TABLET
-This is for everything that's below an iPad including mobile
-phones. This way we can keep mobile styles separate and not
-compete with the base styles.
-*********************/
-@media only screen and (max-width: 767px) {
-  // styles in 767down.scss
-  @import "breakpoints/767down";
-}
-
-// end of media query
-
-/*********************
-TABLET & SMALLER LAPTOPS
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
-*********************/
-@media only screen and (min-width: 768px) {
-  // styles in 768up.scss
-  @import "breakpoints/768up";
-}
-
-// end of media query
-
-@media only screen and (max-width: 899px) {
-  // styles in 899down.scss
-  @import "breakpoints/899down";
-}
-
-// end of media query
-
-@media only screen and (max-width: 1029px) {
-  // styles in 1029down.scss
-  @import "breakpoints/1029down";
-}
-
-// end of media query
-
-/*********************
-TWEENER
-This targets some trickier 'tweener' devices like large
-tablets. You probably won't need to add too much to this stylesheet.
-If you're not using it, delete it.
+Buttons / Alerts / Contact
 *********************/
 
-@media only screen and (min-width: 900px) {
-  // styles in 900up.scss
-  @import "breakpoints/900up";
+@import "modules/alerts";
+
+@import "modules/buttons";
+
+@import "modules/forms";
+
+* {
+  box-sizing: border-box;
 }
 
 /*********************
-DESKTOP
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
+NAV BAR
 *********************/
-@media only screen and (min-width: 1030px) {
-  // styles in 1030up.scss
-  @import "breakpoints/1030up";
+
+#hamburger {
+  cursor: pointer;
+  transition: all 0.4s;
+
+  @media (min-width: #{$screen-lg}) {
+    display: none;
+  }
 }
 
-// end of media query
-
-/*********************
-LARGE VIEWING SIZE
-This is for the larger monitors and possibly full screen viewers.
-*********************/
-@media only screen and (min-width: 1240px) {
-  // styles in 1240up.scss
-  @import "breakpoints/1240up";
+.nav-button {
+  display: block;
+  cursor: pointer;
+  height: auto;
+  width: 30px;
 }
 
-// end of media query
-
-/*********************
-HIMALAYA XL 9000 SIZE
-This is for super ginormous monitors like your one friend has.
-*********************/
-@media only screen and (min-width: 1600px) {
-  // styles in 1600up.scss
-  @import "breakpoints/1600up";
+#hamburger span,
+#hamburger span:before,
+#hamburger span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 35px;
+  background: $blue;
+  position: absolute;
+  display: inline-block;
+  content: "";
 }
 
-// end of media query
+#hamburger span:before {
+  top: -10px;
+}
+
+#hamburger span:after {
+  bottom: -10px;
+}
+
+/*
+#hamburger span, #hamburger span:before, #hamburger span:after {
+  transition: all 200ms ease-in-out;
+}
+*/
+#hamburger span,
+#hamburger span:before,
+#hamburger span:after {
+  -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+}
+
+#hamburger.active span {
+  background-color: transparent;
+}
+
+#hamburger.active span:before,
+#hamburger.active span:after {
+  top: 0;
+}
+
+#hamburger.active span:before {
+  transform: rotate(45deg);
+}
+
+#hamburger.active span:after {
+  transform: translateY(-10px) rotate(-45deg);
+  top: 10px;
+}
+
+.nav-menu {
+  display: none;
+  transition: all 0.4s;
+
+  @media (min-width: #{$screen-lg}) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.main-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: #{$screen-lg}) {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.nav-menu-items {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  background: $white;
+  z-index: 5;
+  border-bottom: 1px solid $light-blue;
+
+  @media (min-width: #{$screen-lg}) {
+    align-items: center;
+    flex-direction: row;
+    border: 0;
+  }
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media (min-width: #{$screen-lg}) {
+    justify-content: center;
+  }
+}
+
+.menu-item-has-children:hover .sub-menu {
+  // visibility: visible;
+  opacity: 1;
+  transition: all ease-in-out 0.5s;
+  height: 100%;
+
+  @media (min-width: #{$screen-lg}) {
+    height: auto;
+  }
+}
+
+.sub-menu {
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  overflow: hidden;
+  background: $light-blue;
+  transform: none;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  height: 0;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 250px;
+    border: 1px solid rgba(20, 20, 20, 0.25);
+    box-shadow: $drop-shadow;
+    background: $white;
+    transform: translate(-50%, 40%);
+    left: 50%;
+    padding: 16px;
+  }
+
+  a {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    margin: 0 auto;
+
+    @media (min-width: #{$screen-lg}) {
+      padding-bottom: 10px !important;
+      padding-top: 0;
+    }
+  }
+
+  .menu-item {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+nav .current_page_item a {
+  color: $blue;
+}
+
+.menu-item-has-children {
+  position: relative;
+}
+
+.header-nav {
+  width: 100%;
+}
+
+.top-nav .menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid $light-blue;
+
+  @media (min-width: #{$screen-sm}) {
+    border: 0;
+  }
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+    align-items: flex-start;
+    border: 0;
+  }
+}
+
+#menu-header-menu li > a {
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  @media (min-width: #{$screen-lg}) {
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+}
+
+.sub-menu-toggle {
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
+  border-style: solid;
+  border-color: $black;
+  border-width: 0px 1px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: border-width 150ms ease-in-out;
+  transition: border-width 150ms ease-in-out;
+  display: none;
+  float: right;
+  margin: 0 10px;
+
+  @media (min-width: #{$screen-lg}) {
+    display: block;
+  }
+}
+
+.sub-menu-toggle:hover,
+.sub-menu-toggle:active {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
 
 /*********************
-PRINT STYLESHEET
-Feel free to customize this. Remember to add things that won't make
-sense to print at the bottom. Things like nav, ads, and forms should
-be set to display none.
-*********************/
-@media print {
-  // styles in print.scss
-  @import "partials/print";
-}
-/*********************
-Homepage  STYLE
+HOMEPAGE HERO SECTION
 *********************/
 .welcome-hero {
   grid-column: span 12;
   position: relative;
-  height: 85vh;
+  height: 65vh;
   overflow: hidden;
-}
 
-.welcome-hero img {
-  width: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .welcome-hero-text {
   position: absolute;
-  top: 25%;
-  left: 30%;
-  right: 30%;
+  bottom: 15%;
+  left: 15%;
+  right: 15%;
+
+  * {
+    color: $white;
+    text-align: center;
+    text-shadow: 6px 2px 10px #040404a6;
+  }
+
+  @media (min-width: #{$screen-lg}) {
+    bottom: 15%;
+  }
 }
 
-.welcome-hero-text * {
-  color: $white;
-  text-align: center;
-  text-shadow: 6px 2px 10px #040404a6;
+.front-page-hero {
+  position: relative;
 }
+
+/*********************
+JOB SEARCH FORM
+*********************/
+
+.job-search-form1 {
+  display: flex;
+  max-width: 100vw;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  background: $white;
+  padding: 10px;
+  flex-direction: column;
+
+  @media (min-width: #{$screen-md}) {
+    max-width: 85vw;
+    padding: 25px;
+    flex-direction: row;
+  }
+
+  @media (min-width: #{$screen-xl}) {
+    max-width: 65vw;
+    padding: 45px;
+    flex-direction: row;
+  }
+}
+
+.job {
+  width: 100%;
+}
+
+.job-search-form-section {
+  width: 100%;
+
+  h4 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.page-hero-header {
+  //   background: $light-blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 90vh;
+
+  @media (min-width: #{$screen-sm}) {
+    height: 80vh;
+  }
+
+  @media (min-width: #{$screen-lg}) {
+    margin: 25px 0;
+    flex-direction: row;
+    height: 80vh;
+  }
+}
+
+.header-hero-image {
+  width: 100%;
+  height: 60%;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 55%;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.header-hero-text {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 35%;
+    text-align: left;
+    height: 100%;
+    align-items: flex-start;
+  }
+}
+
+/*********************
+END OF HOMEPAGE HERO SECTION
+*********************/
 
 .blue-circle {
   position: absolute;
@@ -237,6 +442,11 @@ Homepage  STYLE
   background-size: contain;
   right: 0;
   z-index: -5;
+  display: none;
+
+  @media (min-width: #{$screen-lg}) {
+    display: block;
+  }
 }
 
 .c-home {
@@ -246,13 +456,19 @@ Homepage  STYLE
 .orange-circle {
   position: absolute;
   background-image: url(../images/orange.svg);
-  width: 120px;
-  height: 500px;
+  width: 100px;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
   left: 0;
-  bottom: 0;
+  top: -50%;
+  z-index: 5;
+  display: none;
+
+  @media (min-width: #{$screen-lg}) {
+    display: block;
+  }
 }
 
 .ce-item,
@@ -260,21 +476,63 @@ Homepage  STYLE
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45%;
+  width: 100%;
+  padding: 25px 0;
+  border-bottom: 2px solid $light-blue;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 45%;
+    padding: 0;
+    border: 0;
+  }
 }
 
 .ce-image,
 .l-image {
   width: 100%;
+  overflow: hidden;
 
   img {
     width: 100%;
   }
 }
 
+.blog-mobile-img {
+  display: none;
+
+  @media (min-width: #{$screen-lg}) {
+    display: block;
+  }
+}
+
+.excerpt-blog {
+  display: block;
+
+  @media (min-width: #{$screen-lg}) {
+    display: none;
+  }
+}
+
+.ce-image img,
+.l-image img {
+  transition: all ease-in-out 1.4s;
+}
+
+.ce-image img:hover,
+.l-image img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
 .l-item {
-  width: 30%;
+  width: 100%;
   text-align: center;
+  padding: 25px 0;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 30%;
+    padding: 0;
+  }
 }
 
 .ce-section {
@@ -282,17 +540,54 @@ Homepage  STYLE
   align-items: center;
   justify-content: space-between;
   padding: 5vh 0;
+  flex-direction: column;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+  }
 }
 
 .candidates-employers-text-section {
   text-align: center;
   max-width: 80%;
   margin: 0 auto;
-  padding: 10vh 0;
+  padding: 6vh 0;
+}
+
+#employers,
+#candidates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  a {
+    width: 100%;
+  }
+}
+
+.arrow-icon {
+  width: 22px;
+  margin: 10px;
+  opacity: 1;
+  transition: all 0.4s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.button-section {
+  padding: 5vh 0;
 }
 
 .looking-section {
-  padding: 10vh 0;
+  padding: 5vh 0;
+  background: $light-blue;
+
+  @media (min-width: #{$screen-lg}) {
+    padding: 10vh 0;
+  }
 }
 
 .looking-text-section {
@@ -304,6 +599,12 @@ Homepage  STYLE
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  padding: 5vh 0;
+  flex-direction: column;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+  }
 }
 
 section.we-are-section {
@@ -311,17 +612,38 @@ section.we-are-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row-reverse;
+  flex-direction: column;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row-reverse;
+  }
 }
 
 .we-are-image,
 .we-are-text {
-  width: 50%;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: #{$screen-lg}) {
+    text-align: left;
+    width: 45%;
+  }
 }
 
 .we-are-image {
   display: flex;
   justify-content: flex-end;
+}
+
+.blog-image-single {
+  height: 50vh;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .blog-item-section {
@@ -335,96 +657,160 @@ section.we-are-section {
 .candidates-employers-text-section h2,
 .button-title {
   text-align: center;
+  padding: 0;
+  margin-top: 0;
+  padding-top: 0;
+
+  @media (min-width: #{$screen-lg}) {
+    padding: 5vh 0;
+  }
+}
+
+.blog-single {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 5vh 0;
 }
 
+.blog-single #recent-posts-2 {
+  width: 20%;
+}
+
 section.blog-section {
-  padding: 10vh 0;
+  padding: 5vh 0;
+  background: $light-blue;
 }
 
-section.newsletter-section {
-  padding: 10vh 0;
+.newsletter-group {
+  padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-}
-
-.job-search-form1 {
-  display: flex;
-  max-width: 60vw;
-  margin: 0 auto;
-  align-items: flex-end;
   justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: #{$screen-md}) {
+    padding: 5vh 0;
+  }
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+    padding: 10vh 0;
+  }
+}
+
+.reverse {
+  flex-direction: column;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row-reverse;
+  }
+}
+
+.newsletter-section {
+  background: $light-blue;
+}
+
+.newsletter-text {
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: #{$screen-md}) {
+    margin: 50px 0;
+  }
+
+  @media (min-width: #{$screen-lg}) {
+    text-align: left;
+    margin: 50px 0;
+  }
+}
+
+.newsletter-image {
   width: 100%;
-  background: white;
-  padding: 45px;
-}
 
-.job-search-form-section {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
-// Template pages
-
-.page-hero-header {
-  grid-column: span 12;
-}
-
-.page-hero-header {
-  grid-column: span 12;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 80vh;
-}
-
-.header-hero-image {
-  width: 50%;
-  max-height: 100%;
-  overflow: hidden;
+  @media (min-width: #{$screen-lg}) {
+    width: 50%;
+  }
 
   img {
     width: 100%;
   }
 }
 
-.header-hero-text {
-  width: 30%;
+.newsletter-right-section {
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 40%;
+    text-align: left;
+  }
 }
+
+.newsletter-group-section {
+  padding: 0;
+  border-bottom: 1px solid $light-blue;
+
+  @media (min-width: #{$screen-lg}) {
+    padding: 5vh 0;
+    border: 0;
+  }
+}
+
+// Template pages
 
 .text-sections {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10vh 0;
-  flex-direction: row-reverse;
+  padding: 5vh 0;
+  flex-direction: column;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+    padding: 10vh 0;
+  }
+}
+
+.main .container:nth-child(odd) .text-sections {
+  flex-direction: column-reverse;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row-reverse;
+  }
+}
+
+.main .container:nth-child(even) .text-sections {
+  flex-direction: column;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+  }
 }
 
 .text-text {
-  width: 60%;
+  width: 100%;
+  text-align: center;
+  padding: 2vh 0;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 50%;
+    text-align: left;
+    padding: 0;
+  }
 }
 
 .text-image {
-  width: 40%;
+  width: 100%;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 40%;
+  }
 }
 
 .text-image img {
   margin: 0 auto;
-}
-
-.newsletter-image,
-.newsletter-right-section {
-  width: 40%;
-
-  img {
-    width: 100%;
-  }
-}
-
-.newsletter-text {
-  margin: 50px 0;
 }
 
 .text-sections:nth-child(even) {
@@ -441,31 +827,39 @@ section.newsletter-section {
   text-align: center;
 }
 
-.footer-logo-section {
-  display: flex;
-  width: 30vw;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer-section {
-  display: flex;
-  width: 100%;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-.footer-logos {
-  width: 200px;
-  height: auto;
+.left {
+  text-align: left !important;
 }
 
 .text-card {
-  margin: 40px 0;
-  text-align: center;
+  margin: 20px 0;
 
   * {
     margin: 20px 0;
+    text-align: center;
+  }
+
+  h5 {
+    height: auto;
+    margin-top: 0;
+
+    @media (min-width: #{$screen-lg}) {
+      height: 6vh;
+      margin: 20px 0;
+    }
+  }
+}
+
+.newsletter-card {
+  margin: 20px 0;
+
+  * {
+    margin: 20px 0;
+    text-align: center;
+
+    @media (min-width: #{$screen-lg}) {
+      text-align: left;
+    }
   }
 }
 
@@ -475,6 +869,8 @@ input,
 textarea {
   border: 2px $blue solid;
   margin: 15px 0;
+  padding: 10px;
+  font-size: 14px;
 }
 
 input {
@@ -484,12 +880,6 @@ input {
 
 textarea {
   width: 100%;
-}
-
-.underline {
-  height: 4px;
-  width: 180px;
-  background: $light-blue;
 }
 
 .widgettitle {
@@ -518,6 +908,416 @@ input[type="file"] {
   text-align: center;
 }
 
-[type="submit"] {
+// [type="submit"] {
+// 	width: 100%;
+// }
+
+// HEADER WIDGET
+
+.header-info {
+  display: none;
+
+  @media (min-width: #{$screen-lg}) {
+    display: flex;
+    margin: 25px 0;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.mobile-info {
+  display: flex;
+  align-items: center;
   width: 100%;
+  margin: 25px 0;
+  flex-direction: column-reverse;
+  justify-content: center;
+
+  @media (min-width: #{$screen-lg}) {
+    display: none;
+  }
+}
+
+.social-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-icon {
+  width: 50px;
+  height: auto;
+  transition: all 0.5s;
+
+  ion-icon {
+    width: 100%;
+    height: 25px;
+    color: $blue;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.header-nav-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 60%;
+}
+
+.ce-image img,
+.text-image img,
+.newsletter-image img {
+  box-shadow: $drop-shadow;
+}
+
+// FOOTER STUFF
+
+#inner-footer {
+  margin-top: 5vh;
+}
+
+.footer-logo-section {
+  display: flex;
+  width: 30vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-section,
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.footer-section {
+  padding: 2vh 0;
+
+  @media (min-width: #{$screen-lg}) {
+    padding: 5vh 0 2vh 0;
+  }
+}
+
+.footer-logos {
+  width: 100%;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 50%;
+  }
+
+  img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+
+    @media (min-width: #{$screen-lg}) {
+      margin: 0;
+    }
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid $grey;
+}
+
+.footer-columns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+  flex-direction: row;
+  padding-top: 2vh;
+
+  @media (min-width: #{$screen-sm}) {
+    width: 70%;
+    padding-top: 2vh;
+  }
+
+  @media (min-width: #{$screen-lg}) {
+    width: 30%;
+    padding-top: 0;
+  }
+}
+
+#menu-footer,
+#menu-footer-2 {
+  list-style-type: none;
+  padding: 0;
+
+  .menu-item a {
+    font-size: 12px;
+    padding: 8px 0;
+
+    @media (min-width: #{$screen-sm}) {
+      font-size: 14px;
+      padding: 10px 0;
+    }
+
+    @media (min-width: #{$screen-lg}) {
+      font-size: 16px;
+      padding: 0;
+    }
+  }
+}
+
+.footer-bottom,
+.disclaimer {
+  padding: 2vh 0;
+  text-align: center;
+
+  @media (min-width: #{$screen-lg}) {
+    text-align: left;
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid $grey;
+}
+
+.footer {
+  // background-color: $light-blue;
+}
+
+// Flickity CSS
+
+/*! Flickity v2.2.1
+https://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus {
+  outline: none;
+}
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+  position: absolute;
+  background: hsla(0, 0%, 100%, 0.75);
+  border: none;
+  color: #333;
+}
+
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19f;
+}
+
+.flickity-button:active {
+  opacity: 0.6;
+}
+
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+.flickity-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  /* vertically center */
+  transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous {
+  left: 10px;
+}
+
+.flickity-prev-next-button.next {
+  right: 10px;
+}
+
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+.carousel {
+  width: 100%;
+}
+
+//   Testimonial
+
+.carousel-cell {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  * {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+//Employers Candidates section
+
+.candidates-option,
+.hiring-option {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hiring-looking-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.candidates-option {
+  background: $blue;
+
+  * {
+    color: $white;
+  }
+}
+
+.quote-group {
+  display: none;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  max-width: 400px;
+
+  * {
+    color: $white;
+    @include dropShadow;
+  }
+
+  @media (min-width: #{$screen-md}) {
+    display: block;
+  }
+}
+
+.job-manager-application-wrapper .application .application_button,
+.single_job_listing .application .application_button {
+  font-size: 14px !important;
+}
+
+p.footer-category {
+  display: none;
+}
+
+.flickity-viewport {
+  height: 40vh !important;
 }
