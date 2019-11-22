@@ -10,8 +10,7 @@
 
 <?php get_header(); ?>
 
-<main data-barba='wrapper'>
-    <section data-barba='page-holder'>
+
 
 <div class="page-hero-header">
 
@@ -24,7 +23,7 @@
     </div>
 
     <div class="header-hero-text">
-        <h1><?php the_field('header_text'); ?></h1>
+        <h1 class='stroke'><?php the_field('header_text'); ?></h1>
         <div class="underline-white"></div>
         <h4><?php the_field('header_sub-title'); ?></h4>
     </div>
@@ -43,8 +42,6 @@
     </div>
 </div>
 
-        </section>
-        </main>
 
 
 

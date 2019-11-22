@@ -262,7 +262,7 @@ HEADER STYLES
 #inner-header,
 #inner-footer,
 .blog-single,
-.container {
+.inner {
   max-width: 90vw; // adjust to your content width or remove for full-width
   margin: 0 auto;
 
@@ -799,3 +799,16 @@ mobile. Make sure to double check these!
     }
   }
 } /* end .footer-links */
+
+// EXTRAS
+
+.stroke {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.sticky {
+  position: sticky;
+  top: 100px;
+}

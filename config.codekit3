@@ -321,38 +321,95 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/library/js/barba-css.js": {
+	"/library/js/barba/barba-css.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/min/barba-css-min.js",
+		"oAP": "/library/js/barba/min/barba-css-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/library/js/barba-scripts.js": {
+	"/library/js/barba/barba-scripts.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/min/barba-scripts-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 1
-		},
-	"/library/js/barba.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/library/js/min/barba-min.js",
+		"oAP": "/library/js/barba/min/barba-scripts-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"/library/js/barba/barba.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/barba/min/barba-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/barba/min/barba-css-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/barba/min/min/barba-css-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/barba/min/barba-css-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/barba/min/barba-css-min.js.map",
+		"oF": 0
+		},
+	"/library/js/barba/min/barba-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/barba/min/min/barba-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/barba/min/barba-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/barba/min/barba-min.js.map",
+		"oF": 0
+		},
+	"/library/js/barba/min/barba-scripts-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/barba/min/min/barba-scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/barba/min/barba-scripts-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/barba/min/barba-scripts-min.js.map",
+		"oF": 0
 		},
 	"/library/js/extras/extra-scripts.js": {
 		"bF": 0,
