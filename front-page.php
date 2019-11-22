@@ -10,6 +10,9 @@
 
 <?php get_header(); ?>
 
+<main data-barba='wrapper'>
+    <section data-barba='page-holder'>
+
 <div class="page-hero-header">
 
     <div class="header-hero-image">
@@ -21,9 +24,9 @@
     </div>
 
     <div class="header-hero-text">
-        <h1><?php the_field('header_title'); ?></h1>
-        <div class="underline"></div>
-        <h3><?php the_field('header_sub_title'); ?></h3>
+        <h1><?php the_field('header_text'); ?></h1>
+        <div class="underline-white"></div>
+        <h4><?php the_field('header_sub-title'); ?></h4>
     </div>
 
 
@@ -39,6 +42,9 @@
 
     </div>
 </div>
+
+        </section>
+        </main>
 
 
 

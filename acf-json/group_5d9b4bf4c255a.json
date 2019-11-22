@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_5d9b4c6d20584",
-            "label": "Welcome Image",
-            "name": "welcome_image",
+            "label": "Header Image",
+            "name": "header_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -28,8 +28,8 @@
         },
         {
             "key": "field_5d9b4c4320582",
-            "label": "Welcome Text",
-            "name": "welcome_text",
+            "label": "Header Text",
+            "name": "header_text",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -47,8 +47,8 @@
         },
         {
             "key": "field_5d9b4c5220583",
-            "label": "Welcome Sub-Title",
-            "name": "welcome_sub-title",
+            "label": "Header Desc",
+            "name": "header_sub-title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -85,7 +85,7 @@
         "discussion",
         "comments"
     ],
-    "active": true,
+    "active": 1,
     "description": "",
-    "modified": 1574353516
+    "modified": 1574372087
 }

@@ -1,6 +1,6 @@
 <section class="we-are-section">
 
-    <div class="we-are-image">
+    <div class="we-are-image sticky">
         <?php echo wp_get_attachment_image(get_sub_field('r_image'), 'full'); ?>
 
 

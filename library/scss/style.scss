@@ -24,8 +24,17 @@ our mixins, functions, and variables that we'll be using across
 the whole project.
 *********************/
 
+/*********************
+FONTSSSSS
+*********************/
+
+@import "fonts/fonts";
+
 // Sass variables
 @import "partials/variables";
+
+// styles in base.scss
+@import "partials/base";
 
 // import mixins
 @import "partials/mixins";
@@ -382,6 +391,7 @@ JOB SEARCH FORM
   justify-content: space-between;
   flex-direction: column;
   height: 90vh;
+  background-color: $black;
 
   @media (min-width: #{$screen-sm}) {
     height: 80vh;
@@ -419,6 +429,16 @@ JOB SEARCH FORM
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  * {
+    color: $white;
+  }
+
+  h1 {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
 
   @media (min-width: #{$screen-lg}) {
     width: 35%;
@@ -610,7 +630,7 @@ END OF HOMEPAGE HERO SECTION
 section.we-are-section {
   padding: 10vh 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
 
@@ -827,6 +847,11 @@ section.blog-section {
   text-align: center;
 }
 
+.sticky {
+  position: sticky;
+  top: 100px;
+}
+
 .left {
   text-align: left !important;
 }
@@ -983,7 +1008,7 @@ input[type="file"] {
 
 .footer-logo-section {
   display: flex;
-  width: 30vw;
+  // width: 30vw;
   align-items: center;
   justify-content: space-between;
 }
@@ -998,7 +1023,7 @@ input[type="file"] {
 
   @media (min-width: #{$screen-lg}) {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
   }
 }
@@ -1320,4 +1345,46 @@ p.footer-category {
 
 .flickity-viewport {
   height: 40vh !important;
+}
+
+// BARBA
+
+.fade-leave-active,
+.fade-enter-active,
+.fade-once-active {
+  transition: opacity var(--timing) var(--bezier),
+    transform var(--timing) var(--bezier);
+}
+
+.fade-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: translate(0, 30px);
+}
+
+.fade-enter,
+.fade-once {
+  opacity: 0;
+  transform: translate(0, 30px);
+}
+
+.fade-enter-to,
+.fade-once-to {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translate(0, 30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }

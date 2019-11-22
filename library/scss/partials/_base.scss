@@ -70,7 +70,18 @@ img {
 .underline {
   height: 2px;
   width: 180px;
-  background: $blue;
+  background: $black;
+  margin: 0 auto;
+
+  @media (min-width: #{$screen-lg}) {
+    margin: 0;
+  }
+}
+
+.underline-white {
+  height: 2px;
+  width: 180px;
+  background: $white;
   margin: 0 auto;
 
   @media (min-width: #{$screen-lg}) {
@@ -124,10 +135,10 @@ h5,
 h6,
 .h6 {
   font-family: $sans;
-  font-weight: 400;
+  font-weight: 900;
   margin: $text-space 0;
   padding: 0;
-  color: $blue;
+  color: $black;
   line-height: 1.2;
   text-rendering: optimizelegibility;
 
@@ -291,9 +302,15 @@ HEADER STYLES
 
   img {
     // replace /library/images/logo.svg and adjust for your logo size
-    width: 250px;
+    width: 150px;
     height: auto;
   }
+}
+
+#bloginfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*********************

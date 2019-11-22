@@ -453,6 +453,13 @@ function plate_scripts_and_styles() {
         // accessibility (a11y) scripts
         wp_enqueue_script( 'plate-a11y', get_theme_file_uri() . '/library/js/a11y.js', array( 'jquery' ), '', true );
 
+
+
+        // Barba Scripts
+        wp_enqueue_script( 'barba', get_theme_file_uri() . '/library/js/barba.js');
+        wp_enqueue_script( 'barba-css', get_theme_file_uri() . '/library/js/barba-css.js');
+        wp_enqueue_script( 'barba-scripts', get_theme_file_uri() . '/library/js/barba-scripts.js');
+
         $wp_styles->add_data( 'plate-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
         // plate extra scripts. Uncomment to use. Or better yet, copy what you need to the main scripts folder or on the page(s) you need it

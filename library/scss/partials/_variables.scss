@@ -19,7 +19,6 @@ http://0to255.com/
 
 $screen-xs: 0;
 $screen-sm: 576px;
-
 $screen-md: 768px;
 $screen-lg: 992px;
 $screen-xl: 1200px;
@@ -29,7 +28,7 @@ $screen-xxxl: 1920px;
 /* Fonts ---------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
 
-$sans: "Roboto", sans-serif;
+$sans: "Inter var", sans-serif;
 $serif: "Georgia", Cambria, Times New Roman, Times, serif;
 
 /* Attributes ---------------------------------------------------------- */

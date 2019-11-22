@@ -20,7 +20,7 @@
             </div>
 
             <a href="<?php the_sub_field('ce_link'); ?>">
-                <button>Find out more --></button>
+                <button>Find out more</button>
             </a>
 
         </div>

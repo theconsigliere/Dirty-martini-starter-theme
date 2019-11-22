@@ -4,19 +4,15 @@
 
 	<div class="footer-section">
 		<div class="footer-logo-section">
-			<div id="logo" itemprop="logo">
-				<a href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url"
-					title="<?php bloginfo('name'); ?>">
-					<img src="<?php echo get_theme_file_uri(); ?>/library/images/Dirty-Martini-Logo.png" itemprop="logo"
-						alt="site logo" />
-				</a>
-			</div>
+		<div id="logo" itemprop="logo">
+                        <a href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url"
+                            title="<?php bloginfo('name'); ?>">
+                            <img src="<?php echo get_theme_file_uri(); ?>/library/images/Dirty-Martini-Logo.png"
+                                itemprop="logo" alt="site logo" />
+                        </a>
+                    </div>
 
 
-			<div class='footer-logos'>
-				<img src="<?php echo get_theme_file_uri(); ?>/library/images/apple_touch_icon.png" itemprop="logo"
-					alt="site logo" />
-			</div>
 		</div>
 
 

@@ -1,0 +1,2 @@
+"use strict";var bodyTag=document.querySelector("body");barba.use(barbaCss),barba.init({transitions:[{name:"fade",once:function(){},beforeEnter:function(e){e.current,e.next,e.trigger;window.scrollTo({top:0,behavior:"smooth"})}}],views:[{namespace:"feed",beforeEnter:function(){bodyTag.classList.add("feed")},beforeLeave:function(){bodyTag.classList.remove("feed")}}]});
+//# sourceMappingURL=barba-scripts-min.js.map
