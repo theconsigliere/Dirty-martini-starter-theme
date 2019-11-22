@@ -138,3 +138,8 @@ $link-hover: darken($link-color, 9%);
 
 $border-color: #ccc;
 $disabled-gray: #cfcfcf;
+
+//ANIMATION
+
+$bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
+$timing: 1s;
