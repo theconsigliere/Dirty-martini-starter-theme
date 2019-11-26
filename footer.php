@@ -33,6 +33,7 @@
 
 </div>
 
+
 <?php // all js scripts are loaded in library/functions.php 
 ?>
 

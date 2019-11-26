@@ -183,24 +183,6 @@
 		"oAP": "/library/class-tgm-plugin-activation.php",
 		"oF": 0
 		},
-	"/library/css/admin.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/library/library/css/admin-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/library/css/admin.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/library/css/admin.css.map",
-		"oF": 0
-		},
 	"/library/css/customizer.css": {
 		"aP": 1,
 		"bl": 0,
@@ -422,6 +404,47 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/library/js/GSAP/gsap-script.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/GSAP/min/gsap-script-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/GSAP/min/gsap-script-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/GSAP/min/min/gsap-script-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/GSAP/min/gsap-script-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/GSAP/min/gsap-script-min.js.map",
+		"oF": 0
+		},
+	"/library/js/hero.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/hero-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/library/js/libs/modernizr-custom-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -472,6 +495,25 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/library/js/min/barba-scripts-min.js.map",
+		"oF": 0
+		},
+	"/library/js/min/hero-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/min/hero-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/min/hero-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/min/hero-min.js.map",
 		"oF": 0
 		},
 	"/library/js/min/scripts-min.js": {
@@ -1022,6 +1064,1029 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/single-loop.php",
+		"oF": 0
+		},
+	"/voucherpro/404.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/404.php",
+		"oF": 0
+		},
+	"/voucherpro/acf-json/group_5d9b4bf4c255a.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/voucherpro/acf-json/group_5d9b4bf4c255a-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/voucherpro/acf-json/group_5d9c4a287a947.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/voucherpro/acf-json/group_5d9c4a287a947-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/voucherpro/acf-json/group_5d9c747a3dd8a.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/voucherpro/acf-json/group_5d9c747a3dd8a-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/voucherpro/acf-json/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/acf-json/README.html",
+		"oF": 0
+		},
+	"/voucherpro/acf-json/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/acf-json/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/voucherpro/archive.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/archive.php",
+		"oF": 0
+		},
+	"/voucherpro/comments.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/comments.php",
+		"oF": 0
+		},
+	"/voucherpro/favicon.ai": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/favicon.ai",
+		"oF": 0
+		},
+	"/voucherpro/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/favicon.ico",
+		"oF": 0
+		},
+	"/voucherpro/favicon.png": {
+		"ft": 32768,
+		"iS": 18492,
+		"oA": 0,
+		"oAP": "/voucherpro/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/voucherpro/footer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/footer.php",
+		"oF": 0
+		},
+	"/voucherpro/front-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/front-page.php",
+		"oF": 0
+		},
+	"/voucherpro/functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/functions.php",
+		"oF": 0
+		},
+	"/voucherpro/header.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/header.php",
+		"oF": 0
+		},
+	"/voucherpro/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/index.php",
+		"oF": 0
+		},
+	"/voucherpro/library/_plugins/advanced-custom-fields-pro.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/_plugins/advanced-custom-fields-pro.zip",
+		"oF": 0
+		},
+	"/voucherpro/library/_plugins/custom-post-type.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/_plugins/custom-post-type.php",
+		"oF": 0
+		},
+	"/voucherpro/library/admin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/admin.php",
+		"oF": 0
+		},
+	"/voucherpro/library/class-tgm-plugin-activation.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/class-tgm-plugin-activation.php",
+		"oF": 0
+		},
+	"/voucherpro/library/css/admin.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/library/css/admin-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/voucherpro/library/css/admin.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/css/admin.css.map",
+		"oF": 0
+		},
+	"/voucherpro/library/css/customizer.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/library/css/customizer-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/voucherpro/library/css/customizer.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/css/customizer.css.map",
+		"oF": 0
+		},
+	"/voucherpro/library/css/editor-style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/library/css/editor-style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/voucherpro/library/css/editor-style.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/css/editor-style.css.map",
+		"oF": 0
+		},
+	"/voucherpro/library/css/ie.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/library/css/ie-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/voucherpro/library/css/ie.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/css/ie.css.map",
+		"oF": 0
+		},
+	"/voucherpro/library/css/login.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/library/css/login-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/voucherpro/library/css/login.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/css/login.css.map",
+		"oF": 0
+		},
+	"/voucherpro/library/css/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/library/css/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/voucherpro/library/css/style.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/css/style.css.map",
+		"oF": 0
+		},
+	"/voucherpro/library/customizer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/customizer.php",
+		"oF": 0
+		},
+	"/voucherpro/library/images/Dirty-Martini-Logo.png": {
+		"ft": 32768,
+		"iS": 25881,
+		"oA": 0,
+		"oAP": "/voucherpro/library/images/Dirty-Martini-Logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/voucherpro/library/js/a11y.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/min/a11y-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/barba/barba-css.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/barba/min/barba-css-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/barba/barba-scripts.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/barba/min/barba-scripts-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/barba/barba.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/barba/min/barba-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/barba/min/barba-css-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/barba/min/min/barba-css-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/barba/min/barba-css-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/barba/min/barba-css-min.js.map",
+		"oF": 0
+		},
+	"/voucherpro/library/js/barba/min/barba-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/barba/min/min/barba-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/barba/min/barba-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/barba/min/barba-min.js.map",
+		"oF": 0
+		},
+	"/voucherpro/library/js/barba/min/barba-scripts-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/barba/min/min/barba-scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/barba/min/barba-scripts-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/barba/min/barba-scripts-min.js.map",
+		"oF": 0
+		},
+	"/voucherpro/library/js/extras/extra-scripts.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/extras/min/extra-scripts-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/libs/modernizr-custom-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/libs/min/modernizr-custom-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/libs/modernizr-custom.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/libs/min/modernizr-custom-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/min/a11y-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/min/min/a11y-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/min/barba-scripts-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/min/min/barba-scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/min/barba-scripts-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/min/barba-scripts-min.js.map",
+		"oF": 0
+		},
+	"/voucherpro/library/js/min/scripts-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/min/min/scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/min/scripts-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/min/scripts-min.js.map",
+		"oF": 0
+		},
+	"/voucherpro/library/js/min/theme-customizer-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/min/min/theme-customizer-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/scripts.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/min/scripts-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/js/theme-customizer.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/js/min/theme-customizer-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/voucherpro/library/plate.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/plate.php",
+		"oF": 0
+		},
+	"/voucherpro/library/scss/fonts/_fonts.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/scss/css/_fonts.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/voucherpro/library/scss/fonts/inter/Inter-italic-var.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/scss/fonts/inter/Inter-italic-var.woff2",
+		"oF": 0
+		},
+	"/voucherpro/library/scss/fonts/inter/Inter-upright-var.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/scss/fonts/inter/Inter-upright-var.woff2",
+		"oF": 0
+		},
+	"/voucherpro/library/scss/login.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/css/login.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/voucherpro/library/scss/modules/_alerts.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/scss/css/_alerts.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/voucherpro/library/scss/modules/_buttons.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/scss/css/_buttons.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/voucherpro/library/scss/modules/_forms.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/scss/css/_forms.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/voucherpro/library/scss/partials/_base.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/scss/css/_base.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/voucherpro/library/scss/partials/_mixins.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/scss/css/_mixins.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/voucherpro/library/scss/partials/_variables.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/voucherpro/library/scss/css/_variables.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/voucherpro/library/scss/style.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/voucherpro/library/css/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/voucherpro/library/translation/default.mo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/translation/default.mo",
+		"oF": 0
+		},
+	"/voucherpro/library/translation/default.po": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/translation/default.po",
+		"oF": 0
+		},
+	"/voucherpro/library/translation/en_US.mo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/translation/en_US.mo",
+		"oF": 0
+		},
+	"/voucherpro/library/translation/en_US.po": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/translation/en_US.po",
+		"oF": 0
+		},
+	"/voucherpro/library/translation/platetheme.pot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/translation/platetheme.pot",
+		"oF": 0
+		},
+	"/voucherpro/library/translation/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/translation/README.html",
+		"oF": 0
+		},
+	"/voucherpro/library/translation/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/library/translation/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/voucherpro/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/LICENSE",
+		"oF": 0
+		},
+	"/voucherpro/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/voucherpro/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/voucherpro/page-full.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/page-full.php",
+		"oF": 0
+		},
+	"/voucherpro/page-sidebar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/page-sidebar.php",
+		"oF": 0
+		},
+	"/voucherpro/page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/page.php",
+		"oF": 0
+		},
+	"/voucherpro/partials/contact-form.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/partials/contact-form.php",
+		"oF": 0
+		},
+	"/voucherpro/partials/content-about.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/partials/content-about.php",
+		"oF": 0
+		},
+	"/voucherpro/partials/content-blog.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/partials/content-blog.php",
+		"oF": 0
+		},
+	"/voucherpro/partials/content-button.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/partials/content-button.php",
+		"oF": 0
+		},
+	"/voucherpro/partials/content-ce.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/partials/content-ce.php",
+		"oF": 0
+		},
+	"/voucherpro/partials/content-looking.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/partials/content-looking.php",
+		"oF": 0
+		},
+	"/voucherpro/partials/content-newsletter.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/partials/content-newsletter.php",
+		"oF": 0
+		},
+	"/voucherpro/partials/content-text.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/partials/content-text.php",
+		"oF": 0
+		},
+	"/voucherpro/partials/page-modules.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/partials/page-modules.php",
+		"oF": 0
+		},
+	"/voucherpro/readme.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/readme.html",
+		"oF": 0
+		},
+	"/voucherpro/readme.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/readme.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/voucherpro/screenshot.ai": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/screenshot.ai",
+		"oF": 0
+		},
+	"/voucherpro/screenshot.png": {
+		"ft": 32768,
+		"iS": 40885,
+		"oA": 0,
+		"oAP": "/voucherpro/screenshot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/voucherpro/search.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/search.php",
+		"oF": 0
+		},
+	"/voucherpro/searchform.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/searchform.php",
+		"oF": 0
+		},
+	"/voucherpro/sidebar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/sidebar.php",
+		"oF": 0
+		},
+	"/voucherpro/single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/single.php",
+		"oF": 0
+		},
+	"/voucherpro/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/library/css/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/voucherpro/style.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/library/css/style.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/voucherpro/templates/archive-loop.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/templates/archive-loop.php",
+		"oF": 0
+		},
+	"/voucherpro/templates/byline.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/templates/byline.php",
+		"oF": 0
+		},
+	"/voucherpro/templates/category-tags.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/templates/category-tags.php",
+		"oF": 0
+		},
+	"/voucherpro/templates/comment-count.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/templates/comment-count.php",
+		"oF": 0
+		},
+	"/voucherpro/templates/content-excerpt.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/templates/content-excerpt.php",
+		"oF": 0
+		},
+	"/voucherpro/templates/header-title.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/templates/header-title.php",
+		"oF": 0
+		},
+	"/voucherpro/templates/index-loop.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/templates/index-loop.php",
+		"oF": 0
+		},
+	"/voucherpro/templates/loop.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/templates/loop.php",
+		"oF": 0
+		},
+	"/voucherpro/templates/post-navigation.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/templates/post-navigation.php",
+		"oF": 0
+		},
+	"/voucherpro/templates/single-loop.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/templates/single-loop.php",
+		"oF": 0
+		},
+	"/voucherpro/website-wireframe.xd": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/voucherpro/website-wireframe.xd",
 		"oF": 0
 		},
 	"/website-wireframe.xd": {
@@ -1803,7 +2868,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {

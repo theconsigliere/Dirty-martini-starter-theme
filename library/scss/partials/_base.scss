@@ -288,12 +288,14 @@ HEADER STYLES
 }
 
 #site-title {
-  margin: 0 0.5em 0 0;
-  font-size: 2em;
   line-height: inherit;
 
   a {
     color: lighten($sb-black, 12%);
+  }
+
+  * {
+    margin: 0;
   }
 }
 
@@ -302,7 +304,7 @@ HEADER STYLES
 
   img {
     // replace /library/images/logo.svg and adjust for your logo size
-    width: 150px;
+    width: 50px;
     height: auto;
   }
 }
@@ -310,7 +312,8 @@ HEADER STYLES
 #bloginfo {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 /*********************
@@ -392,6 +395,286 @@ style a page via class
       max-width: 100%;
     }
   }
+}
+
+/*********************
+NAV BAR
+*********************/
+
+#hamburger {
+  cursor: pointer;
+  transition: all 0.4s;
+
+  @media (min-width: #{$screen-lg}) {
+    display: none;
+  }
+}
+
+.nav-button {
+  display: block;
+  cursor: pointer;
+  height: auto;
+  width: 30px;
+}
+
+#hamburger span,
+#hamburger span:before,
+#hamburger span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 35px;
+  background: $blue;
+  position: absolute;
+  display: inline-block;
+  content: "";
+}
+
+#hamburger span:before {
+  top: -10px;
+}
+
+#hamburger span:after {
+  bottom: -10px;
+}
+
+/*
+#hamburger span, #hamburger span:before, #hamburger span:after {
+  transition: all 200ms ease-in-out;
+}
+*/
+#hamburger span,
+#hamburger span:before,
+#hamburger span:after {
+  -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+}
+
+#hamburger.active span {
+  background-color: transparent;
+}
+
+#hamburger.active span:before,
+#hamburger.active span:after {
+  top: 0;
+}
+
+#hamburger.active span:before {
+  transform: rotate(45deg);
+}
+
+#hamburger.active span:after {
+  transform: translateY(-10px) rotate(-45deg);
+  top: 10px;
+}
+
+.nav-menu {
+  display: none;
+  transition: all 0.4s;
+
+  @media (min-width: #{$screen-lg}) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.main-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: #{$screen-lg}) {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.nav-menu-items {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  background: $white;
+  z-index: 5;
+  border-bottom: 1px solid $light-blue;
+
+  @media (min-width: #{$screen-lg}) {
+    align-items: center;
+    flex-direction: row;
+    border: 0;
+  }
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media (min-width: #{$screen-lg}) {
+    justify-content: center;
+  }
+}
+
+.menu-item-has-children:hover .sub-menu {
+  // visibility: visible;
+  opacity: 1;
+  transition: all ease-in-out 0.5s;
+  height: 100%;
+
+  @media (min-width: #{$screen-lg}) {
+    height: auto;
+  }
+}
+
+.sub-menu {
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  overflow: hidden;
+  background: $light-blue;
+  transform: none;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  height: 0;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 250px;
+    border: 1px solid rgba(20, 20, 20, 0.25);
+    box-shadow: $drop-shadow;
+    background: $white;
+    transform: translate(-50%, 40%);
+    left: 50%;
+    padding: 16px;
+  }
+
+  a {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    margin: 0 auto;
+
+    @media (min-width: #{$screen-lg}) {
+      padding-bottom: 10px !important;
+      padding-top: 0;
+    }
+  }
+
+  .menu-item {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+nav .current_page_item a {
+  color: $black;
+}
+
+.menu-item-has-children {
+  position: relative;
+}
+
+.header-nav {
+  width: 100%;
+}
+
+.top-nav .menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid $light-blue;
+
+  @media (min-width: #{$screen-sm}) {
+    border: 0;
+  }
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+    align-items: flex-start;
+    border: 0;
+  }
+}
+
+#menu-header-menu li > a {
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  @media (min-width: #{$screen-lg}) {
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+}
+
+.sub-menu-toggle {
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
+  border-style: solid;
+  border-color: $black;
+  border-width: 0px 1px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: border-width 150ms ease-in-out;
+  transition: border-width 150ms ease-in-out;
+  display: none;
+  float: right;
+  margin: 0 10px;
+
+  @media (min-width: #{$screen-lg}) {
+    display: block;
+  }
+}
+
+.sub-menu-toggle:hover,
+.sub-menu-toggle:active {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+/*********************
+HOMEPAGE HERO SECTION
+*********************/
+.welcome-hero {
+  grid-column: span 12;
+  position: relative;
+  height: 65vh;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.welcome-hero-text {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  right: 15%;
+
+  * {
+    color: $white;
+    text-align: center;
+    text-shadow: 6px 2px 10px #040404a6;
+  }
+
+  @media (min-width: #{$screen-lg}) {
+    bottom: 15%;
+  }
+}
+
+.front-page-hero {
+  position: relative;
 }
 
 /*********************
@@ -514,97 +797,6 @@ img.lazyloaded {
 
 li#text-3 {
   list-style: none;
-}
-
-/*********************
-BUTTONS
-*********************/
-
-%button {
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  border: 0;
-  background: #5b8af2;
-  color: #fff;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-  }
-
-  &:active {
-    top: 1px; // adds a tiny hop to the click
-    background: $white;
-    color: $blue;
-    transition: all 0.6s;
-  }
-} // end .button
-
-button,
-[type="submit"],
-.application_button {
-  position: relative;
-  display: inline-block;
-  padding: 9px 30px;
-  border: 1px solid $blue;
-  background: $blue;
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-
-  &:hover {
-    background: $white;
-    border: 1px solid $blue;
-    transition: all 0.6s;
-    color: $blue;
-  }
-}
-
-.blue-button {
-  @extend %button;
-  background: #0056ac;
-  color: #fff;
-
-  &:hover,
-  &:focus {
-    color: #fff;
-  }
-}
-
-.label-block {
-  width: 100%;
-  margin: 5px auto;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  @media (min-width: #{$screen-md}) {
-    margin: 0 auto;
-  }
-
-  p {
-    font-size: 10px;
-    text-align: left;
-    margin: 10px 0;
-  }
-}
-
-.job-search-input,
-select {
-  margin: 0 auto;
-  width: 90%;
-  border: 2px #5b8af2 solid;
-  height: 40px;
-  margin-bottom: 0;
-}
-
-.job-search-input-search {
-  height: 40px;
-  width: 90%;
-  margin: 0;
 }
 
 //EXTRA BASE STYLES

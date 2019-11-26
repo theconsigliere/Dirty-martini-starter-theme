@@ -451,6 +451,9 @@ SCRIPTS & ENQUEUEING
 
             if (!is_admin()) {
 
+                // front-page-hero
+                wp_enqueue_script('hero', get_template_directory_uri() . '/library/js/hero.js', array(), '', true);
+
                 // modernizr (3.6.0 2018-04-17)
                 wp_enqueue_script('modernizr', get_theme_file_uri() . '/library/js/libs/modernizr-custom-min.js', array(), '3.6.0', false);
 
@@ -475,6 +478,12 @@ SCRIPTS & ENQUEUEING
                 wp_enqueue_script('barba', get_template_directory_uri() . '/library/js/barba/barba.js', array(), '', true);
                 wp_enqueue_script('barba-css', get_template_directory_uri() . '/library/js/barba/barba-css.js', array(), '', true);
                 wp_enqueue_script('barba-scripts', get_template_directory_uri() . '/library/js/barba/barba-scripts.js', array(), '', true);
+
+
+                // GSAP Scripts
+                wp_enqueue_script('gsap-js', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js', array(), false, true);
+                wp_enqueue_script('gsap-rule', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSRulePlugin.min.js', array(), false, true);
+                wp_enqueue_script('gsap-script', get_template_directory_uri() . '/library/js/GSAP/gsap-script.js', array(), false, true);
 
 
                 $wp_styles->add_data('plate-ie-only', 'conditional', 'lt IE 9'); // add conditional wrapper around ie stylesheet

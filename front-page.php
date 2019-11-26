@@ -23,9 +23,9 @@
     </div>
 
     <div class="header-hero-text">
-        <h1 class='stroke'><?php the_field('header_text'); ?></h1>
-        <div class="underline-white"></div>
-        <h4><?php the_field('header_sub-title'); ?></h4>
+        <div class='div-js'><?php the_field('header_text'); ?></div>
+        <div class="underline"></div>
+        <h3><?php the_field('header_sub-title'); ?></h3>
     </div>
 
 

@@ -108,7 +108,7 @@
                     <div id="site-title" class="site-title" itemprop="name">
                         <a href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url"
                             title="<?php bloginfo('name'); ?>">
-                            <?php bloginfo('name'); ?>
+                            <h3><?php bloginfo('name'); ?></h3>
                         </a>
                     </div>
 
