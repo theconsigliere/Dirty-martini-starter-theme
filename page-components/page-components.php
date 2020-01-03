@@ -9,38 +9,43 @@
 				// loop through all the rows of flexible content
 				while (have_rows('page_content')) : the_row();
 
+					// full width hero
+					if (get_row_layout() == 'hero_fullwidth')
+						get_template_part('page-components/hero', 'fullwidth');
+
+
 					// Candidates & Employers
 					if (get_row_layout() == 'two_card_section')
-						get_template_part('partials/content', 'ce');
+						get_template_part('page-components/content', 'ce');
 
 					// Are you looking Section?
 					if (get_row_layout() == 'repeater_item_section')
-						get_template_part('partials/content', 'looking');
+						get_template_part('page-components/content', 'looking');
 
 					// Blog sECTION
 					if (get_row_layout() == 'blog_section')
-						get_template_part('partials/content', 'blog');
+						get_template_part('page-components/content', 'blog');
 
 					// Newsletter Section
 					if (get_row_layout() == 'newsletter_section')
-						get_template_part('partials/content', 'newsletter');
+						get_template_part('page-components/content', 'newsletter');
 
 					// We are Section
 					if (get_row_layout() == 'image_text_section')
-						get_template_part('partials/content', 'about');
+						get_template_part('page-components/content', 'about');
 
 
 					// Text Sections
 					if (get_row_layout() == 'text_sections')
-						get_template_part('partials/content', 'text');
+						get_template_part('page-components/content', 'text');
 
 					// Show Important Buttons
 					if (get_row_layout() == 'button_section')
-						get_template_part('partials/content', 'button');
+						get_template_part('page-components/content', 'button');
 
 					// Contact Form
 					if (get_row_layout() == 'contact_form')
-						get_template_part('partials/contact', 'form');
+						get_template_part('page-components/contact', 'form');
 
 				endwhile; // close the loop of flexible content
 			endif; // close flexible content conditional

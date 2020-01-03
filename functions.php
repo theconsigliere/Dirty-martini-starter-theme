@@ -43,8 +43,8 @@ add_action('after_setup_theme', 'plate_lunch');
 function plate_lunch()
 {
 
-    // editor style
-    add_editor_style(get_stylesheet_directory_uri() . '/library/css/editor-style.css');
+    // // editor style
+    // add_editor_style(get_stylesheet_directory_uri() . '/library/css/editor-style.css');
 
     // let's get language support going, if you need it
     load_theme_textdomain('dmtheme', get_template_directory() . '/library/translation');
@@ -204,22 +204,7 @@ COMMENTS
 Blah blah blah.
 *********************/
 
-// Adding a custom gravatar. Customize this to add your own. Or delete it. It's totally up to you.
-add_filter('avatar_defaults', 'new_default_avatar');
 
-function new_default_avatar($avatar_defaults)
-{
-
-//Set the URL where the image file for your avatar is located
-$new_avatar_url = get_stylesheet_directory_uri() . '/library/images/custom-gravatar.png';
-
-// var_dump($new_avatar_url);
-
-//Set the text that will appear to the right of your avatar in Settings>>Discussion
-$avatar_defaults[$new_avatar_url] = 'Custom Avatar';
-
-return $avatar_defaults;
-}
 
 // Comment Layout
 function plate_comments($comment, $args, $depth)
@@ -248,9 +233,9 @@ $GLOBALS['comment'] = $comment; ?>
                     $bgauthemail = get_comment_author_email();
                     ?>
 
-            <img data-gravatar="//www.gravatar.com/avatar/<?php echo md5($bgauthemail); ?>?s=256"
+            <!-- <img data-gravatar="//www.gravatar.com/avatar/<?php echo md5($bgauthemail); ?>?s=256"
                 class="load-gravatar avatar avatar-48 photo" height="64" width="64"
-                src="<?php echo get_theme_file_uri(); ?>/library/images/custom-gravatar.png" />
+                src="<?php echo get_theme_file_uri(); ?>/library/images/custom-gravatar.png" /> -->
 
             <?php // end custom gravatar call 
                     ?>
@@ -439,9 +424,9 @@ the junk we don't need.
         }
 
 
-        /*********************
+/*********************
 SCRIPTS & ENQUEUEING
-         *********************/
+*********************/
 
         // loading modernizr and jquery, comment reply and custom scripts
         function plate_scripts_and_styles()
@@ -451,23 +436,28 @@ SCRIPTS & ENQUEUEING
 
             if (!is_admin()) {
 
-                // front-page-hero
-                wp_enqueue_script('hero', get_template_directory_uri() . '/library/js/hero.js', array(), '', true);
 
-                // modernizr (3.6.0 2018-04-17)
-                wp_enqueue_script('modernizr', get_theme_file_uri() . '/library/js/libs/modernizr-custom-min.js', array(), '3.6.0', false);
+                // STYLES
+                /*********************/
+
 
                 // register main stylesheet
                 wp_enqueue_style('plate-stylesheet', get_theme_file_uri() . '/library/css/style.css', array(), '', 'all');
 
-                // ie-only style sheet
-                wp_enqueue_style('plate-ie-only', get_theme_file_uri() . '/library/css/ie.css', array(), '');
+
+
+                // SCRIPTS
+                /*********************/
+
+                // modernizr (3.6.0 2018-04-17)
+                wp_enqueue_script('modernizr', get_theme_file_uri() . '/library/js/libs/modernizr-custom-min.js', array(), '3.6.0', false);
+
 
                 // comment reply script for threaded comments
                 if (is_singular() and comments_open() and (get_option('thread_comments') == 1)) {
                     wp_enqueue_script('comment-reply');
                 }
-
+                
                 // adding scripts file in the footer
                 wp_enqueue_script('plate-js', get_theme_file_uri() . '/library/js/scripts.js', array('jquery'), '', true);
 
@@ -475,21 +465,15 @@ SCRIPTS & ENQUEUEING
                 wp_enqueue_script('plate-a11y', get_theme_file_uri() . '/library/js/a11y.js', array('jquery'), '', true);
 
                 // Barba Scripts
-                wp_enqueue_script('barba', get_template_directory_uri() . '/library/js/barba/barba.js', array(), '', true);
-                wp_enqueue_script('barba-css', get_template_directory_uri() . '/library/js/barba/barba-css.js', array(), '', true);
-                wp_enqueue_script('barba-scripts', get_template_directory_uri() . '/library/js/barba/barba-scripts.js', array(), '', true);
+                // wp_enqueue_script('barba', get_template_directory_uri() . '/library/js/barba/barba.js', array(), '', true);
 
-
+                
                 // GSAP Scripts
-                wp_enqueue_script('gsap-js', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js', array(), false, true);
-                wp_enqueue_script('gsap-rule', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSRulePlugin.min.js', array(), false, true);
-                wp_enqueue_script('gsap-script', get_template_directory_uri() . '/library/js/GSAP/gsap-script.js', array(), false, true);
+                // wp_enqueue_script('gsap-js', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js', array(), false, true);
 
 
                 $wp_styles->add_data('plate-ie-only', 'conditional', 'lt IE 9'); // add conditional wrapper around ie stylesheet
 
-                // plate extra scripts. Uncomment to use. Or better yet, copy what you need to the main scripts folder or on the page(s) you need it
-                // wp_enqueue_script( 'plate-extra-js', get_theme_file_uri() . '/library/js/extras/extra-scripts.js', array( 'jquery' ), '', true );
 
             }
         }
@@ -518,7 +502,7 @@ function in case you don't need them.
         function plate_block_editor_styles()
         {
 
-            wp_enqueue_style('plate-block-editor-styles', get_theme_file_uri('/library/css/editor.css'), false, '1.0', 'all');
+            // wp_enqueue_style('plate-block-editor-styles', get_theme_file_uri('/library/css/editor.css'), false, '1.0', 'all');
         }
 
         /**
@@ -532,7 +516,7 @@ function in case you don't need them.
         function plate_gutenberg_styles()
         {
 
-            wp_enqueue_style('plate-gutenberg-styles', get_theme_file_uri('/library/css/gutenberg.css'), false, '1.0', 'all');
+            // wp_enqueue_style('plate-gutenberg-styles', get_theme_file_uri('/library/css/gutenberg.css'), false, '1.0', 'all');
         }
 
         /****************************************
@@ -540,40 +524,6 @@ function in case you don't need them.
          ****************************************/
 
         /* 
-* Remove emojis: because WordPress is serious business.
-* But, if you want emojis, don't let me stop you from having a good time. 
-* To enable emojis, comment these functions out or just delete them.
-*/
-
-        add_action('init', 'disable_wp_emojicons');
-
-        function disable_wp_emojicons()
-        {
-
-            // all actions related to emojis
-            remove_action('admin_print_styles', 'print_emoji_styles');
-            remove_action('wp_head', 'print_emoji_detection_script', 7);
-            remove_action('admin_print_scripts', 'print_emoji_detection_script');
-            remove_action('wp_print_styles', 'print_emoji_styles');
-            remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
-            remove_filter('the_content_feed', 'wp_staticize_emoji');
-            remove_filter('comment_text_rss', 'wp_staticize_emoji');
-
-            // filter to remove TinyMCE emojis
-            add_filter('tiny_mce_plugins', 'disable_emojicons_tinymce');
-        }
-
-        function disable_emojicons_tinymce($plugins)
-        {
-
-            if (is_array($plugins)) {
-
-                return array_diff($plugins, array('wpemoji'));
-            } else {
-
-                return array();
-            }
-        }
 
 
         /* 
@@ -831,26 +781,6 @@ THEME SUPPORT
 
 
         /* 
-* WooCommerce Support
-*
-* This function only removes the warning in the WP admin when 
-* WooCommerce is installed. To fully support WooCommerce you 
-* will need to add some stuff to your product loops.
-* 
-* See here: https://docs.woocommerce.com/document/third-party-custom-theme-compatibility/
-*
-*/
-
-        if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')))) {
-
-            add_action('after_setup_theme', 'woocommerce_support');
-
-            function woocommerce_support()
-            {
-
-                add_theme_support('woocommerce');
-            }
-        }
 
 
         /*********************
@@ -1110,13 +1040,13 @@ RELATED POSTS FUNCTION
         // To use, go here and copy the css/html for the dashicon you want: https://developer.wordpress.org/resource/dashicons/
         // Example: <span class="dashicons dashicons-wordpress"></span>
 
-        // add_action( 'wp_enqueue_scripts', 'template_load_dashicons' );
+        add_action( 'wp_enqueue_scripts', 'template_load_dashicons' );
 
-        // function template_load_dashicons() {
+        function template_load_dashicons() {
 
-        //     wp_enqueue_style( 'dashicons' );
+            wp_enqueue_style( 'dashicons' );
 
-        // }
+        }
 
 
         // Post Author function (from WP Twenty Seventeen theme)
@@ -1233,10 +1163,11 @@ RELATED POSTS FUNCTION
 
 
 
-
-        /**
-         * Activate PLUGIN on theme ACTIVATION //////////
-         */
+         /** 
+        * TGM_Plugin_Activation class.
+        * 
+        * 
+        */
 
         /**
          * Include the TGM_Plugin_Activation class.
@@ -1324,7 +1255,7 @@ RELATED POSTS FUNCTION
                 array(
                     'name'      => 'ACF Content Analysis for Yoast SEO',
                     'slug'      => 'yoast-acf-analysis',
-                    'required'  => true,
+                    'required'  => false,
                 ),
 
             );

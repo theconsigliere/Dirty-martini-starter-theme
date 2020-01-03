@@ -17,14 +17,8 @@ REMOVE DASHBOARD WIDGETS
 Clean up the Dashboard, yo.
 *********************/
 
-/*
-Eddie's old function wasn't working on some widgets so I've updated it
-This cleans up a lot of the widgets on the Dashboard page. If you want
-to have any of these back, comment them out.
-*/
 
 
-add_action('wp_dashboard_setup', 'plate_remove_dashboard_widgets');
 
 function plate_remove_dashboard_widgets() {
 
@@ -42,6 +36,8 @@ function plate_remove_dashboard_widgets() {
     remove_action('welcome_panel','wp_welcome_panel'); // WP Welcome
 
 }
+
+add_action('wp_dashboard_setup', 'plate_remove_dashboard_widgets');
 
 /*********************
 CUSTOM LOGIN PAGE
@@ -90,10 +86,12 @@ add_action( 'admin_enqueue_scripts', 'plate_admin_css', 10 );
 
 // Custom Backend Footer
 // adding it to the admin area
-add_filter( 'admin_footer_text', 'plate_custom_admin_footer' );
+
 
 function plate_custom_admin_footer() {
-	_e( '<span id="footer-thankyou">Developed by <a href="https://studio.bio" target="_blank">studio.bio</a></span>. Built using <a href="https://studio.bio/themes/plate" target="_blank">Plate</a>.', 'dmtheme' );
+	_e( '<span id="footer-thankyou">Developed by <a href="https://maxwellkirwin.co.uk" target="_blank">Maxwell Kirwin</a></span>. Built using the <a href="https://dirty-martini.com/" target="_blank">Dirty Martini Theme</a>.', 'dmtheme' );
 }
+
+add_filter( 'admin_footer_text', 'plate_custom_admin_footer' );
 
 ?>

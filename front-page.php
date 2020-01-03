@@ -12,24 +12,6 @@
 
 
 
-<div class="page-hero-header">
-
-    <div class="header-hero-image">
-        <?php $image = get_field('header_image');
-        if (!empty($image)) : ?>
-        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" data-no-lazy="1" />
-        <?php endif; ?>
-
-    </div>
-
-    <div class="header-hero-text">
-        <div class='div-js'><?php the_field('header_text'); ?></div>
-        <div class="underline"></div>
-        <h3><?php the_field('header_sub-title'); ?></h3>
-    </div>
-
-
-</div>
 
 <div id="full-page">
 
@@ -37,7 +19,7 @@
 
 
         <!-- Page Modules -->
-        <?php get_template_part('partials/page', 'modules'); ?>
+        <?php get_template_part('page-components/page', 'components'); ?>
 
     </div>
 </div>

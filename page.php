@@ -29,29 +29,13 @@
 
 <?php get_header(); ?>
 
-<div class="welcome-hero">
-    <?php $image = get_field('welcome_image');
-
-    if (!empty($image)) : ?>
-
-    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" data-no-lazy="1" />
-
-    <?php endif; ?>
-
-    <div class="welcome-hero-text">
-        <h1><?php the_field('welcome_text'); ?></h1>
-        <h3><?php the_field('welcome_sub-title'); ?></h3>
-    </div>
-
-</div>
-
 
 <div id="full-page">
 
     <div id="inner-content" class="wrap">
- 
+
         <!-- Page Modules -->
-        <?php get_template_part('partials/page', 'modules'); ?>
+        <?php get_template_part('page-components/page', 'components'); ?>
 
 
     </div>

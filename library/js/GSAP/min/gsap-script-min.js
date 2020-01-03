@@ -1,2 +1,0 @@
-"use strict";document.addEventListener("DOMContentLoaded",(function(e){console.log("DOM loaded"),window.addEventListener("load",(function(e){var t=CSSRulePlugin.getRule(".hidetext:before"),n=new TimelineMax({});n.set(t,{height:"100px"}),n.to(t,1.3,{height:"0px",ease:Power4.easeOut},.15)}),!1)}));
-//# sourceMappingURL=gsap-script-min.js.map
