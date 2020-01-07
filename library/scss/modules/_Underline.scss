@@ -1,0 +1,21 @@
+.underline {
+  height: 2px;
+  width: 180px;
+  background: $black;
+  margin: 0 auto;
+
+  @media (min-width: #{$screen-lg}) {
+    margin: 0;
+  }
+}
+
+.underline-white {
+  height: 2px;
+  width: 180px;
+  background: $white;
+  margin: 0 auto;
+
+  @media (min-width: #{$screen-lg}) {
+    margin: 0;
+  }
+}

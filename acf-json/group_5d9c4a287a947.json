@@ -18,8 +18,8 @@
             "layouts": {
                 "layout_5d9c4e2ce36cf": {
                     "key": "layout_5d9c4e2ce36cf",
-                    "name": "two_card_section",
-                    "label": "Two Card Section",
+                    "name": "card_section",
+                    "label": "Card Section",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -62,7 +62,7 @@
                         },
                         {
                             "key": "field_5d9c62bb387fc",
-                            "label": "Candidate & Employer Section",
+                            "label": "Card Section",
                             "name": "ce_item",
                             "type": "repeater",
                             "instructions": "",
@@ -719,5 +719,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1578071002
+    "modified": 1578414612
 }

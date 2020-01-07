@@ -1,4 +1,4 @@
-<section class="we-are-section">
+<section class="container-wrap we-are-section">
 
     <div class="we-are-image sticky">
         <?php echo wp_get_attachment_image(get_sub_field('r_image'), 'full'); ?>

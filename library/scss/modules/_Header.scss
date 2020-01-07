@@ -1,0 +1,65 @@
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+  background: #fff;
+  position: relative;
+}
+
+#inner-header,
+#inner-footer,
+.blog-single,
+.inner {
+  max-width: 90vw; // adjust to your content width or remove for full-width
+  margin: 0 auto;
+
+  @media (min-width: #{$screen-md}) {
+    max-width: 85vw;
+  }
+
+  @media (min-width: #{$screen-lg}) {
+    max-width: 75vw;
+  }
+
+  @media (min-width: #{$screen-xxl}) {
+    max-width: 65vw;
+  }
+}
+
+// fix for new header.php schema layout
+#inner-header {
+  display: flex;
+  padding: 3vh 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#site-title {
+  line-height: inherit;
+
+  a {
+    color: lighten($sb-black, 12%);
+  }
+
+  * {
+    margin: 0;
+  }
+}
+
+#logo {
+  height: 100%;
+
+  img {
+    // replace /library/images/logo.svg and adjust for your logo size
+    width: 50px;
+    height: auto;
+  }
+}
+
+#bloginfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}

@@ -13,10 +13,9 @@
 					if (get_row_layout() == 'hero_fullwidth')
 						get_template_part('page-components/hero', 'fullwidth');
 
-
-					// Candidates & Employers
-					if (get_row_layout() == 'two_card_section')
-						get_template_part('page-components/content', 'ce');
+					// Card Section
+					if (get_row_layout() == 'card_section')
+						get_template_part('page-components/content', 'card');
 
 					// Are you looking Section?
 					if (get_row_layout() == 'repeater_item_section')
@@ -30,10 +29,9 @@
 					if (get_row_layout() == 'newsletter_section')
 						get_template_part('page-components/content', 'newsletter');
 
-					// We are Section
+					// Image Side Text Side Section
 					if (get_row_layout() == 'image_text_section')
-						get_template_part('page-components/content', 'about');
-
+						get_template_part('page-components/imageside', 'textside');
 
 					// Text Sections
 					if (get_row_layout() == 'text_sections')

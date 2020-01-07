@@ -1,0 +1,22 @@
+// Image
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img[data-lazy-src] {
+  opacity: 0;
+}
+
+img.lazyloaded {
+  -webkit-transition: opacity 0.5s linear 0.2s;
+  -moz-transition: opacity 0.5s linear 0.2s;
+  transition: opacity 0.5s linear 0.2s;
+  opacity: 1;
+}
+
+li#text-3 {
+  list-style: none;
+}
