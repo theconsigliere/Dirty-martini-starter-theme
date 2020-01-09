@@ -6,7 +6,7 @@
 
     </div>
 
-    <div class="we-are-text">
+    <div class="text-side">
         <h2><?php the_sub_field('r_title'); ?></h2>
         <p><?php the_sub_field('r_desc'); ?></p>
 

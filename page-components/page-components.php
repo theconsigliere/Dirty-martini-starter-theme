@@ -29,7 +29,11 @@
 					if (get_row_layout() == 'image_text_section')
 						get_template_part('page-components/imageside', 'textside');
 
-					// Show Important Buttons
+					// Slider Section
+					if (get_row_layout() == 'slider_section')
+					get_template_part('page-components/content', 'slider');
+
+					// Show Button Section
 					if (get_row_layout() == 'button_section')
 						get_template_part('page-components/content', 'button');
 

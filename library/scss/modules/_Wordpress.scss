@@ -108,6 +108,7 @@ POSTS & CONTENT STYLES
 }
 
 //SCREEN READER STYLES
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
@@ -170,28 +171,4 @@ POSTS & CONTENT STYLES
     float: none;
     margin: 0 auto;
   }
-}
-// EXTRAS
-
-.stroke {
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #fff;
-}
-
-.sticky {
-  position: initial;
-  top: 100px;
-
-  @media (min-width: #{$screen-md}) {
-    position: sticky;
-  }
-}
-
-.middle {
-  text-align: center;
-}
-
-.gray {
-  background-color: $light-gray;
 }

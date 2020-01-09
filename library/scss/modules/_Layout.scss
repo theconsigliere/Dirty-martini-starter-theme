@@ -174,3 +174,28 @@ pre,
 table {
   margin-bottom: 2.5rem;
 }
+
+// EXTRAS
+
+.stroke {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.sticky {
+  position: initial;
+  top: 100px;
+
+  @media (min-width: #{$screen-lg}) {
+    position: sticky;
+  }
+}
+
+.middle {
+  text-align: center;
+}
+
+.gray {
+  background-color: $light-gray;
+}

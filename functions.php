@@ -464,6 +464,9 @@ SCRIPTS & ENQUEUEING
                 // accessibility (a11y) scripts
                 wp_enqueue_script('plate-a11y', get_theme_file_uri() . '/library/js/a11y.js', array('jquery'), '', true);
 
+                  // Flickity Scripts
+               wp_enqueue_script('flickity', get_template_directory_uri() . '/library/js/flickity.js', array(), '', true);
+
                 // Barba Scripts
                 // wp_enqueue_script('barba', get_template_directory_uri() . '/library/js/barba/barba.js', array(), '', true);
 

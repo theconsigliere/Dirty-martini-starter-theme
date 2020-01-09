@@ -269,6 +269,17 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/library/js/flickity.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/flickity-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/library/js/libs/modernizr-custom-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -302,42 +313,23 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/library/js/min/barba-scripts-min.js": {
+	"/library/js/min/flickity-min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/min/min/barba-scripts-min-min.js",
+		"oAP": "/library/js/min/min/flickity-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/library/js/min/barba-scripts-min.js.map": {
+	"/library/js/min/flickity-min.js.map": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/library/js/min/barba-scripts-min.js.map",
-		"oF": 0
-		},
-	"/library/js/min/hero-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/library/js/min/min/hero-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
-	"/library/js/min/hero-min.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/library/js/min/hero-min.js.map",
+		"oAP": "/library/js/min/flickity-min.js.map",
 		"oF": 0
 		},
 	"/library/js/min/scripts-min.js": {
@@ -490,6 +482,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/library/scss/css/_Color.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/library/scss/modules/_Flickity.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/library/scss/css/_Flickity.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -802,6 +807,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-components/content-card.php",
+		"oF": 0
+		},
+	"/page-components/content-slider.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/content-slider.php",
 		"oF": 0
 		},
 	"/page-components/content-texttitle.php": {
