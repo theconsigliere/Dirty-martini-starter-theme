@@ -13,6 +13,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 // Default body styles
@@ -23,6 +24,7 @@ body {
   font-weight: 300;
   letter-spacing: 0.01em;
   line-height: 1.6;
+  margin: 0;
 
   // Adjust for your type
   -webkit-font-smoothing: antialiased;

@@ -17,25 +17,17 @@
 					if (get_row_layout() == 'card_section')
 						get_template_part('page-components/content', 'card');
 
-					// Are you looking Section?
-					if (get_row_layout() == 'repeater_item_section')
-						get_template_part('page-components/content', 'looking');
+					// Text & Title Section
+					if (get_row_layout() == 'text_title_section')
+					get_template_part('page-components/content', 'texttitle');
 
-					// Blog sECTION
+					// Blog Section
 					if (get_row_layout() == 'blog_section')
 						get_template_part('page-components/content', 'blog');
-
-					// Newsletter Section
-					if (get_row_layout() == 'newsletter_section')
-						get_template_part('page-components/content', 'newsletter');
 
 					// Image Side Text Side Section
 					if (get_row_layout() == 'image_text_section')
 						get_template_part('page-components/imageside', 'textside');
-
-					// Text Sections
-					if (get_row_layout() == 'text_sections')
-						get_template_part('page-components/content', 'text');
 
 					// Show Important Buttons
 					if (get_row_layout() == 'button_section')

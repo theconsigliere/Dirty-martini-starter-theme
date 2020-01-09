@@ -11,7 +11,7 @@
 }
 
 .container-wrap {
-  max-width: calc(100vw - #{$page-margin});
+  max-width: calc(100vw - #{$page-margin-row});
   margin: 0 auto;
 }
 

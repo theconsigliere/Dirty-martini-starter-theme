@@ -86,6 +86,27 @@ POSTS & CONTENT STYLES
   }
 }
 
+// Utility
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Clear a float with .clearfix
+.clearfix {
+  &:after {
+    clear: both;
+    content: " "; // The space content is one way to avoid an Opera bug.
+    display: table;
+  }
+}
+
+// Float either direction
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 //SCREEN READER STYLES
 
 /* Text meant only for screen readers. */
@@ -159,6 +180,18 @@ POSTS & CONTENT STYLES
 }
 
 .sticky {
-  position: sticky;
+  position: initial;
   top: 100px;
+
+  @media (min-width: #{$screen-md}) {
+    position: sticky;
+  }
+}
+
+.middle {
+  text-align: center;
+}
+
+.gray {
+  background-color: $light-gray;
 }

@@ -69,7 +69,7 @@
 
         <header class="header" id="header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
 
-            <div id="inner-header" class="wrap">
+            <div class='container-wrap' id="inner-header" class="wrap">
 
                 <?php // updated with proper markup and wrapping div for organization 
                 ?>

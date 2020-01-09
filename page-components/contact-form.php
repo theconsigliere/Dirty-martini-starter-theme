@@ -1,7 +1,8 @@
-<?php if (get_sub_field('contact')) : ?>
+<section class="contact-form container">
 
-<div class="contact-form">
-    <?php echo do_shortcode('[contact-form-7 id="16308" title="Contact form 1"]'); ?>
-</div>
+    <?php 
+    $form_id = get_sub_field('contact_form_id'); 
 
-<?php endif; ?>
+    echo do_shortcode($form_id); 
+    ?>
+</section>

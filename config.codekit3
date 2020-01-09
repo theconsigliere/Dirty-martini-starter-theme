@@ -468,19 +468,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/library/scss/modules/_Blockquote.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/library/scss/css/_Blockquote.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"/library/scss/modules/_Button.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -490,19 +477,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/library/scss/css/_Button.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/library/scss/modules/_Code.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/library/scss/css/_Code.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -520,7 +494,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/library/scss/modules/_Divider.scss": {
+	"/library/scss/modules/_Footer.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -528,7 +502,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/library/scss/css/_Divider.css",
+		"oAP": "/library/scss/css/_Footer.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -572,6 +546,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/library/scss/modules/_Hero.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/library/scss/css/_Hero.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/library/scss/modules/_Image.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -581,6 +568,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/library/scss/css/_Image.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/library/scss/modules/_Layout.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/library/scss/css/_Layout.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -624,32 +624,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/library/scss/modules/_Navigation.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/library/scss/css/_Navigation.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/library/scss/modules/_Spacing.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/library/scss/css/_Spacing.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"/library/scss/modules/_Table.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -672,32 +646,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/library/scss/css/_Typography.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/library/scss/modules/_Underline.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/library/scss/css/_Underline.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/library/scss/modules/_Utility.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/library/scss/css/_Utility.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -856,28 +804,12 @@
 		"oAP": "/page-components/content-card.php",
 		"oF": 0
 		},
-	"/page-components/content-looking.php": {
+	"/page-components/content-texttitle.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/content-looking.php",
-		"oF": 0
-		},
-	"/page-components/content-newsletter.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-components/content-newsletter.php",
-		"oF": 0
-		},
-	"/page-components/content-text.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-components/content-text.php",
+		"oAP": "/page-components/content-texttitle.php",
 		"oF": 0
 		},
 	"/page-components/hero-fullwidth.php": {

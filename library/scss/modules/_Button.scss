@@ -6,9 +6,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background-color: $color-primary;
-  border: 0.1rem solid $color-primary;
-  border-radius: 0.4rem;
+  background-color: $black;
+  border: 0.1rem solid $black;
   color: $color-initial;
   cursor: pointer;
   display: inline-block;
@@ -25,9 +24,9 @@ input[type="submit"] {
 
   &:focus,
   &:hover {
-    background-color: $color-secondary;
-    border-color: $color-secondary;
-    color: $color-initial;
+    background-color: $white;
+    border-color: $black;
+    color: $black;
     outline: 0;
   }
 
@@ -37,8 +36,8 @@ input[type="submit"] {
 
     &:focus,
     &:hover {
-      background-color: $color-primary;
-      border-color: $color-primary;
+      background-color: $black;
+      border-color: $black;
     }
   }
 

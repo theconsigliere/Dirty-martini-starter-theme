@@ -3,7 +3,7 @@
 
 <footer id="footer" class="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
 
-    <div id="inner-footer" class="wrap">
+    <div class='container-wrap' id="inner-footer" class="wrap">
 
         <div class="footer-section">
             <div class="footer-logo-section">

@@ -21,296 +21,150 @@ http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
 ******************************************************************/
 
 @keyframes topnavbar {
-    from {
-      transform: translateY(0) rotateZ(0deg);
-    }
-    to {
-      transform: translateY(9px) rotateZ(45deg);
-    }
+  from {
+    transform: translateY(0) rotateZ(0deg);
   }
-  
-  @keyframes bottomnavbar {
-    from {
-      transform: translateY(0) rotateZ(0deg);
-    }
-    to {
-      transform: translateY(-5px) rotateZ(-45deg);
-    }
+  to {
+    transform: translateY(9px) rotateZ(45deg);
   }
-  
-  @keyframes middlenavbar {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
+}
+
+@keyframes bottomnavbar {
+  from {
+    transform: translateY(0) rotateZ(0deg);
   }
+  to {
+    transform: translateY(-5px) rotateZ(-45deg);
+  }
+}
+
+@keyframes middlenavbar {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
 @mixin resetButton {
-    appearance: none;
-    background: none;
-    border: none;
-    border-radius: 0;
-    cursor: pointer;
-  }
-  
-  @mixin dropShadow {
-    text-shadow: $drop-shadow;
-  }
-  
-  @mixin noList {
-    list-style: none;
-    margin: 0;
+  appearance: none;
+  background: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+@mixin dropShadow {
+  text-shadow: $drop-shadow;
+}
+
+@mixin noList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  & li {
     padding: 0;
-  
-    & li {
-      padding: 0;
-      margin: 0;
-    }
-  }
-  
-  @mixin heading {
-    font-family: $font-head;
-    font-weight: 300;
     margin: 0;
-    padding: 0;
   }
-  
-  @mixin hero1 {
-    font-size: $size-hero1-mobile;
-    line-height: $lineheight-hero1-mobile;
-  
-    @media (min-width: #{$screen-lg}) {
-      font-size: $size-hero1-desktop;
-      line-height: $lineheight-hero1-desktop;
-    }
-  }
-  
-  @mixin hero2 {
-    font-size: $size-hero2-mobile;
-    line-height: $lineheight-hero2-mobile;
-  
-    @media (min-width: #{$screen-lg}) {
-      font-size: $size-hero2-desktop;
-      line-height: $lineheight-hero2-desktop;
-    }
-  }
-  
-  @mixin hero3 {
-    font-size: $size-hero3-mobile;
-    line-height: $lineheight-hero3-mobile;
-  
-    @media (min-width: #{$screen-lg}) {
-      font-size: $size-hero3-desktop;
-      line-height: $lineheight-hero3-desktop;
-    }
-  }
-  
-  @mixin eyebrow {
+}
+
+@mixin strong {
+  font-weight: 700;
+}
+
+@mixin unorderedList {
+  @include noList;
+  display: block;
+
+  &li {
+    display: inline-block;
+    width: 100%;
     position: relative;
-    font-size: $size-eyebrow-mobile;
-    line-height: $lineheight-eyebrow-mobile;
-    margin: 10px 0;
-  
+    padding: 0 0 0 15px;
+    color: $color-secondary;
+
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+
     &:before {
       content: "";
       display: block;
-      width: 60px;
-      border-top: solid 2px $color-primary;
-      margin-bottom: 20px;
-    }
-  
-    @media (min-width: #{$screen-lg}) {
-      font-size: $size-eyebrow-desktop;
-      line-height: $size-eyebrow-desktop;
-    }
-  }
-  
-  
-  
-  @mixin subtitle {
-    font-size: $size-subtitle-mobile;
-    line-height: $lineheight-subtitle-mobile;
-  
-    @media (min-width: #{$screen-lg}) {
-      font-size: $size-subtitle-desktop;
-      line-height: $lineheight-subtitle-desktop;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $color-primary;
+      top: 10px;
+      left: 0;
     }
   }
-  
-  @mixin lead {
-    font-size: $size-lead-mobile;
-    line-height: $lineheight-lead-mobile;
-  
-    @media (min-width: #{$screen-lg}) {
-      font-size: $size-lead-desktop;
-      line-height: $lineheight-lead-desktop;
-    }
-  }
-  
-  @mixin strong {
-    font-weight: 700;
-  }
-  
-  @mixin text {
-    color: $color-secondary;
-    font-size: $size-text-mobile;
-    line-height: $lineheight-text-mobile;
-  
-    @media (min-width: #{$screen-lg}) {
-      font-size: $size-text-desktop;
-      line-height: $lineheight-text-desktop;
-    }
-  }
-  
-  @mixin small {
+}
+
+@mixin orderedList {
+  @include noList;
+  display: block;
+
+  & li {
     display: inline-block;
-    font-size: $size-small-mobile;
-    line-height: $lineheight-small-mobile;
-  
-    @media (min-width: #{$screen-lg}) {
-      font-size: $size-small-desktop;
-      line-height: $lineheight-small-desktop;
-    }
-  }
-  
-  @mixin blockquote {
-    font-size: $size-text-mobile;
-    line-height: $lineheight-text-mobile;
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 0;
-  
-    @media (min-width: #{$screen-lg}) {
-      font-size: $size-text-desktop;
-      line-height: $lineheight-text-desktop;
-    }
-  }
-  
-  @mixin unorderedList {
-    @include noList;
-    display: block;
-  
-    &li {
-      display: inline-block;
-      width: 100%;
-      position: relative;
-      padding: 0 0 0 15px;
-      color: $color-secondary;
-  
-      & p {
-        margin: 0;
-        padding: 0;
-      }
-  
-      &:before {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: $color-primary;
-        top: 10px;
-        left: 0;
-      }
-    }
-  }
-  
-  @mixin orderedList {
-    @include noList;
-    display: block;
-  
-    & li {
-      display: inline-block;
-      width: 100%;
-      position: relative;
-      padding: 0 0 0 20px;
-      color: $color-secondary;
-  
-      & p {
-        margin: 0;
-        padding: 0;
-      }
-  
-      &:first-child {
-        counter-reset: section;
-      }
-  
-      &:before {
-        content: "";
-        display: block;
-        position: absolute;
-        border-radius: 50%;
-        top: 0;
-        left: 0;
-        counter-increment: section;
-        content: counters(section, "." ".");
-        font-weight: bold;
-        color: $color-primary;
-      }
-    }
-  }
-  
-  @mixin specialList {
-    @include noList;
-    display: block;
-  
-    & li {
-      display: inline-block;
-      width: 100%;
-      position: relative;
-      padding: 0 0 0 25px;
-      color: $color-secondary;
-  
-      & p {
-        margin: 0;
-        padding: 0;
-      }
-  
-      &:before {
-        content: "🍒";
-        display: block;
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: $color-primary;
-        top: 3px;
-        left: 0;
-      }
-    }
-  }
-  
-  @mixin container {
-    margin: auto;
-    min-width: $min-width;
-    padding-right: $margin-container-mobile;
-    padding-left: $margin-container-mobile;
-  
-    @media (min-width: #{$screen-lg}) {
-      padding-right: $margin-container-desktop;
-      padding-left: $margin-container-desktop;
-    }
-  
-    @media (min-width: #{$screen-xxxl}) {
-      min-width: 1704px;
-    }
-  }
-  
-  @mixin containerFluid {
     width: 100%;
-    min-width: initial;
-    padding-right: $margin-container-mobile;
-    padding-left: $margin-container-mobile;
-    margin-right: auto;
-    margin-left: auto;
-  
-    @media (min-width: #{$screen-lg}) {
-      padding-right: $margin-container-desktop;
-      padding-left: $margin-container-desktop;
+    position: relative;
+    padding: 0 0 0 20px;
+    color: $color-secondary;
+
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+
+    &:first-child {
+      counter-reset: section;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      counter-increment: section;
+      content: counters(section, "." ".");
+      font-weight: bold;
+      color: $color-primary;
     }
   }
-  
+}
+
+@mixin specialList {
+  @include noList;
+  display: block;
+
+  & li {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding: 0 0 0 25px;
+    color: $color-secondary;
+
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+
+    &:before {
+      content: "🍒";
+      display: block;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $color-primary;
+      top: 3px;
+      left: 0;
+    }
+  }
+}
