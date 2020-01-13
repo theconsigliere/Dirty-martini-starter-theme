@@ -199,3 +199,24 @@ table {
 .gray {
   background-color: $light-gray;
 }
+
+// Image Side - Text Side
+// -------------------------------------------------------------------------
+
+.image-side,
+.text-side {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+
+  @media (min-width: #{$screen-lg}) {
+    text-align: left;
+    width: 45%;
+  }
+}
+
+.image-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -9,25 +9,30 @@
 				// loop through all the rows of flexible content
 				while (have_rows('page_content')) : the_row();
 
-					// full width hero
-					if (get_row_layout() == 'hero_fullwidth')
-						get_template_part('page-components/hero', 'fullwidth');
-
 					// Card Section
 					if (get_row_layout() == 'card_section')
 						get_template_part('page-components/content', 'card');
 
-					// Text & Title Section
-					if (get_row_layout() == 'text_title_section')
-					get_template_part('page-components/content', 'texttitle');
 
 					// Blog Section
 					if (get_row_layout() == 'blog_section')
 						get_template_part('page-components/content', 'blog');
 
-					// Image Side Text Side Section
-					if (get_row_layout() == 'image_text_section')
-						get_template_part('page-components/imageside', 'textside');
+					// Layout Components
+					if (get_row_layout() == 'layout')
+
+						if (have_rows('layout_content')) : while (have_rows('layout_content')) : the_row();
+		
+								// Image Side Text Side Section
+								if (get_row_layout() == 'image_text_section')
+								get_template_part('page-components/layout/layout', 'image-text');
+
+
+								// Text & Title Section
+								if (get_row_layout() == 'text_title_section')
+								get_template_part('page-components/layout/layout', 'text-title');
+
+						endwhile; endif; 
 
 					// Slider Section
 					if (get_row_layout() == 'slider_section')

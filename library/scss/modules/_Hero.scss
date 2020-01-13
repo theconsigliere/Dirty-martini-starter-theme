@@ -3,7 +3,7 @@
   HERO
   section
   *********************/
-.welcome-hero {
+.full-width-hero {
   grid-column: span 12;
   position: relative;
   height: 85vh;
@@ -16,7 +16,7 @@
   }
 }
 
-.welcome-hero-text {
+.full-width-text-group {
   position: absolute;
   bottom: 15%;
   left: 15%;
@@ -31,8 +31,4 @@
   @media (min-width: #{$screen-lg}) {
     bottom: 25%;
   }
-}
-
-.front-page-hero {
-  position: relative;
 }

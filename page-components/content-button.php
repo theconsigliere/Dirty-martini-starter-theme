@@ -11,8 +11,8 @@
             <a href="<?php the_sub_field('button_link'); ?>">
 
 
-                <a class='button button-black'><?php the_sub_field('button_text'); ?>
-                </a>
+                <button aria-label="Go to Link" class='button button-black'><?php the_sub_field('button_text'); ?>
+                </button>
 
             </a>
         </div>

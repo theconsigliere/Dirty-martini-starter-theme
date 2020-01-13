@@ -25,6 +25,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/acf-json/group_5e1c2ee285415.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5e1c2ee285415-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/acf-json/README.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -447,6 +455,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/library/scss/modules/_Barba.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/library/scss/css/_Barba.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/library/scss/modules/_Base.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -817,28 +838,36 @@
 		"oAP": "/page-components/content-slider.php",
 		"oF": 0
 		},
-	"/page-components/content-texttitle.php": {
+	"/page-components/hero/hero-components.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/content-texttitle.php",
+		"oAP": "/page-components/hero/hero-components.php",
 		"oF": 0
 		},
-	"/page-components/hero-fullwidth.php": {
+	"/page-components/hero/hero-fullwidth.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/hero-fullwidth.php",
+		"oAP": "/page-components/hero/hero-fullwidth.php",
 		"oF": 0
 		},
-	"/page-components/imageside-textside.php": {
+	"/page-components/layout/layout-image-text.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/imageside-textside.php",
+		"oAP": "/page-components/layout/layout-image-text.php",
+		"oF": 0
+		},
+	"/page-components/layout/layout-text-title.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/layout/layout-text-title.php",
 		"oF": 0
 		},
 	"/page-components/page-components.php": {

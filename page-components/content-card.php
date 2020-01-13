@@ -1,4 +1,4 @@
-<section class="gray">
+<section>
 
 
     <div class="full-width-section">

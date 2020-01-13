@@ -1,4 +1,4 @@
-<div class="welcome-hero">
+<div class="full-width-hero">
     <?php $image = get_sub_field('hero_image');
 
     if (!empty($image)) : ?>
@@ -7,7 +7,7 @@
 
     <?php endif; ?>
 
-    <div class="welcome-hero-text">
+    <div class="full-width-text-group">
         <h1><?php the_sub_field('hero_title'); ?></h1>
         <!-- <div class="underline"></div> -->
         <p><?php the_sub_field('hero_desc'); ?></p>

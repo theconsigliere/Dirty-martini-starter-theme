@@ -6,7 +6,7 @@
         <div class="l-section">
 
             <div class="carousel"
-                data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false, "prevNextButtons": false, "pageDots": false, "wrapAround": true, "lazyLoad": 2 }'>
+                data-flickity='{ "autoPlay": true, "pauseAutoPlayOnHover": false, "prevNextButtons": false, "pageDots": false, "wrapAround": true, "lazyLoad": 2 }'>
 
                 <?php while (have_rows('slider_group')) : the_row(); ?>
 
