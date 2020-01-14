@@ -1,4 +1,40 @@
-// FOOTER STUFF
+// footer slider
+// --------------------------
+
+.footer-slider .flickity-viewport {
+  height: 25vh !important;
+}
+
+.footer-slider {
+  img {
+    height: 400px;
+    width: auto;
+    display: block;
+  }
+}
+
+// footer socials
+// --------------------------
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  * {
+    margin: 0;
+  }
+
+  .social-logo {
+    width: 25px;
+    height: 25px;
+
+    i {
+    }
+  }
+}
+
+// FOOTER PHP
+// ----------------------------
 
 #inner-footer {
   margin-top: 5vh;

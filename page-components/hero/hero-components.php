@@ -12,6 +12,11 @@
 						get_template_part('page-components/hero/hero', 'fullwidth');
 
 
+					// Video hero
+					if (get_row_layout() == 'hero_video')
+						get_template_part('page-components/hero/hero', 'video');
+					
+
 				endwhile; // close the loop of flexible content
 			endif; // close flexible content conditional
 

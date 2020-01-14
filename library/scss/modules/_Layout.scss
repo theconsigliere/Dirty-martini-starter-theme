@@ -48,6 +48,21 @@
   }
 }
 
+.menu-section-row {
+  margin: 0 auto;
+  max-width: 112rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(#{$page-margin-column} / 2) 0;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+  }
+}
+
 .no-padding-section {
   display: flex;
   align-items: center;
@@ -198,6 +213,10 @@ table {
 
 .gray {
   background-color: $light-gray;
+}
+
+.white {
+  color: $white;
 }
 
 // Image Side - Text Side

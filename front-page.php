@@ -1,10 +1,6 @@
 <?php
 /*
  Template Name: Home Page
- * 
- * Use this template for a static home page. 
- * If you don't need the main loop, remove it
- * and get busy.
 */
 ?>
 
@@ -27,9 +23,12 @@
         <!-- Page Modules -->
         <?php get_template_part('page-components/page', 'components'); ?>
 
+
+        <!-- Page Footer-->
+        <?php get_template_part('page-components/footer/footer', 'components'); ?>
+
     </div>
 </div>
-
 
 
 

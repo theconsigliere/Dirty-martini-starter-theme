@@ -33,6 +33,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/acf-json/group_5e1d959c199a6.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5e1d959c199a6-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/acf-json/README.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -277,13 +285,13 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/library/js/flickity.js": {
+	"/library/js/flickity.min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/min/flickity-min.js",
+		"oAP": "/library/js/min/flickity.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -338,6 +346,25 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/library/js/min/flickity-min.js.map",
+		"oF": 0
+		},
+	"/library/js/min/flickity.min-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/min/flickity.min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/min/flickity.min-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/min/flickity.min-min.js.map",
 		"oF": 0
 		},
 	"/library/js/min/scripts-min.js": {
@@ -838,6 +865,46 @@
 		"oAP": "/page-components/content-slider.php",
 		"oF": 0
 		},
+	"/page-components/footer/footer-components.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/footer/footer-components.php",
+		"oF": 0
+		},
+	"/page-components/footer/footer-form.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/footer/footer-form.php",
+		"oF": 0
+		},
+	"/page-components/footer/footer-menu.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/footer/footer-menu.php",
+		"oF": 0
+		},
+	"/page-components/footer/footer-slider.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/footer/footer-slider.php",
+		"oF": 0
+		},
+	"/page-components/footer/footer-socials.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/footer/footer-socials.php",
+		"oF": 0
+		},
 	"/page-components/hero/hero-components.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -854,12 +921,28 @@
 		"oAP": "/page-components/hero/hero-fullwidth.php",
 		"oF": 0
 		},
+	"/page-components/hero/hero-video.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/hero/hero-video.php",
+		"oF": 0
+		},
 	"/page-components/layout/layout-image-text.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-components/layout/layout-image-text.php",
+		"oF": 0
+		},
+	"/page-components/layout/layout-testimonial.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/layout/layout-testimonial.php",
 		"oF": 0
 		},
 	"/page-components/layout/layout-text-title.php": {

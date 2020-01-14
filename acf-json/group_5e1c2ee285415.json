@@ -87,6 +87,90 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5e1d97123e861": {
+                    "key": "layout_5e1d97123e861",
+                    "name": "hero_video",
+                    "label": "Hero Video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e1d97263e865",
+                            "label": "Hero Video",
+                            "name": "hero_video",
+                            "type": "oembed",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": ""
+                        },
+                        {
+                            "key": "field_5e1d974b3e866",
+                            "label": "Hero Logo",
+                            "name": "video_logo",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5e1d97123e863",
+                            "label": "Hero Title",
+                            "name": "video_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e1d9dfad565b",
+                            "label": "Hero Colour",
+                            "name": "video_colour",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -110,7 +194,7 @@
             }
         ]
     ],
-    "menu_order": 9,
+    "menu_order": 1,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -120,5 +204,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1578905588
+    "modified": 1579001249
 }

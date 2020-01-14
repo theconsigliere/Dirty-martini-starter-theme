@@ -32,6 +32,11 @@
 								if (get_row_layout() == 'text_title_section')
 								get_template_part('page-components/layout/layout', 'text-title');
 
+
+								// Footer testimonial
+								if (get_row_layout() == 'layout_testimonial')
+								get_template_part('page-components/layout/layout', 'testimonial');      
+
 						endwhile; endif; 
 
 					// Slider Section
@@ -45,6 +50,8 @@
 					// Contact Form
 					if (get_row_layout() == 'contact_form')
 						get_template_part('page-components/contact', 'form');
+
+
 
 				endwhile; // close the loop of flexible content
 			endif; // close flexible content conditional
