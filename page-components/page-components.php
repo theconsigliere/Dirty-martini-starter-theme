@@ -6,6 +6,7 @@
 			// are there any rows within within our flexible content?
 			if (have_rows('page_content')) :
 
+				
 				// loop through all the rows of flexible content
 				while (have_rows('page_content')) : the_row();
 
