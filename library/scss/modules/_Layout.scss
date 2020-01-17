@@ -239,3 +239,71 @@ table {
   justify-content: center;
   align-items: center;
 }
+
+// Card
+//--------------------------------
+
+.ce-item,
+.l-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 25px 0;
+  border-bottom: 2px solid $light-blue;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+}
+
+.ce-image,
+.l-image {
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+.ce-image img,
+.l-image img {
+  transition: all ease-in-out 1.4s;
+}
+
+.ce-image img:hover,
+.l-image img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.text-card {
+  margin: 20px 0;
+
+  * {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  h5 {
+    height: auto;
+    margin-top: 0;
+
+    @media (min-width: #{$screen-lg}) {
+      height: 6vh;
+      margin: 20px 0;
+    }
+  }
+}
+
+// Button Section
+//-------------------------------------
+
+.button-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

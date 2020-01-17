@@ -35,12 +35,10 @@ the whole project.
 @import "modules/Header";
 @import "modules/Footer";
 @import "modules/Button";
-@import "modules/Form";
 @import "modules/Grid";
 @import "modules/Image";
-@import "modules/Link";
-@import "modules/List";
-@import "modules/Table";
+@import "modules/Html";
+@import "modules/Post";
 @import "modules/Flickity";
 @import "modules/Barba";
 @import "modules/Wordpress";
@@ -74,4 +72,4 @@ the whole project.
 MY STYLES
 *********************/
 
-@import "mystyles";
+@import "MyStyles";

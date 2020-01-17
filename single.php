@@ -1,23 +1,45 @@
+
+
+<?php // Edit the loop in /templates/single-loop. Or roll your own. ?>
+<?php //get_template_part( 'templates/single', 'loop'); ?>
+
+
+
+<?php // related posts function; uncomment below to use ?>
+<?php // plate_related_posts(); ?>
+
+
+
 <?php get_header(); ?>
 
-	<div id="content">
 
-		<div id="inner-content" class="wrap">
+<section>
 
-			<main id="main" class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="https://schema.org/Blog">
+    <!-- Hero Modules -->
+    <?php get_template_part('page-components/hero/hero', 'components'); ?>
 
-				<?php // Edit the loop in /templates/single-loop. Or roll your own. ?>
-				<?php get_template_part( 'templates/single', 'loop'); ?>
+</section>
 
-			</main>
 
-			<?php // related posts function; uncomment below to use ?>
-			<?php // plate_related_posts(); ?>
 
-		</div>
+<div id="full-page">
 
-	</div>
+    <div id="inner-content" class="wrap">
 
-    <?php get_sidebar(); ?>
+
+        <!-- Page Modules -->
+        <?php get_template_part('page-components/posts/post', 'components'); ?>
+
+
+        <!-- Page Footer-->
+        <?php get_template_part('page-components/footer/footer', 'components'); ?>
+
+
+    </div>
+</div>
+
+
+
+
 
 <?php get_footer(); ?>

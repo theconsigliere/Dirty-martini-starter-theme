@@ -14,6 +14,10 @@
 					if (get_row_layout() == 'card_section')
 						get_template_part('page-components/content', 'card');
 
+					// Content Section
+					if (get_row_layout() == 'content_section')
+					get_template_part('page-components/content', 'content');
+
 
 					// Blog Section
 					if (get_row_layout() == 'blog_section')
@@ -37,6 +41,11 @@
 								// Footer testimonial
 								if (get_row_layout() == 'layout_testimonial')
 								get_template_part('page-components/layout/layout', 'testimonial');      
+
+
+								// Two Image Section
+								if (get_row_layout() == 'two_image_section')
+								get_template_part('page-components/layout/layout', 'two-image-section');      
 
 						endwhile; endif; 
 

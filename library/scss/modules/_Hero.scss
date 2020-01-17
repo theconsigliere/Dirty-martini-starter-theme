@@ -66,7 +66,7 @@
 
 .embed-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 100vh;
   overflow: hidden;
   max-width: 100%;
   height: auto;
@@ -76,10 +76,18 @@
 .embed-container object,
 .embed-container embed {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  display: block;
+
+  @media (min-width: #{$screen-lg}) {
+    display: block;
+  }
 }
 
 .video-hero-image {

@@ -27,7 +27,7 @@
                             "label": "Title",
                             "name": "ce_s_title",
                             "type": "text",
-                            "instructions": "Put in your Title below:",
+                            "instructions": "Enter your section title.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -60,25 +60,6 @@
                             "layout": "table",
                             "button_label": "",
                             "sub_fields": [
-                                {
-                                    "key": "field_5d9c50ab4e8c9",
-                                    "label": "Link",
-                                    "name": "ce_link",
-                                    "type": "page_link",
-                                    "instructions": "Input correct link to the candidate page:",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "post_type": "",
-                                    "taxonomy": "",
-                                    "allow_null": 0,
-                                    "allow_archives": 1,
-                                    "multiple": 0
-                                },
                                 {
                                     "key": "field_5d9c50ab4e8c6",
                                     "label": "Image",
@@ -140,6 +121,21 @@
                                     "maxlength": "",
                                     "rows": "",
                                     "new_lines": ""
+                                },
+                                {
+                                    "key": "field_5d9c50ab4e8c9",
+                                    "label": "Button",
+                                    "name": "ce_link",
+                                    "type": "link",
+                                    "instructions": "Input correct link to the candidate page:",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
                                 }
                             ]
                         }
@@ -158,7 +154,7 @@
                             "label": "Title",
                             "name": "b_title",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Enter your section title.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -171,47 +167,13 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_5e0f71251455b": {
-                    "key": "layout_5e0f71251455b",
-                    "name": "hero_fullwidth",
-                    "label": "Hero Full Width",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5e0f71251455c",
-                            "label": "Image",
-                            "name": "hero_image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
                         },
                         {
-                            "key": "field_5e0f71251455d",
-                            "label": "Title",
-                            "name": "hero_title",
+                            "key": "field_5e20881986779",
+                            "label": "Category",
+                            "name": "category",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Either 'blog' for blog posts or 'careers' for open vacancies.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -224,25 +186,6 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
-                        },
-                        {
-                            "key": "field_5e0f71251455e",
-                            "label": "Description",
-                            "name": "hero_desc",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -256,10 +199,10 @@
                     "sub_fields": [
                         {
                             "key": "field_5d9c7d8c0a5b9",
-                            "label": "title",
+                            "label": "Title",
                             "name": "button_title",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Enter your section title.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -318,7 +261,7 @@
                 "layout_5d9c7dc80a5bc": {
                     "key": "layout_5d9c7dc80a5bc",
                     "name": "contact_form",
-                    "label": "contact form",
+                    "label": "Contact Form",
                     "display": "table",
                     "sub_fields": [
                         {
@@ -326,7 +269,7 @@
                             "label": "Contact Form ID",
                             "name": "contact_form_id",
                             "type": "text",
-                            "instructions": "Go to Contact (on the sidebar) and copy and paste the contact from shortcode",
+                            "instructions": "Go to Contact (on the sidebar) and copy and paste the contact form shortcode to display contact form.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -418,10 +361,39 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_5e206ef078ed6": {
+                    "key": "layout_5e206ef078ed6",
+                    "name": "content_section",
+                    "label": "Full Width Content Section",
+                    "display": "table",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e206efe78eda",
+                            "label": "Content",
+                            "name": "content_area",
+                            "type": "wysiwyg",
+                            "instructions": "Full width Content Field for iframes, widgets or plain old HTML",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_5e1c34e930119": {
                     "key": "layout_5e1c34e930119",
                     "name": "layout",
-                    "label": "Layout",
+                    "label": "Layout Components",
                     "display": "table",
                     "sub_fields": [
                         {
@@ -429,7 +401,7 @@
                             "label": "Layout Content",
                             "name": "layout_content",
                             "type": "flexible_content",
-                            "instructions": "",
+                            "instructions": "A group of layout components to display text & images in different ways.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -505,6 +477,21 @@
                                             "maxlength": "",
                                             "rows": "",
                                             "new_lines": ""
+                                        },
+                                        {
+                                            "key": "field_5e1f075d7e325",
+                                            "label": "Button",
+                                            "name": "r_button",
+                                            "type": "link",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array"
                                         }
                                     ],
                                     "min": "",
@@ -660,6 +647,64 @@
                                     ],
                                     "min": "",
                                     "max": ""
+                                },
+                                "layout_5e2191615f501": {
+                                    "key": "layout_5e2191615f501",
+                                    "name": "two_image_section",
+                                    "label": "Two Image Section",
+                                    "display": "table",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5e21916b5f502",
+                                            "label": "Image Left",
+                                            "name": "image_left",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "id",
+                                            "preview_size": "medium",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        },
+                                        {
+                                            "key": "field_5e21917b5f503",
+                                            "label": "Image Right",
+                                            "name": "image_right",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "id",
+                                            "preview_size": "medium",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
                                 }
                             },
                             "button_label": "Add Row",
@@ -681,7 +726,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "page"
             }
         ],
         [
@@ -702,5 +747,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1579023059
+    "modified": 1579299271
 }

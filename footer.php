@@ -19,7 +19,8 @@
             </div>
 
 
-            <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+            <p class="source-org copyright">&copy; <?php echo date('Y'); ?> All Rights Reserved. Website Made with ❤️ by
+        <a href='https://dirty-martini.com/' target='new'>Dirty Martini Marketing</a></p>
         </div>
 
         <div class="footer-text">

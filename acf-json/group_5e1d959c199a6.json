@@ -19,7 +19,7 @@
                 "layout_5e1d95c16301f": {
                     "key": "layout_5e1d95c16301f",
                     "name": "footer_form",
-                    "label": "footer form",
+                    "label": "Footer Contact Form",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -304,5 +304,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1579022255
+    "modified": 1579298912
 }

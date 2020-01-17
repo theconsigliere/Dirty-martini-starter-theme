@@ -4,10 +4,37 @@
 // .container is main centered wrapper with a max width of 112.0rem (1120px)
 .container {
   margin: 0 auto;
-  max-width: 112rem;
+  max-width: 120rem;
   padding: 0 2rem;
   position: relative;
   width: 100%;
+}
+
+.footer-container {
+  margin: 0 auto;
+  max-width: 120rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+  }
+}
+
+.text-container {
+  margin: 0 auto;
+  max-width: 120rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+  }
 }
 
 .container-wrap {
@@ -128,13 +155,23 @@
 
     &.column-33,
     &.column-34 {
-      flex: 0 0 33.3333%;
-      max-width: 33.3333%;
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      @media (min-width: #{$screen-lg}) {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+      }
     }
 
     &.column-40 {
-      flex: 0 0 40%;
-      max-width: 40%;
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      @media (min-width: #{$screen-lg}) {
+        flex: 0 0 40%;
+        max-width: 40%;
+      }
     }
 
     &.column-50 {
@@ -143,8 +180,13 @@
     }
 
     &.column-60 {
-      flex: 0 0 60%;
-      max-width: 60%;
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      @media (min-width: #{$screen-lg}) {
+        flex: 0 0 60%;
+        max-width: 60%;
+      }
     }
 
     &.column-66,
@@ -188,6 +230,19 @@
 
 @media (min-width: #{$screen-lg}) {
   .container {
+    .row {
+      flex-direction: row;
+      margin-left: -1rem;
+      width: calc(100% + 2rem);
+
+      .column {
+        margin-bottom: inherit;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  .container-wrap {
     .row {
       flex-direction: row;
       margin-left: -1rem;
