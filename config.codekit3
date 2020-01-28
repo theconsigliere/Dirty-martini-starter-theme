@@ -807,6 +807,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/page-components/company-highlight.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/company-highlight.php",
+		"oF": 0
+		},
 	"/page-components/contact-form.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -847,12 +855,36 @@
 		"oAP": "/page-components/content-content.php",
 		"oF": 0
 		},
+	"/page-components/content-list.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/content-list.php",
+		"oF": 0
+		},
+	"/page-components/content-quote.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/content-quote.php",
+		"oF": 0
+		},
 	"/page-components/content-slider.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-components/content-slider.php",
+		"oF": 0
+		},
+	"/page-components/event-highlight.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/event-highlight.php",
 		"oF": 0
 		},
 	"/page-components/footer/footer-components.php": {
@@ -893,6 +925,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-components/footer/footer-socials.php",
+		"oF": 0
+		},
+	"/page-components/grid/grid-one-one.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/grid/grid-one-one.php",
+		"oF": 0
+		},
+	"/page-components/grid/grid-two-one.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/grid/grid-two-one.php",
 		"oF": 0
 		},
 	"/page-components/hero/hero-components.php": {

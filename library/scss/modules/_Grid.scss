@@ -56,7 +56,7 @@
   &.row-no-padding {
     padding: 0;
 
-    & > .column {
+    &>.column {
       padding: 0;
     }
   }
@@ -254,4 +254,148 @@
       }
     }
   }
+}
+
+// Grid Components
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.grid-two-up-one-down {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  // height: 100vh;
+}
+
+
+.grid-left {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.grid-right {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.grid-bottom {
+  grid-column: span 2;
+  grid-row: 2;
+
+}
+
+.grid-square {
+  position: relative;
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .grid-item-group {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      display: none;
+
+      @media (min-width: #{$screen-md}) {
+        display: block;
+      }
+
+    }
+
+  }
+}
+
+.grid-bottom {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .grid-item-group {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+  }
+}
+
+.grid-item-illustration {
+  width: 150px;
+  height: auto;
+
+  @media (min-width: #{$screen-md}) {
+    width: 250px;
+  }
+}
+
+
+
+.grid-one-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  height: 50vh;
+}
+
+
+.grid-one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.grid-two {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.grid-one,
+.grid-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .grid-item-group {
+    width: 80%;
+    margin: 0 auto;
+
+    .grid-item-illustration {
+      width: 80px;
+      height: auto;
+
+      @media (min-width: #{$screen-md}) {
+        width: 150px;
+      }
+    }
+
+  }
+
+
+
 }

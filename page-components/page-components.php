@@ -49,6 +49,40 @@
 
 						endwhile; endif; 
 
+						// Grid Components
+						if (get_row_layout() == 'grid')
+
+							if (have_rows('grid_content')) : while (have_rows('grid_content')) : the_row();
+		
+								// Grid Two Square and one below
+								if (get_row_layout() == 'grid_two_one')
+								get_template_part('page-components/grid/grid', 'two-one');
+
+
+								// Grid Two Square
+								if (get_row_layout() == 'grid_one_one')
+								get_template_part('page-components/grid/grid', 'one-one');
+
+						endwhile; endif; 
+
+
+					// Company Highlight
+					if (get_row_layout() == 'company_highlight')
+					get_template_part('page-components/company', 'highlight');
+
+					// 	List
+					if (get_row_layout() == 'content_list')
+					get_template_part('page-components/content', 'list');
+
+					// 	Event Highlight
+					if (get_row_layout() == 'event_highlight')
+					get_template_part('page-components/event', 'highlight');
+
+					// 	Quote Section
+					if (get_row_layout() == 'content_quote')
+					get_template_part('page-components/content', 'quote');
+
+
 					// Slider Section
 					if (get_row_layout() == 'slider_section')
 					get_template_part('page-components/content', 'slider');

@@ -141,7 +141,7 @@ pre {
   border-left: 0.3rem solid $color-primary;
   overflow-y: hidden;
 
-  & > code {
+  &>code {
     border-radius: 0;
     display: block;
     padding: 1rem 1.5rem;
@@ -306,4 +306,136 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+// Highlight
+// -------------------------------------------------------------------------
+
+
+.highlight-section {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: calc(#{$page-margin-row} / 2) auto !important;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+  }
+}
+
+.event-highlight-section {
+  border: 2px solid black;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // margin: calc(#{$page-margin-row} / 2) auto !important;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+  }
+}
+
+.event-highlight-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 250px;
+    height: auto;
+  }
+}
+
+.highlight-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.highlight-image,
+.highlight-text {
+  width: 100%;
+  margin: calc(#{$page-margin-row} / 2) 0;
+  text-align: center;
+
+
+  @media (min-width: #{$screen-lg}) {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+// List
+// -------------------------------------------------------------------------
+
+
+.list-item-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+  }
+
+  .list-item {
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: #{$screen-lg}) {
+      width: 45%;
+      text-align: left;
+    }
+
+    span {
+      margin: .5em;
+    }
+  }
+}
+
+
+// Quote
+// -------------------------------------------------------------------------
+
+
+.quote-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: $page-margin-row auto !important;
+
+  @media (min-width: #{$screen-lg}) {
+    flex-direction: row;
+  }
+}
+
+.quote-image {
+  width: 100%;
+  padding: $page-margin-row 0;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 35%;
+  }
+
+}
+
+.quote-text {
+  width: 100%;
+  padding: $page-margin-row 0;
+
+  @media (min-width: #{$screen-lg}) {
+    width: 65%;
+  }
+
+
 }
