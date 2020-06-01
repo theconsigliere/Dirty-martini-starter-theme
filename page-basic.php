@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Full Width Page
+ Template Name: Basic Page Template
  * 
  * No Sidebar on this page.
  * Be sure to change your CSS Grid styles to adjust (in _cssgrid.scss).

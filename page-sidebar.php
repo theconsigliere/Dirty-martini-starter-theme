@@ -1,33 +1,39 @@
 <?php
 /*
- Template Name: Sidebar Page
- 
- * This is a default page with a sidebar. 
- * 
- * 
- * For more info: http://codex.wordpress.org/Page_Templates
- * 
- * Visual interactive WordPress template hierarchy: https://wphierarchy.com
+ Template Name: Theme Sidebar Template
+
 */
 ?>
 
+
+
 <?php get_header(); ?>
 
-	<div id="content">
 
-		<div id="inner-content" class="wrap">
+<section>
 
-			<main id="main" class="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="https://schema.org/Blog">
+    <!-- Hero Modules -->
+    <?php get_template_part('page-components/hero/hero', 'components'); ?>
 
-				<?php // Edit the loop in /templates/loop. Or roll your own. ?>
-				<?php get_template_part( 'templates/loop'); ?>
+</section>
 
-			</main>
 
-		</div>
 
-	</div>
+<div id="full-page">
 
-    <?php get_sidebar(); ?>
+    <div id="inner-content" class="wrap">
+
+        <!-- Page Modules -->
+        <?php get_template_part('page-components/page', 'components'); ?>
+
+
+        <!-- Page Footer-->
+        <?php get_template_part('page-components/footer/footer', 'components'); ?>
+
+    </div>
+</div>
+
+<?php get_sidebar(); ?>
+
 
 <?php get_footer(); ?>

@@ -19,7 +19,7 @@ html {
 // Default body styles
 body {
   color: $black;
-  font-family: $sans;
+  font-family: $text-font;
   font-size: 1.6em; // Currently ems cause chrome bug misinterpreting rems on body element
   font-weight: 300;
   letter-spacing: 0.01em;
@@ -29,4 +29,14 @@ body {
   // Adjust for your type
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.visually-hidden {
+  /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }

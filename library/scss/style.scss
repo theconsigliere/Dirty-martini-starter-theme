@@ -26,9 +26,9 @@ the whole project.
 *********************/
 
 @import "modules/Color";
-@import "modules/Typography";
 @import "modules/Variables";
 @import "modules/Mixins";
+@import "modules/Typography";
 @import "modules/Base";
 @import "modules/Hero";
 @import "modules/Layout";
@@ -42,6 +42,7 @@ the whole project.
 @import "modules/Flickity";
 @import "modules/Barba";
 @import "modules/Wordpress";
+@import "modules/Settings";
 
 // Styles for the custom dashboard widget in the admin
 #plate_dashboard_widget {

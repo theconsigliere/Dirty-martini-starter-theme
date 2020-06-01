@@ -1,0 +1,143 @@
+{
+    "key": "group_5ed41a3cef2f4",
+    "title": "Header",
+    "fields": [
+        {
+            "key": "field_5ed41a3d24d89",
+            "label": "Header Layouts",
+            "name": "header_layouts",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5d9c4e2ce36cf": {
+                    "key": "layout_5d9c4e2ce36cf",
+                    "name": "logo_left",
+                    "label": "Logo Left - Menu Right",
+                    "display": "table",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ed41ae38820f",
+                            "label": "Logo",
+                            "name": "logo",
+                            "type": "image",
+                            "instructions": "Insert your logo here, we recommend SVG, PNG or JPG",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "post-thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5ed41c4688210",
+                            "label": "Menu",
+                            "name": "menu",
+                            "type": "menu",
+                            "instructions": "Choose your menu (go to Appearance > Menus to create your menu)",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": "nav-logo-left"
+                            },
+                            "return_format": "id",
+                            "allow_null": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d9c4f234e8bb": {
+                    "key": "layout_5d9c4f234e8bb",
+                    "name": "logo_middle",
+                    "label": "Logo Middle",
+                    "display": "table",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ed41a3d4dda1",
+                            "label": "Title",
+                            "name": "b_title",
+                            "type": "text",
+                            "instructions": "Enter your section title.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ed41a3d51be8",
+                            "label": "Category",
+                            "name": "category",
+                            "type": "text",
+                            "instructions": "Either 'blog' for blog posts or 'careers' for open vacancies.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-header"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1591003170
+}

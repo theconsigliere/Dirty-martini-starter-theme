@@ -7,7 +7,7 @@
 		"uuidString": "C3905ABE-09FE-4F9D-9B45-90D77F9339EC"
 		}
 	],
-"creatorBuild": "31934",
+"creatorBuild": "32001",
 "files": {
 	"/404.php": {
 		"cB": 0,
@@ -16,6 +16,14 @@
 		"oA": 0,
 		"oAP": "/404.php",
 		"oF": 0
+		},
+	"/acf-json/group_5800d4f9c0a52.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5800d4f9c0a52-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"/acf-json/group_5d9c4a287a947.json": {
 		"ft": 524288,
@@ -45,6 +53,22 @@
 		"ft": 524288,
 		"oA": 1,
 		"oAP": "/acf-json/group_5e219a11840f2-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5e70bf21d3932.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5e70bf21d3932-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5ed41a3cef2f4.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5ed41a3cef2f4-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
@@ -127,14 +151,6 @@
 		"oAP": "/footer.php",
 		"oF": 0
 		},
-	"/front-page.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/front-page.php",
-		"oF": 0
-		},
 	"/functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -165,6 +181,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/library/_plugins/advanced-custom-fields-pro.zip",
+		"oF": 0
+		},
+	"/library/_plugins/all-in-one-wp-migration.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/_plugins/all-in-one-wp-migration.zip",
 		"oF": 0
 		},
 	"/library/_plugins/custom-post-type.php": {
@@ -375,6 +399,25 @@
 		"oAP": "/library/js/min/flickity.min-min.js.map",
 		"oF": 0
 		},
+	"/library/js/min/modal-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/min/modal-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/min/modal-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/min/modal-min.js.map",
+		"oF": 0
+		},
 	"/library/js/min/scripts-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -401,6 +444,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/library/js/min/min/theme-customizer-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/modal.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/modal-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -672,6 +726,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/library/scss/modules/_Settings.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/library/scss/css/_Settings.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/library/scss/modules/_Typography.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -806,6 +873,14 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"/page-basic.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-basic.php",
+		"oF": 0
 		},
 	"/page-components/company-highlight.php": {
 		"cB": 0,
@@ -943,6 +1018,30 @@
 		"oAP": "/page-components/grid/grid-two-one.php",
 		"oF": 0
 		},
+	"/page-components/header/header-components.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/header/header-components.php",
+		"oF": 0
+		},
+	"/page-components/header/logo-left.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/header/logo-left.php",
+		"oF": 0
+		},
+	"/page-components/header/logo-middle.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/header/logo-middle.php",
+		"oF": 0
+		},
 	"/page-components/hero/hero-components.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1055,12 +1154,20 @@
 		"oAP": "/page-components/posts/post-two-text-section.php",
 		"oF": 0
 		},
-	"/page-full.php": {
+	"/page-components/theme-settings/announcement-bar.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-full.php",
+		"oAP": "/page-components/theme-settings/announcement-bar.php",
+		"oF": 0
+		},
+	"/page-components/theme-settings/modal.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/theme-settings/modal.php",
 		"oF": 0
 		},
 	"/page-sidebar.php": {
@@ -1871,6 +1978,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"grouped-accessor-pairs": {
+			"active": 0,
+			"optionString": "'anyOrder'"
+			},
 		"guard-for-in": {
 			"active": 0,
 			"optionString": ""
@@ -2047,6 +2158,10 @@
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
+		"no-constructor-return": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-continue": {
 			"active": 0,
 			"optionString": ""
@@ -2072,6 +2187,10 @@
 			"optionString": ""
 			},
 		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-else-if": {
 			"active": 1,
 			"optionString": ""
 			},
@@ -2375,6 +2494,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-setter-return": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
@@ -2578,6 +2701,10 @@
 		"prefer-destructuring": {
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-exponentiation-operator": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-named-capture-group": {
 			"active": 0,

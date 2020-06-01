@@ -63,6 +63,18 @@ HEADER STYLES
   width: 100%;
 }
 
+// NAV UL
+
+.main-menu {
+  margin: 0;
+  .menu-item {
+    margin: 0;
+    a {
+      margin: 0;
+    }
+  }
+}
+
 /*********************
 NAV BAR
 *********************/
