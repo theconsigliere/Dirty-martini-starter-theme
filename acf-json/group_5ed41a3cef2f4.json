@@ -61,42 +61,103 @@
                             },
                             "return_format": "id",
                             "allow_null": 0
+                        },
+                        {
+                            "key": "field_5ed52312d9add",
+                            "label": "Socials",
+                            "name": "socials",
+                            "type": "repeater",
+                            "instructions": "Add your Social Icons",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ed52336d9ade",
+                                    "label": "Social Logo",
+                                    "name": "social_logo",
+                                    "type": "font-awesome",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "icon_sets": [
+                                        "fas",
+                                        "far",
+                                        "fab"
+                                    ],
+                                    "custom_icon_set": "",
+                                    "default_label": "",
+                                    "default_value": "",
+                                    "save_format": "element",
+                                    "allow_null": 0,
+                                    "show_preview": 1,
+                                    "enqueue_fa": 1,
+                                    "fa_live_preview": "",
+                                    "choices": []
+                                },
+                                {
+                                    "key": "field_5ed52360d9adf",
+                                    "label": "Social Link",
+                                    "name": "social_link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
                         }
                     ],
                     "min": "",
                     "max": ""
                 },
-                "layout_5d9c4f234e8bb": {
-                    "key": "layout_5d9c4f234e8bb",
+                "layout_5ed52bb09279c": {
+                    "key": "layout_5ed52bb09279c",
                     "name": "logo_middle",
-                    "label": "Logo Middle",
+                    "label": "Logo Middle - Menu Right - Socials Left",
                     "display": "table",
                     "sub_fields": [
                         {
-                            "key": "field_5ed41a3d4dda1",
-                            "label": "Title",
-                            "name": "b_title",
-                            "type": "text",
-                            "instructions": "Enter your section title.",
-                            "required": 0,
+                            "key": "field_5ed52bb09279e",
+                            "label": "Menu",
+                            "name": "menu",
+                            "type": "menu",
+                            "instructions": "Choose your menu (go to Appearance > Menus to create your menu)",
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
-                                "id": ""
+                                "id": "nav-logo-left"
                             },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "return_format": "id",
+                            "allow_null": 0
                         },
                         {
-                            "key": "field_5ed41a3d51be8",
-                            "label": "Category",
-                            "name": "category",
-                            "type": "text",
-                            "instructions": "Either 'blog' for blog posts or 'careers' for open vacancies.",
+                            "key": "field_5ed52bb09279d",
+                            "label": "Logo",
+                            "name": "logo",
+                            "type": "image",
+                            "instructions": "Insert your logo here, we recommend SVG, PNG or JPG",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -104,11 +165,80 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "return_format": "id",
+                            "preview_size": "post-thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5ed52bb09279f",
+                            "label": "Socials",
+                            "name": "socials",
+                            "type": "repeater",
+                            "instructions": "Add your Social Icons",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ed52bb0927a0",
+                                    "label": "Social Logo",
+                                    "name": "social_logo",
+                                    "type": "font-awesome",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "icon_sets": [
+                                        "fas",
+                                        "far",
+                                        "fab"
+                                    ],
+                                    "custom_icon_set": "",
+                                    "default_label": "",
+                                    "default_value": "",
+                                    "save_format": "element",
+                                    "allow_null": 0,
+                                    "show_preview": 1,
+                                    "enqueue_fa": 1,
+                                    "fa_live_preview": "",
+                                    "choices": []
+                                },
+                                {
+                                    "key": "field_5ed52bb0927a1",
+                                    "label": "Social Link",
+                                    "name": "social_link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
                         }
                     ],
                     "min": "",
@@ -139,5 +269,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1591003170
+    "modified": 1591029225
 }

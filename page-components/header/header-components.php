@@ -1,7 +1,6 @@
 
 
-    <?php // open the WordPress loop
-	if (have_posts()) : while (have_posts()) : the_post();
+    <?php 
 
 			// are there any rows within within our flexible content?
 			if (have_rows('header_layouts', 'option')) :
@@ -21,9 +20,19 @@
 
 	
 				endwhile; // close the loop of flexible content
+
+
+			else :
+
+
+			get_template_part('page-components/header/header', 'default');
+
+
+
 			endif; // close flexible content conditional
 
-		endwhile;
-	endif; // close the WordPress loop 
+
 	?>
+
+
 

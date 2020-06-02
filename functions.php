@@ -473,8 +473,12 @@ SCRIPTS & ENQUEUEING
                 // Barba Scripts
                 // wp_enqueue_script('barba', get_template_directory_uri() . '/library/js/barba/barba.js', array(), '', true);
 
-                 // MODAL -> THEME SETTINGS
-             wp_enqueue_script('modal', get_template_directory_uri() . '/library/js/modal.js', array(), false, '1.0.0' );
+                
+                // MODAL -> THEME SETTINGS
+                wp_enqueue_script('modal', get_template_directory_uri() . '/library/js/modal.js', array(), false, '1.0.0' );
+
+                // Header
+                wp_enqueue_script('header', get_template_directory_uri() . '/library/js/header.js', array(), '', true );
 
                 
                 // GSAP Scripts
@@ -486,6 +490,7 @@ SCRIPTS & ENQUEUEING
 
             }
         }
+
 
 /*********************
 ACF SCRIPTS

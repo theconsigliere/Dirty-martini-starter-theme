@@ -81,8 +81,8 @@
 
              <?php 
              
-             // Header Template Loop
              
+             // Header Template Loop
              
              get_template_part( 'page-components/header/header-components' ); ?>
 
@@ -107,5 +107,7 @@
 
         </div>
 
-        <main data-barba='wrapper'>
+        <div class="page-cover"></div>
+        
+        <main data-barba='wrapper' class='page-in-full'>
             <section data-barba='container'>
