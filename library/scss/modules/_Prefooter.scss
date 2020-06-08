@@ -1,0 +1,51 @@
+//------------------------------------------------------------
+// Pre Footer Socials
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+.social-item {
+  @include center-center;
+
+  * {
+    margin: 0;
+  }
+
+  .social-logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    @include center-center;
+
+    i {
+      font-size: 20px;
+    }
+  }
+}
+
+//------------------------------------------------------------
+// Pre Footer Menu & Socials
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+.pre__footer_section {
+  padding: 1vh 0;
+}
+
+.footer_menu__buttons {
+  @include center-between-column;
+  padding: calc(#{$page-margin-column} / 2) 0;
+  width: 100%;
+
+  @media (min-width: #{$screen-lg}) {
+    @include center-center;
+  }
+
+  .button,
+  .social-item {
+    margin: 20px 0;
+
+    @media (min-width: #{$screen-lg}) {
+      margin: 0 20px;
+    }
+  }
+}

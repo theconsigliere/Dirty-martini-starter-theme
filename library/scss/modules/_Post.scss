@@ -1,0 +1,125 @@
+//--------------------------------------------------------------
+// Author Section
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+.author__section {
+  padding: 2vh 0;
+
+  .author__section_inner {
+    @extend .inner;
+    @include center-between-column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $black;
+
+    @media (min-width: #{$screen-lg}) {
+      @include center-between;
+    }
+
+    .author__item {
+      @include start-between;
+
+      .author__image {
+        @include center-center;
+
+        img {
+          width: 100px;
+          height: auto;
+        }
+      }
+
+      .author__desc {
+        margin-left: 40px;
+      }
+    }
+
+    .author__categories {
+      margin-top: 5vh;
+
+      @media (min-width: #{$screen-lg}) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+//--------------------------------------------------------------
+// Post Display
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+.blog__title-section {
+  margin-bottom: 5vh;
+}
+
+#post-display {
+  padding: 2vh 0;
+
+  .blog__title-section * {
+    text-align: center;
+  }
+}
+
+.blog__holder {
+  @include start-between-column;
+  flex-wrap: wrap;
+
+  @media (min-width: #{$screen-md}) {
+    @include start-between;
+  }
+
+  .blog-item {
+    max-width: 100%;
+    border: 0;
+    margin: 0;
+
+    @media (min-width: #{$screen-md}) {
+      max-width: 45%;
+    }
+    @media (min-width: #{$screen-lg}) {
+      max-width: 30%;
+    }
+
+    @media (min-width: #{$screen-xxl}) {
+      max-width: 25%;
+    }
+
+    .blog-item__inner {
+      padding: 0 10px;
+
+      .blog__image {
+        padding: 0 0 20px 0;
+        height: 25vh;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .byline {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+//--------------------------------------------------------------
+// Quote Section
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+.quote__section {
+  padding-bottom: 5vh;
+}
+
+//--------------------------------------------------------------
+// title Section
+//--------------------------------------------------------------
+//--------------------------------------------------------------
+
+.post_title-section {
+  text-align: center;
+  padding-bottom: 5vh;
+}

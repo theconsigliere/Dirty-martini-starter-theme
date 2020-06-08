@@ -31,18 +31,18 @@ the whole project.
 @import "modules/Typography";
 @import "modules/Base";
 @import "modules/Hero";
-@import "modules/Layout";
+@import "modules/Modules";
 @import "modules/Header";
+@import "modules/Prefooter";
 @import "modules/Footer";
 @import "modules/Button";
 @import "modules/Grid";
-@import "modules/Image";
-@import "modules/Html";
 @import "modules/Post";
-@import "modules/Flickity";
+@import "modules/Swiper";
 @import "modules/Barba";
-@import "modules/Wordpress";
 @import "modules/Settings";
+@import "modules/Experimental";
+@import "modules/Landscape";
 
 // Styles for the custom dashboard widget in the admin
 #plate_dashboard_widget {

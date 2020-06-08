@@ -1,0 +1,421 @@
+//------------------------------------------------------------
+// TEXT TRAIL
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+.frame {
+  padding: 3rem 5vw 0;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.frame__title {
+  font-size: 1rem;
+  margin: 0 0 1rem;
+  font-weight: normal;
+}
+
+.frame__links {
+  display: inline;
+}
+
+.frame__links a:not(:last-child),
+.frame__demos a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.frame__demos {
+  margin: 1rem 0;
+}
+
+.frame__demo--current,
+.frame__demo--current:hover {
+  color: $black;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  grid-template-areas: "main";
+  height: calc(100vh - 19rem);
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content__slide {
+  grid-area: main;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  grid-template-areas: "inner";
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.content__slide--current {
+  opacity: 1;
+}
+
+.content__img,
+.content__text-wrap {
+  grid-area: inner;
+  width: 100%;
+}
+
+.content__img {
+  height: calc(100vh - 25rem);
+  width: 90%;
+  max-width: calc(1000px - 11rem);
+  max-height: 600px;
+  justify-self: center;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+}
+
+.content__img--full::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+.content__img-inner {
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.content__text-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo-4 .content__text-wrap {
+  mix-blend-mode: color-dodge;
+}
+
+.demo-5 .content__text-wrap {
+  mix-blend-mode: luminosity;
+}
+
+.content__text {
+  overflow: hidden;
+  flex: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.content__text:nth-child(6) {
+  opacity: 1;
+}
+
+.content__text--full {
+  flex: none;
+}
+
+.content__text-inner {
+  display: block;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15vh;
+  line-height: 0.85;
+  font-family: "Goblin One", cursive;
+  // font-family: "Kanit", sans-serif;
+
+  -webkit-text-stroke: 3px $black;
+  text-stroke: 3px $black;
+  // mix-blend-mode: exclusion;
+}
+
+// .demo-2 {
+//   font-weight: 700;
+//   font-size: 15vh;
+//   line-height: 0.85;
+//   font-family: "Syncopate", sans-serif;
+// }
+
+// .demo-3 {
+//   --font-trail-weight: 400;
+//   --font-trail-size: 15vh;
+//   --font-trail-lheight: 0.85;
+//   font-family: "Goblin One", sans-serif;
+// }
+
+// .demo-4 {
+//   --font-trail-weight: 700;
+//   --font-trail-size: 15vh;
+//   --font-trail-lheight: 0.85;
+//   font-family: "Source Code Pro", sans-serif;
+// }
+
+// .demo-5 {
+//   --font-trail-weight: 700;
+//   --font-trail-size: 18vh;
+//   --font-trail-lheight: 0.85;
+//   --font-trail-family: "Syncopate", sans-serif;
+// }
+
+.content__text-inner--bottom {
+  transform: translate3d(0, -40%, 0);
+}
+
+.content__text-inner--stroke {
+  -webkit-text-stroke: 3px $black;
+  text-stroke: 3px $black;
+  -webkit-text-fill-color: $black;
+  text-fill-color: $black;
+  color: $black;
+  text-shadow: none;
+}
+
+.content__nav {
+  grid-area: main;
+  justify-self: center;
+  align-self: end;
+  width: 80%;
+  max-width: 900px;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.content__nav-button {
+  border: 0;
+  cursor: pointer;
+  background: none;
+  margin: 0.25rem 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 900;
+  line-height: 1;
+  padding: 10px 50px;
+  background: $black;
+  border: 1px solid white;
+}
+
+.content__nav-button:focus {
+  outline: none;
+}
+
+.content__nav-button--next {
+  transform: translateX(1rem);
+}
+
+@media screen and (min-width: 53em) {
+  .frame {
+    position: fixed;
+    text-align: left;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    display: grid;
+    align-content: space-between;
+    width: 100%;
+    max-width: none;
+    height: 100vh;
+    padding: 3rem;
+    pointer-events: none;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title tagline"
+      "... ..."
+      "links demos";
+  }
+  .frame__title-wrap {
+    grid-area: title;
+    display: flex;
+  }
+  .frame__title {
+    margin: 0;
+  }
+  .frame__tagline {
+    grid-area: tagline;
+    justify-self: end;
+    margin: 0;
+    text-align: right;
+  }
+  .frame__demos {
+    margin: 0;
+    grid-area: demos;
+    justify-self: end;
+  }
+  .frame__links {
+    grid-area: links;
+    padding: 0;
+    justify-self: start;
+  }
+  .frame a {
+    pointer-events: auto;
+  }
+  .content {
+    height: 100vh;
+  }
+  .content__img {
+    width: calc(90% - 11rem);
+    height: 60vh;
+  }
+  .content__img--full {
+    height: calc(100vh + 20px);
+    width: calc(100vw + 20px);
+    max-width: none;
+    max-height: none;
+  }
+  .content__text-inner {
+    font-size: 17vh;
+  }
+  .content__nav {
+    align-self: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30vh;
+    font-size: 1.75rem;
+  }
+  .demo-5 .content__text-inner--stroke {
+    -webkit-text-stroke: 3px $black;
+    text-stroke: 3px $black;
+  }
+}
+
+//------------------------------------------------------------
+// Marquee section
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+.marquee__section_inner {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 10vh 0 25vh;
+  counter-reset: menu;
+}
+
+.marquee__item {
+  cursor: default;
+  position: relative;
+  padding: 0 5vw;
+
+  .marquee_img {
+    pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+    opacity: 0;
+    width: auto;
+    left: 100%;
+    top: 50%;
+    transform: translate3d(calc(-100% - 6vw), -30%, 0) translate3d(0, 20px, 0);
+  }
+}
+
+.marquee-link {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  -webkit-text-stroke: 1.5px #000;
+  text-stroke: 1.5px #000;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: transparent;
+  transition: opacity 0.4s;
+
+  &:before {
+    all: initial;
+    font-family: sofia-pro, sans-serif;
+    counter-increment: menu;
+    content: counter(menu);
+    position: absolute;
+    bottom: 60%;
+    left: 0;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transition-duration: 0.1s;
+    opacity: 0;
+  }
+}
+
+.marquee-link:hover + .marquee_img {
+  opacity: 1;
+  transform: translate3d(calc(-100% - 6vw), -30%, 0) rotate3d(0, 0, 1, 4deg);
+  transition: all 0.2s;
+}
+
+/* Make sure 3 items are visible in the viewport by setting suitable font size. */
+
+.marquee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  pointer-events: none;
+  mix-blend-mode: color-burn;
+}
+
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(calc(-25% + 20vw), 0, 0);
+  animation: marquee 5s linear infinite;
+  animation-play-state: paused;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.marquee-link:hover ~ .marquee .marquee__inner {
+  animation-play-state: running;
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+.marquee span {
+  text-align: center;
+}
+
+.marquee-link,
+.marquee span {
+  white-space: nowrap;
+  font-size: 5vw;
+  padding: 0 1vw;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.marquee span {
+  font-style: italic;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(calc(-25% + 20vw), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(calc(-50% + 20vw), 0, 0);
+  }
+}

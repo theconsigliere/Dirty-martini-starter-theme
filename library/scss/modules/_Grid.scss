@@ -1,17 +1,9 @@
 // Grid
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// .container is main centered wrapper with a max width of 112.0rem (1120px)
-.container {
-  margin: 0 auto;
-  max-width: 120rem;
-  padding: 0 2rem;
-  position: relative;
-  width: 100%;
-}
-
 .blog-single,
-.inner {
+.inner,
+.container {
   max-width: 90vw; // adjust to your content width or remove for full-width
   margin: 0 auto;
 
@@ -30,28 +22,22 @@
 
 .footer-container {
   margin: 0 auto;
-  max-width: 120rem;
+  max-width: 90vw;
   width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-direction: column;
+  @include start-between-column;
 
   @media (min-width: #{$screen-lg}) {
-    flex-direction: row;
+    @include start-between;
   }
 }
 
 .text-container {
   margin: 0 auto;
-  max-width: 120rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  max-width: 90vw;
+  @include center-between-column;
 
   @media (min-width: #{$screen-lg}) {
-    flex-direction: row;
+    @include center-between;
   }
 }
 
@@ -316,10 +302,7 @@
     left: 0;
     right: 0;
     top: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include center-center-column;
 
     p {
       display: none;
@@ -347,10 +330,7 @@
     left: 0;
     right: 0;
     top: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include center-center-column;
   }
 }
 
@@ -383,10 +363,7 @@
 
 .grid-one,
 .grid-two {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include center-center-column;
 
   .grid-item-group {
     width: 80%;

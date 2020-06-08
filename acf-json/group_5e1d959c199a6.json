@@ -1,10 +1,10 @@
 {
     "key": "group_5e1d959c199a6",
-    "title": "Footer",
+    "title": "Pre-Footer",
     "fields": [
         {
             "key": "field_5e1d95b932664",
-            "label": "Footer Content",
+            "label": "Pre-Footer Content",
             "name": "footer_content",
             "type": "flexible_content",
             "instructions": "",
@@ -105,6 +105,21 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5eddf71f03ec8",
+                            "label": "Background Colour",
+                            "name": "menu_colour",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": ""
+                        },
+                        {
                             "key": "field_5e1de1d3976f5",
                             "label": "Footer Nav",
                             "name": "footer_nav",
@@ -137,61 +152,6 @@
                                         "id": ""
                                     },
                                     "return_format": "array"
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_5e1d95d232665": {
-                    "key": "layout_5e1d95d232665",
-                    "name": "footer_slider",
-                    "label": "Footer Slider",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5e1de82b7cd38",
-                            "label": "Footer Slider Group",
-                            "name": "footer_slider_group",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 0,
-                            "layout": "table",
-                            "button_label": "",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5e1de83c7cd39",
-                                    "label": "Footer Image",
-                                    "name": "footer_image",
-                                    "type": "image",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "id",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
                                 }
                             ]
                         }
@@ -304,5 +264,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1590944505
+    "modified": 1591609631
 }

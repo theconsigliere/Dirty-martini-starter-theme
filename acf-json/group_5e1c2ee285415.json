@@ -66,10 +66,10 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5e1c2ee2ba237",
-                            "label": "Description",
-                            "name": "hero_desc",
-                            "type": "wysiwyg",
+                            "key": "field_5ed7d5ae89ab3",
+                            "label": "Sub Title",
+                            "name": "hero_sub_title",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -79,10 +79,321 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e1c2ee2ba237",
+                            "label": "Description",
+                            "name": "hero_desc",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5ed7d53989ab1",
+                            "label": "Button",
+                            "name": "hero_button",
+                            "type": "link",
+                            "instructions": "Include a button to direct users to a new page.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_5eda7979146bd",
+                            "label": "Text Position",
+                            "name": "text_position",
+                            "type": "radio",
+                            "instructions": "Position where the text sits",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "middle_aligned": "Middle Aligned",
+                                "left_aligned": "Left Aligned",
+                                "right_aligned": "Right Aligned"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5edd01442478c": {
+                    "key": "layout_5edd01442478c",
+                    "name": "hero_text_image",
+                    "label": "Hero Text side Image Side",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5edd018c24793",
+                            "label": "Hero Column",
+                            "name": "hero_column",
+                            "type": "repeater",
+                            "instructions": "Add a new Hero Column",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "Add Column",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5edd01b424794",
+                                    "label": "Add a Hero Item",
+                                    "name": "hero_item",
+                                    "type": "flexible_content",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layouts": {
+                                        "layout_5edd01bcc86a8": {
+                                            "key": "layout_5edd01bcc86a8",
+                                            "name": "hero_title_section",
+                                            "label": "Hero Title Section",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5edd023d24799",
+                                                    "label": "Sub Title",
+                                                    "name": "hero_sub_title",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5edd01e924796",
+                                                    "label": "Title",
+                                                    "name": "hero_title",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5edd020a24797",
+                                                    "label": "Description",
+                                                    "name": "hero_desc",
+                                                    "type": "textarea",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "maxlength": "",
+                                                    "rows": "",
+                                                    "new_lines": ""
+                                                },
+                                                {
+                                                    "key": "field_5edd022c24798",
+                                                    "label": "Button",
+                                                    "name": "hero_button",
+                                                    "type": "link",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "return_format": "array"
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        "layout_5edd01de24795": {
+                                            "key": "layout_5edd01de24795",
+                                            "name": "hero_image_section",
+                                            "label": "Hero Image Section",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5edd02582479a",
+                                                    "label": "Image",
+                                                    "name": "hero_image",
+                                                    "type": "image",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "return_format": "id",
+                                                    "preview_size": "post-thumbnail",
+                                                    "library": "all",
+                                                    "min_width": "",
+                                                    "min_height": "",
+                                                    "min_size": "",
+                                                    "max_width": "",
+                                                    "max_height": "",
+                                                    "max_size": "",
+                                                    "mime_types": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        }
+                                    },
+                                    "button_label": "Add Item",
+                                    "min": "",
+                                    "max": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ed7e7615f648": {
+                    "key": "layout_5ed7e7615f648",
+                    "name": "hero_collage",
+                    "label": "Hero Collage",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ed80eef3220f",
+                            "label": "Background Colour",
+                            "name": "hero_background",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": ""
+                        },
+                        {
+                            "key": "field_5ed7e7615f64a",
+                            "label": "Title",
+                            "name": "hero_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ed80f0132210",
+                            "label": "Text Colour",
+                            "name": "hero_colour",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": ""
+                        },
+                        {
+                            "key": "field_5ed7e7935f64e",
+                            "label": "Images",
+                            "name": "hero_images",
+                            "type": "gallery",
+                            "instructions": "Add images",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "post-thumbnail",
+                            "insert": "append",
+                            "library": "all",
+                            "min": "",
+                            "max": 6,
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         }
                     ],
                     "min": "",
@@ -175,7 +486,7 @@
             },
             "button_label": "Add Row",
             "min": "",
-            "max": ""
+            "max": 1
         }
     ],
     "location": [
@@ -204,5 +515,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1590944497
+    "modified": 1591543038
 }

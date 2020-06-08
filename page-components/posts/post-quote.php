@@ -1,4 +1,4 @@
-<section class="full-width-section">
+<section class="quote__section">
     <article class="container">
         <blockquote>
             <h3><?php the_sub_field('quote')?>

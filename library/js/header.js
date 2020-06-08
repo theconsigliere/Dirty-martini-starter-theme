@@ -50,7 +50,12 @@ window.addEventListener("scroll", () => {
     header.classList.add(scrollDown);
 
     toggleIcon.classList.remove('toggle_on');
-    fullScreenNav.classList.remove("opacity-full");
+
+    if (fullScreenNav) {
+
+      fullScreenNav.classList.remove("opacity-full");
+      
+    }
 
 
   } else if (currentScroll < lastScroll && header.classList.contains(scrollDown)) {

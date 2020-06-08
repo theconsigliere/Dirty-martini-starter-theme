@@ -73,6 +73,22 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/acf-json/group_5ed8ce3d582a3.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5ed8ce3d582a3-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/acf-json/group_5ed91060152f0.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/acf-json/group_5ed91060152f0-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/acf-json/README.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -317,13 +333,13 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/library/js/flickity.min.js": {
+	"/library/js/gsap-user.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/library/js/min/flickity.min-min.js",
+		"oAP": "/library/js/min/gsap-user-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -357,6 +373,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/library/js/libs/min/modernizr-custom-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/list.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/list-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -410,6 +437,44 @@
 		"oAP": "/library/js/min/flickity.min-min.js.map",
 		"oF": 0
 		},
+	"/library/js/min/glide-user-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/min/glide-user-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/min/glide-user-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/min/glide-user-min.js.map",
+		"oF": 0
+		},
+	"/library/js/min/gsap-user-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/min/gsap-user-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/min/gsap-user-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/min/gsap-user-min.js.map",
+		"oF": 0
+		},
 	"/library/js/min/header-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -427,6 +492,25 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/library/js/min/header-min.js.map",
+		"oF": 0
+		},
+	"/library/js/min/list-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/min/list-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/min/list-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/min/list-min.js.map",
 		"oF": 0
 		},
 	"/library/js/min/modal-min.js": {
@@ -448,6 +532,25 @@
 		"oAP": "/library/js/min/modal-min.js.map",
 		"oF": 0
 		},
+	"/library/js/min/preloader-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/min/preloader-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/min/preloader-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/min/preloader-min.js.map",
+		"oF": 0
+		},
 	"/library/js/min/scripts-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -465,6 +568,63 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/library/js/min/scripts-min.js.map",
+		"oF": 0
+		},
+	"/library/js/min/swiper-user-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/min/swiper-user-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/min/swiper-user-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/min/swiper-user-min.js.map",
+		"oF": 0
+		},
+	"/library/js/min/swiper.min-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/min/swiper.min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/min/swiper.min-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/min/swiper.min-min.js.map",
+		"oF": 0
+		},
+	"/library/js/min/texttrail-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/min/texttrail-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/min/texttrail-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/library/js/min/texttrail-min.js.map",
 		"oF": 0
 		},
 	"/library/js/min/theme-customizer-min.js": {
@@ -508,6 +668,17 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/library/js/preloader.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/preloader-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/library/js/scripts.js": {
 		"bF": 0,
 		"ft": 64,
@@ -515,6 +686,39 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/library/js/min/scripts-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/swiper-user.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/swiper-user-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/swiper.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/swiper.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/library/js/texttrail.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/library/js/min/texttrail-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -645,7 +849,7 @@
 		"oS": 3,
 		"sct": 1
 		},
-	"/library/scss/modules/_Flickity.scss": {
+	"/library/scss/modules/_Experimental.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -653,7 +857,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/library/scss/css/_Flickity.css",
+		"oAP": "/library/scss/css/_Experimental.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -710,7 +914,7 @@
 		"oS": 3,
 		"sct": 1
 		},
-	"/library/scss/modules/_Html.scss": {
+	"/library/scss/modules/_Landscape.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -718,33 +922,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/library/scss/css/_Html.css",
-		"oF": 0,
-		"oS": 3,
-		"sct": 1
-		},
-	"/library/scss/modules/_Image.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/library/scss/css/_Image.css",
-		"oF": 0,
-		"oS": 3,
-		"sct": 1
-		},
-	"/library/scss/modules/_Layout.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/library/scss/css/_Layout.css",
+		"oAP": "/library/scss/css/_Landscape.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -762,6 +940,19 @@
 		"oS": 3,
 		"sct": 1
 		},
+	"/library/scss/modules/_Modules.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/library/scss/css/_Modules.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
 	"/library/scss/modules/_Post.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -775,6 +966,19 @@
 		"oS": 3,
 		"sct": 1
 		},
+	"/library/scss/modules/_Prefooter.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/library/scss/css/_Prefooter.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
 	"/library/scss/modules/_Settings.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -784,6 +988,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/library/scss/css/_Settings.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/library/scss/modules/_Swiper.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/library/scss/css/_Swiper.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -810,19 +1027,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/library/scss/css/_Variables.css",
-		"oF": 0,
-		"oS": 3,
-		"sct": 1
-		},
-	"/library/scss/modules/_Wordpress.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/library/scss/css/_Wordpress.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -931,12 +1135,28 @@
 		"oAP": "/page-basic.php",
 		"oF": 0
 		},
-	"/page-components/company-highlight.php": {
+	"/page-components/blog-section.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/company-highlight.php",
+		"oAP": "/page-components/blog-section.php",
+		"oF": 0
+		},
+	"/page-components/button-section.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/button-section.php",
+		"oF": 0
+		},
+	"/page-components/card-section.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/card-section.php",
 		"oF": 0
 		},
 	"/page-components/contact-form.php": {
@@ -947,30 +1167,6 @@
 		"oAP": "/page-components/contact-form.php",
 		"oF": 0
 		},
-	"/page-components/content-blog.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-components/content-blog.php",
-		"oF": 0
-		},
-	"/page-components/content-button.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-components/content-button.php",
-		"oF": 0
-		},
-	"/page-components/content-card.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-components/content-card.php",
-		"oF": 0
-		},
 	"/page-components/content-content.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -979,76 +1175,52 @@
 		"oAP": "/page-components/content-content.php",
 		"oF": 0
 		},
-	"/page-components/content-list.php": {
+	"/page-components/experimental-layouts/experimental-components.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/content-list.php",
+		"oAP": "/page-components/experimental-layouts/experimental-components.php",
 		"oF": 0
 		},
-	"/page-components/content-quote.php": {
+	"/page-components/experimental-layouts/marquee.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/content-quote.php",
+		"oAP": "/page-components/experimental-layouts/marquee.php",
 		"oF": 0
 		},
-	"/page-components/content-slider.php": {
+	"/page-components/experimental-layouts/text-trail.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/content-slider.php",
+		"oAP": "/page-components/experimental-layouts/text-trail.php",
 		"oF": 0
 		},
-	"/page-components/event-highlight.php": {
+	"/page-components/footer/footer-bottom.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/event-highlight.php",
+		"oAP": "/page-components/footer/footer-bottom.php",
 		"oF": 0
 		},
-	"/page-components/footer/footer-components.php": {
+	"/page-components/footer/footer-contact-details.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/footer/footer-components.php",
+		"oAP": "/page-components/footer/footer-contact-details.php",
 		"oF": 0
 		},
-	"/page-components/footer/footer-form.php": {
+	"/page-components/footer/footer-main.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/footer/footer-form.php",
-		"oF": 0
-		},
-	"/page-components/footer/footer-menu.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-components/footer/footer-menu.php",
-		"oF": 0
-		},
-	"/page-components/footer/footer-slider.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-components/footer/footer-slider.php",
-		"oF": 0
-		},
-	"/page-components/footer/footer-socials.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-components/footer/footer-socials.php",
+		"oAP": "/page-components/footer/footer-main.php",
 		"oF": 0
 		},
 	"/page-components/grid/grid-one-one.php": {
@@ -1107,6 +1279,14 @@
 		"oAP": "/page-components/header/logo-middle.php",
 		"oF": 0
 		},
+	"/page-components/hero/hero-collage.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/hero/hero-collage.php",
+		"oF": 0
+		},
 	"/page-components/hero/hero-components.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1123,6 +1303,14 @@
 		"oAP": "/page-components/hero/hero-fullwidth.php",
 		"oF": 0
 		},
+	"/page-components/hero/hero-textside-imageside.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/hero/hero-textside-imageside.php",
+		"oF": 0
+		},
 	"/page-components/hero/hero-video.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1131,36 +1319,20 @@
 		"oAP": "/page-components/hero/hero-video.php",
 		"oF": 0
 		},
-	"/page-components/layout/layout-image-text.php": {
+	"/page-components/image-section.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/layout/layout-image-text.php",
+		"oAP": "/page-components/image-section.php",
 		"oF": 0
 		},
-	"/page-components/layout/layout-testimonial.php": {
+	"/page-components/list-section.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/layout/layout-testimonial.php",
-		"oF": 0
-		},
-	"/page-components/layout/layout-text-title.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-components/layout/layout-text-title.php",
-		"oF": 0
-		},
-	"/page-components/layout/layout-two-image-section.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-components/layout/layout-two-image-section.php",
+		"oAP": "/page-components/list-section.php",
 		"oF": 0
 		},
 	"/page-components/page-components.php": {
@@ -1171,6 +1343,14 @@
 		"oAP": "/page-components/page-components.php",
 		"oF": 0
 		},
+	"/page-components/posts/post-author.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/posts/post-author.php",
+		"oF": 0
+		},
 	"/page-components/posts/post-components.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1179,12 +1359,20 @@
 		"oAP": "/page-components/posts/post-components.php",
 		"oF": 0
 		},
-	"/page-components/posts/post-full-width-text.php": {
+	"/page-components/posts/post-display.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-components/posts/post-full-width-text.php",
+		"oAP": "/page-components/posts/post-display.php",
+		"oF": 0
+		},
+	"/page-components/posts/post-html.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/posts/post-html.php",
 		"oF": 0
 		},
 	"/page-components/posts/post-quote.php": {
@@ -1219,6 +1407,46 @@
 		"oAP": "/page-components/posts/post-two-text-section.php",
 		"oF": 0
 		},
+	"/page-components/pre-footer/footer-components.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/pre-footer/footer-components.php",
+		"oF": 0
+		},
+	"/page-components/pre-footer/footer-form.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/pre-footer/footer-form.php",
+		"oF": 0
+		},
+	"/page-components/pre-footer/footer-menu.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/pre-footer/footer-menu.php",
+		"oF": 0
+		},
+	"/page-components/pre-footer/footer-socials.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/pre-footer/footer-socials.php",
+		"oF": 0
+		},
+	"/page-components/slider-section.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/slider-section.php",
+		"oF": 0
+		},
 	"/page-components/theme-settings/announcement-bar.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1233,6 +1461,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-components/theme-settings/modal.php",
+		"oF": 0
+		},
+	"/page-components/theme-settings/pre-loader.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/theme-settings/pre-loader.php",
+		"oF": 0
+		},
+	"/page-components/title-section.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-components/title-section.php",
 		"oF": 0
 		},
 	"/page-sidebar.php": {

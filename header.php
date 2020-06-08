@@ -57,6 +57,22 @@
 
 <body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebPage">
 
+    <?php // PRE-LOADER 
+
+    // Grab the select field data
+    $activated = get_field('loading_activate', 'option');		
+    // check the selection
+    if($activated == 'yes') { ?>
+
+        <div class="pre_loader">
+
+            <?php get_template_part( 'page-components/theme-settings/pre-loader' ); ?>
+
+        </div>
+
+    <?php   } ?>
+
+
 
         <header class="header" id="header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
 

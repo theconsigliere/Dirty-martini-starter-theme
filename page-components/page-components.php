@@ -10,44 +10,48 @@
 				// loop through all the rows of flexible content
 				while (have_rows('page_content')) : the_row();
 
+					// Text & Title Section
+					if (get_row_layout() == 'text_title_section')
+					get_template_part('page-components/title', 'section');
+
+
+					// Experimental Layouts
+					if (get_row_layout() == 'experimental_layouts')
+						get_template_part('page-components/experimental-layouts/experimental-components');
+						
+
 					// Card Section
 					if (get_row_layout() == 'card_section')
-						get_template_part('page-components/content', 'card');
+						get_template_part('page-components/card', 'section');
+
+
+					// Show Button Section
+					if (get_row_layout() == 'button_section')
+					get_template_part('page-components/button', 'section');
 
 					// Content Section
 					if (get_row_layout() == 'content_section')
 					get_template_part('page-components/content', 'content');
 
-
 					// Blog Section
 					if (get_row_layout() == 'blog_section')
-						get_template_part('page-components/content', 'blog');
+						get_template_part('page-components/blog', 'section');
 
-					// Layout Components
-					if (get_row_layout() == 'layout')
-
-						if (have_rows('layout_content')) : while (have_rows('layout_content')) : the_row();
-		
-								// Image Side Text Side Section
-								if (get_row_layout() == 'image_text_section')
-								get_template_part('page-components/layout/layout', 'image-text');
+					// Image Section
+					if (get_row_layout() == 'image_section')
+					get_template_part('page-components/image', 'section');   
 
 
-								// Text & Title Section
-								if (get_row_layout() == 'text_title_section')
-								get_template_part('page-components/layout/layout', 'text-title');
+					// 	List
+					if (get_row_layout() == 'list_section')
+					get_template_part('page-components/list', 'section');
 
 
-								// Footer testimonial
-								if (get_row_layout() == 'layout_testimonial')
-								get_template_part('page-components/layout/layout', 'testimonial');      
+					// Slider Section
+					if (get_row_layout() == 'slider_section')
+					get_template_part('page-components/slider', 'section');
 
 
-								// Two Image Section
-								if (get_row_layout() == 'two_image_section')
-								get_template_part('page-components/layout/layout', 'two-image-section');      
-
-						endwhile; endif; 
 
 						// Grid Components
 						if (get_row_layout() == 'grid')
@@ -66,30 +70,6 @@
 						endwhile; endif; 
 
 
-					// Company Highlight
-					if (get_row_layout() == 'company_highlight')
-					get_template_part('page-components/company', 'highlight');
-
-					// 	List
-					if (get_row_layout() == 'content_list')
-					get_template_part('page-components/content', 'list');
-
-					// 	Event Highlight
-					if (get_row_layout() == 'event_highlight')
-					get_template_part('page-components/event', 'highlight');
-
-					// 	Quote Section
-					if (get_row_layout() == 'content_quote')
-					get_template_part('page-components/content', 'quote');
-
-
-					// Slider Section
-					if (get_row_layout() == 'slider_section')
-					get_template_part('page-components/content', 'slider');
-
-					// Show Button Section
-					if (get_row_layout() == 'button_section')
-						get_template_part('page-components/content', 'button');
 
 					// Contact Form
 					if (get_row_layout() == 'contact_form')

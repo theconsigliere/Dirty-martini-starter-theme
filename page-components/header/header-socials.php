@@ -10,15 +10,16 @@ if( have_rows('socials') ): ?>
             <div class="social_item">
 
             <?php
-
                 $link = get_sub_field('social_link');
-                $link_url = $link['url'];
-            ?>
-                <a href="<?php echo esc_url( $link_url ); ?>">
-                    <div class="social_logo">
-                        <?php the_sub_field('social_logo'); ?>
-                    </div>
-                </a>
+
+                if( $link ): 
+                    $link_url = $link['url'];  ?>
+                    <a href="<?php echo esc_url( $link_url ); ?>">
+                        <div class="social_logo">
+                            <?php the_sub_field('social_logo'); ?>
+                        </div>
+                    </a>
+                <?php endif; ?>
             </div>
 
 

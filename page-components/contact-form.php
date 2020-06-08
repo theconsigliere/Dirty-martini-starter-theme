@@ -1,10 +1,14 @@
-<section class="contact-form container">
+<section class='full-width-section'>
 
-    <?php 
+    <div class='contact-form container'>
 
-    $form_id = get_sub_field('contact_form_id'); 
-    echo do_shortcode($form_id); 
+        <?php 
 
-    ?>
+        $form_id = get_sub_field('contact_form_id'); 
+        echo do_shortcode($form_id); 
+
+        ?>
+
+    </div>
 
 </section>

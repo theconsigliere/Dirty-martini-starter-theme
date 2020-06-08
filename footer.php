@@ -3,31 +3,17 @@
 
 <footer id="footer" class="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
 
-    <div class='container-wrap' id="inner-footer" class="wrap">
-
-        <div class="footer-section">
-            <div class="footer-logo-section">
-                <div id="logo" itemprop="logo">
-                    <a href="<?php echo home_url(); ?>" rel="nofollow" itemprop="url"
-                        title="<?php bloginfo('name'); ?>">
-                        <img src="<?php echo get_theme_file_uri(); ?>/library/images/Dirty-Martini-Logo.png"
-                            itemprop="logo" alt="site logo" />
-                    </a>
-                </div>
+        <?php   //Footer Main
+             
+        get_template_part( 'page-components/footer/footer-main' ); ?>
 
 
-            </div>
 
 
-            <p class="source-org copyright">&copy; <?php echo date('Y'); ?> All Rights Reserved. Website Made with ❤️ by
-        <a href='https://dirty-martini.com/' target='new'>Dirty Martini Marketing</a></p>
-        </div>
+        <?php   // Footer Bottom
+             
+        get_template_part( 'page-components/footer/footer-bottom' ); ?>
 
-        <div class="footer-text">
-            <?php get_sidebar('footer-info'); ?>
-        </div>
-
-    </div>
 
 
 </footer>

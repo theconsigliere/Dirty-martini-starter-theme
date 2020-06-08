@@ -467,8 +467,11 @@ SCRIPTS & ENQUEUEING
                 // accessibility (a11y) scripts
                 wp_enqueue_script('plate-a11y', get_theme_file_uri() . '/library/js/a11y.js', array('jquery'), '', true);
 
-                  // Flickity Scripts
-               wp_enqueue_script('flickity', get_template_directory_uri() . '/library/js/flickity.min.js', array(), '', true);
+                  // GLIDE Scripts
+               wp_enqueue_script('swiper', get_template_directory_uri() . '/library/js/swiper.min.js', array(), '', true);
+
+               //Glide User File
+               wp_enqueue_script('swiper-user', get_template_directory_uri() . '/library/js/swiper-user.js', array(), '', true);
 
                 // Barba Scripts
                 // wp_enqueue_script('barba', get_template_directory_uri() . '/library/js/barba/barba.js', array(), '', true);
@@ -477,12 +480,26 @@ SCRIPTS & ENQUEUEING
                 // MODAL -> THEME SETTINGS
                 wp_enqueue_script('modal', get_template_directory_uri() . '/library/js/modal.js', array(), false, '1.0.0' );
 
+                // For List Component
+                wp_enqueue_script('list', get_template_directory_uri() . '/library/js/list.js', array(), false, '1.0.0' );
+
                 // Header
                 wp_enqueue_script('header', get_template_directory_uri() . '/library/js/header.js', array(), '', true );
 
-                
+
+                // Pre Loader
+                wp_enqueue_script('preloader', get_template_directory_uri() . '/library/js/preloader.js', array(), '', true );
+
+                // Text trail
+                wp_enqueue_script('texttrail', get_template_directory_uri() . '/library/js/texttrail.js', array(), '', true );
+
+
                 // GSAP Scripts
-                // wp_enqueue_script('gsap-js', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js', array(), false, true);
+                 wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js', array(), false, true);
+                 // Scroll Trigger
+                 wp_enqueue_script('gsap-scrolltrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js', array(), false, true);
+                 
+                 wp_enqueue_script('gsap-user', get_template_directory_uri() . '/library/js/gsap-user.js', array(), false, true);
 
 
                 $wp_styles->add_data('plate-ie-only', 'conditional', 'lt IE 9'); // add conditional wrapper around ie stylesheet

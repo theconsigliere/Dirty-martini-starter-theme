@@ -28,7 +28,7 @@
 
 
         <!-- Page Footer-->
-        <?php get_template_part('page-components/footer/footer', 'components'); ?>
+        <?php get_template_part('page-components/pre-footer/footer', 'components'); ?>
 
     </div>
 </div>

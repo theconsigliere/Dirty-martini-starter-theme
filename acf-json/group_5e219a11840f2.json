@@ -20,7 +20,7 @@
                     "key": "layout_5e219af4e0525",
                     "name": "text_title_section",
                     "label": "Text & Title Section",
-                    "display": "table",
+                    "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5e219a11b620f",
@@ -40,6 +40,35 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ede431bc7584",
+                            "label": "Title Size",
+                            "name": "title_size",
+                            "type": "select",
+                            "instructions": "Please choose Heading size ( Heading 1 being the biggest, Heading 6 the smallest)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "h1": "Heading 1",
+                                "h2": "Heading 2",
+                                "h3": "Heading 3",
+                                "h4": "Heading 4",
+                                "h5": "Heading 5",
+                                "h6": "Heading 6"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
                         },
                         {
                             "key": "field_5e219a11b6214",
@@ -273,29 +302,10 @@
                 },
                 "layout_5e206ef078ed6": {
                     "key": "layout_5e206ef078ed6",
-                    "name": "width_text_section",
-                    "label": "Full Width Text Section",
+                    "name": "html_section",
+                    "label": "HTML Content",
                     "display": "table",
                     "sub_fields": [
-                        {
-                            "key": "field_5e219cdfcc944",
-                            "label": "Title",
-                            "name": "w_t_title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
                         {
                             "key": "field_5e219a11b217d",
                             "label": "Content",
@@ -314,6 +324,154 @@
                             "toolbar": "full",
                             "media_upload": 1,
                             "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ede28e4d30ff": {
+                    "key": "layout_5ede28e4d30ff",
+                    "name": "author_section",
+                    "label": "Author Section",
+                    "display": "table",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ede28efd3100",
+                            "label": "Author Image",
+                            "name": "author_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "post-thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5ede292ed3102",
+                            "label": "Author Name",
+                            "name": "author_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ede28ffd3101",
+                            "label": "Date",
+                            "name": "author_date",
+                            "type": "date_picker",
+                            "instructions": "Add the date your want presented",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "F j, Y",
+                            "return_format": "F j, Y",
+                            "first_day": 1
+                        },
+                        {
+                            "key": "field_5ede2972d3103",
+                            "label": "Category",
+                            "name": "author_category",
+                            "type": "taxonomy",
+                            "instructions": "Display the Category this post belongs to",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "category",
+                            "field_type": "multi_select",
+                            "allow_null": 0,
+                            "add_term": 1,
+                            "save_terms": 1,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "multiple": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5ede361527952": {
+                    "key": "layout_5ede361527952",
+                    "name": "display_blogs",
+                    "label": "Display Related Blogs",
+                    "display": "table",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ede3ac24ded6",
+                            "label": "Title",
+                            "name": "blogs_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ede36bc27953",
+                            "label": "Blogs",
+                            "name": "blogs",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": "",
+                            "taxonomy": "",
+                            "filters": [
+                                "search",
+                                "post_type",
+                                "taxonomy"
+                            ],
+                            "elements": [
+                                "featured_image"
+                            ],
+                            "min": "",
+                            "max": "",
+                            "return_format": "object"
                         }
                     ],
                     "min": "",
@@ -347,9 +505,10 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "the_content"
+        "the_content",
+        "format"
     ],
     "active": 1,
     "description": "",
-    "modified": 1590944520
+    "modified": 1591624639
 }

@@ -26,9 +26,18 @@
 					if (get_row_layout() == 'post_quote')
                     get_template_part('page-components/posts/post', 'quote');
                     
-                    // Full Width Text Section
-					if (get_row_layout() == 'width_text_section')
-					get_template_part('page-components/posts/post', 'full-width-text');
+                    // HTML Section
+					if (get_row_layout() == 'html_section')
+					get_template_part('page-components/posts/post', 'html');
+
+					// Author Section
+					if (get_row_layout() == 'author_section')
+					get_template_part('page-components/posts/post', 'author');
+
+
+					// Display Related Blogs
+					if (get_row_layout() == 'display_blogs')
+					get_template_part('page-components/posts/post', 'display');
 
 
 				endwhile; // close the loop of flexible content
