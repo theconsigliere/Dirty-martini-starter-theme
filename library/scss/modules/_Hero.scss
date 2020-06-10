@@ -285,10 +285,16 @@
   @include center-between-column;
   flex-direction: column-reverse;
   height: auto;
+  // using gsap makes visible
+  visibility: hidden;
 
   @media (min-width: #{$screen-lg}) {
     @include center-between;
     height: 100vh;
+  }
+
+  .js_textside__button {
+    opacity: 0;
   }
 
   .hero__column {
